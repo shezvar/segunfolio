@@ -9,7 +9,7 @@ const projectData = [
   {image: 'https://tailwindui.com/img/component-images/dark-project-app-screenshot.png', alt: 'first image', title: 'Century Tech', description: 'Optimising The Onboarding Processes', link: '#'}
 ]
 
-export default function Home() {
+export default function Contact() {
 
   return (
     <div className="bg-white">
