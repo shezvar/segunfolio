@@ -7,7 +7,7 @@ import ProjectHeader from '@/components/project-header'
 const projectData = [
     { title: 'Automated Budget System In State Governance', subtext: 'An enterprise solution that offers improved transparency and accountability in the budget and expenditure management process.', imageUrl: '/images/sampleimage.png', alt: 'Prowoks EMS', role1: 'Research', role2: 'Information Architecture', role3: '', role4: '', role5: '', platform1: 'Desktop', platform2: 'Mobile Responsive', platform3: '' },
 ]
-export default function Fullgap() {
+export default function Booosta() {
 
     return (
         <div className="bg-white">
