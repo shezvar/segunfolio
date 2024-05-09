@@ -81,7 +81,7 @@ export default function Fullgap() {
                 </div>
             </main>
 
-            {/* <LockScreen /> */}
+            <LockScreen />
         </div>
     )
 }

@@ -2,8 +2,12 @@
 import React from 'react'
 import Header from '@/components/header'
 import LockScreen from '@/components/passwordRequest'
+import ProjectHeader from '@/components/project-header'
 
-export default function Booosta() {
+const projectData = [
+    { title: 'Automated Budget System In State Governance', subtext: 'An enterprise solution that offers improved transparency and accountability in the budget and expenditure management process.', imageUrl: '/images/sampleimage.png', alt: 'Prowoks EMS', role1: 'Research', role2: 'Information Architecture', role3: '', role4: '', role5: '', platform1: 'Desktop', platform2: 'Mobile Responsive', platform3: '' },
+]
+export default function Fullgap() {
 
     return (
         <div className="bg-white">
@@ -27,38 +31,23 @@ export default function Booosta() {
 
                     <div className="overflow-hidden">
 
-                        <div className='mx-auto flex items-center max-w-2xl md:max-w-3xl xl:max-w-7xl px-6 pb-[2rem] pt-56 sm:pt-60 lg:px-8 lg:pt-[20rem]'>
-                            <div className='w-full'>
-                                <h1 className='text-6xl font-medium'>Automated Budget System in State Governance</h1>
-                                <h3 className='text-3xl font-normal mt-8 text-slate-600'>Designed to help creative professionals, particularly freelancers, manage their clients and projects effectively</h3>
-                                <div className='relative w-full h-[40rem] mt-16 group'>
-                                    <div className='absolute top-0 right-0 left-0 bottom-0 p-2 border bg-slate-100 rounded-3xl shadow-2xl'>
-                                        <img src="/images/sampleimage.png" className='transition group-hover:scale-110 rounded-2xl h-full w-full block object-cover object-center' />
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div className='mx-auto max-w-7xl px-6 pb-[2rem] sm:pt-60 lg:px-8 lg:pt-10'>
-                            <div className='grid grid-cols-1 gap-y-8 md:grid-cols-2 gap-2 border-b pb-16'>
-
-                                <div className=''>
-                                    <h5 className='uppercase text-lg font-medium text-gray-600'>Role</h5>
-                                    <div className='pt-3'>
-                                        <p className="text-base text-gray-900">Research</p>
-                                        <p className="text-base text-gray-900">Information Architecture</p>
-                                    </div>
-                                </div>
-
-                                <div className=''>
-                                    <h5 className='uppercase text-lg font-medium text-gray-600'>Platform</h5>
-                                    <div className='pt-3'>
-                                        <p className="text-base text-gray-900">Desktop</p>
-                                        <p className="text-base text-gray-900">Mobile Responsive</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        {projectData.map((item) => (
+                            <ProjectHeader
+                            key={item.imageUrl}
+                            title={item.title}
+                            subtext={item.subtext}
+                            imageUrl={item.imageUrl}
+                            alt={item.alt}
+                            role1={item.role1}
+                            role2={item.role2}
+                            role3={item.role3}
+                            role4={item.role4}
+                            role5={item.role5}
+                            platform1={item.platform1}
+                            platform2={item.platform2}
+                            platform3={item.platform3}
+                        />
+                        ))}
 
                         <div className='mx-auto max-w-7xl px-6 sm:pt-60 lg:px-8 lg:pt-10'>
                             <h5 className='uppercase text-lg font-medium text-gray-600'>Background</h5>
@@ -91,6 +80,7 @@ export default function Booosta() {
                     </div>
                 </div>
             </main>
+
             <LockScreen />
         </div>
     )
