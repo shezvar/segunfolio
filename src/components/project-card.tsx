@@ -10,7 +10,7 @@ export default function ProjectCard(props: { imageUrl: any; alt: any; title: any
                 <h3>
                     <a href={link} className="group">
                         <img
-                            className="max-w-full rounded-xl bg-gray-900 shadow-xl ring-1 ring-gray-400/10"
+                            className="transition max-w-full ease-in-out rounded-xl bg-gray-900 shadow-xl ring-1 ring-gray-400/10 group-hover:scale-[1.05]"
                             src={imageUrl}
                             alt={alt}
                         />
@@ -19,7 +19,7 @@ export default function ProjectCard(props: { imageUrl: any; alt: any; title: any
                                 <h3 className="text-lg mt-4 font-semibold text-gray-900 group-hover:text-indigo-500">{title}</h3>
                                 <p className="text-base text-gray-500">{description}</p>
                             </div>
-                            <ArrowLongRightIcon className="w-6 hover:translate-x-2"/>
+                            <ArrowLongRightIcon className="transition w-6 group-hover:translate-x-2"/>
                         </div>
                     </a>
                 </h3>

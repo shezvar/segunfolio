@@ -3,7 +3,7 @@ import Header from '@/components/header'
 import ProjectCard from '@/components/project-card'
 
 const projectData = [
-  {image: 'https://tailwindui.com/img/component-images/dark-project-app-screenshot.png', alt: 'first image', title: 'Fullgap', description: 'Creative Economy', link: '#'},
+  {image: 'https://tailwindui.com/img/component-images/dark-project-app-screenshot.png', alt: 'first image', title: 'Fullgap', description: 'Creative Economy', link: '/projects-list'},
   {image: 'https://tailwindui.com/img/component-images/dark-project-app-screenshot.png', alt: 'first image', title: 'Prowoks', description: 'Automated Budget System in State Governance', link: '#'},
   {image: 'https://tailwindui.com/img/component-images/dark-project-app-screenshot.png', alt: 'first image', title: 'Booosta', description: 'The #1 Operating System For E-commerce In Africa', link: '#'},
   {image: 'https://tailwindui.com/img/component-images/dark-project-app-screenshot.png', alt: 'first image', title: 'Century Tech', description: 'Optimising The Onboarding Processes', link: '#'}
@@ -42,6 +42,7 @@ export default function Home() {
             </svg>
             <rect width="100%" height="100%" strokeWidth={0} fill="url(#1f932ae7-37de-4c0a-a8b0-a6e3b4d44b84)" />
           </svg>
+
           <div
             className="absolute left-1/2 right-0 top-0 -z-10 -ml-24 transform-gpu overflow-hidden blur-3xl lg:ml-24 xl:ml-48"
             aria-hidden="true"
@@ -60,23 +61,21 @@ export default function Home() {
 
               <div className="mx-auto max-w-2xl gap-x-14 lg:mx-0 lg:flex lg:max-w-none lg:items-center">
                 <div className="w-full max-w-xl lg:shrink-0 xl:max-w-2xl">
-                  <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
-                    We’re changing the way people connect.
+                  <h1 className="text-4xl font-normal tracking-tight text-gray-900 sm:text-6xl">
+                    My name is <span className='font-thin italic'>Segun</span>, <span className='font-thin italic'>Product Designer</span> working and living in <span className='font-thin italic'>London</span>
                   </h1>
                   <p className="relative mt-6 text-lg leading-8 text-gray-600 sm:max-w-md lg:max-w-none">
-                    Cupidatat minim id magna ipsum sint dolor qui. Sunt sit in quis cupidatat mollit aute velit. Et
-                    labore commodo nulla aliqua proident mollit ullamco exercitation tempor. Sint aliqua anim nulla sunt
-                    mollit id pariatur in voluptate cillum.
+                    When I am not designing, you will find me exploring London looking for basketball courts, writing lines of codes using Next JS, like I did this site, jogging and hitting new milestones amongst others...
                   </p>
                   <div className="mt-10 flex items-center gap-x-6">
                     <a
-                      href="#"
+                      href="/contact"
                       className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
                     >
-                      Get started
+                      Contact me
                     </a>
-                    <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
-                      Live demo <span aria-hidden="true">→</span>
+                    <a href="/about" className="text-sm font-semibold leading-6 text-gray-900">
+                      Learn more <span aria-hidden="true">→</span>
                     </a>
                   </div>
                 </div>
@@ -85,8 +84,8 @@ export default function Home() {
                   <div className="ml-auto w-44 flex-none space-y-8 pt-32 sm:ml-0 sm:pt-80 lg:order-last lg:pt-36 xl:order-none xl:pt-80">
                     <div className="relative">
                       <img
-                        src="https://images.unsplash.com/photo-1557804506-669a67965ba0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&h=528&q=80"
-                        alt=""
+                        src="https://plus.unsplash.com/premium_photo-1671436822885-0ef977b97959?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt="Basketball"
                         className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
                       />
                       <div className="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10" />
@@ -95,16 +94,16 @@ export default function Home() {
                   <div className="mr-auto w-44 flex-none space-y-8 sm:mr-0 sm:pt-52 lg:pt-36">
                     <div className="relative">
                       <img
-                        src="https://images.unsplash.com/photo-1485217988980-11786ced9454?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&h=528&q=80"
-                        alt=""
+                        src="https://images.unsplash.com/photo-1618477388954-7852f32655ec?q=80&w=3464&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt="React code"
                         className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
                       />
                       <div className="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10" />
                     </div>
                     <div className="relative">
                       <img
-                        src="https://images.unsplash.com/photo-1559136555-9303baea8ebd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&crop=focalpoint&fp-x=.4&w=396&h=528&q=80"
-                        alt=""
+                        src="https://images.unsplash.com/photo-1566230555350-59683b1d16e0?q=80&w=1828&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt="Swimming"
                         className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
                       />
                       <div className="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10" />
@@ -113,16 +112,16 @@ export default function Home() {
                   <div className="w-44 flex-none space-y-8 pt-32 sm:pt-0">
                     <div className="relative">
                       <img
-                        src="https://images.unsplash.com/photo-1670272504528-790c24957dda?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&crop=left&w=400&h=528&q=80"
-                        alt=""
+                        src="https://images.unsplash.com/photo-1609605988071-0d1cfd25044e?q=80&w=2817&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt="Cycling"
                         className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
                       />
                       <div className="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10" />
                     </div>
                     <div className="relative">
                       <img
-                        src="https://images.unsplash.com/photo-1670272505284-8faba1c31f7d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&h=528&q=80"
-                        alt=""
+                        src="https://images.unsplash.com/photo-1563166647-18db48f73987?q=80&w=2900&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt="Running"
                         className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
                       />
                       <div className="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10" />
@@ -138,7 +137,7 @@ export default function Home() {
 
             <div className="mx-auto max-w-7xl px-6 lg:px-8">
               <div className="mx-auto max-w-2xl lg:mx-0">
-                <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Select projects</h2>
+                <h2 className="text-3xl font-medium tracking-tight text-gray-900 sm:text-4xl">Selected projects</h2>
                 <p className="mt-6 text-lg leading-8 text-gray-600">
                   I believe technology is the answer to the world’s greatest challenges. It’s also the cause, so we find ourselves in bit of a catch 22 situation.
                 </p>
