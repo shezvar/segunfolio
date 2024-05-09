@@ -1,6 +1,8 @@
 import { useState } from 'react'
 import { Dialog } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
+import Image from 'next/image'
+import LinkedInLogo from "@/assets/Linkedin-Logo.png"
 
 const navigation = [
     { name: 'About me', href: '/about' },
@@ -16,11 +18,12 @@ export default function Header() {
                 <div className="flex lg:flex-1">
                     <a href="/" className="-m-1.5 p-1.5">
                         <span className="sr-only">Segun Oroyo</span>
-                        <img
+                        {/* <img
                             className="h-8 w-auto"
                             src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
                             alt=""
-                        />
+                        /> */}
+                        <div className='text-md font-semibold leading-6'>shezvar@gmail.com</div>
                     </a>
                 </div>
                 <div className="flex lg:hidden">
@@ -35,14 +38,15 @@ export default function Header() {
                 </div>
                 <div className="hidden lg:flex lg:gap-x-12">
                     {navigation.map((item) => (
-                        <a key={item.name} href={item.href} className="text-sm font-semibold leading-6 text-gray-900">
+                        <a key={item.name} href={item.href} className="text-md font-semibold leading-6 text-gray-900">
                             {item.name}
                         </a>
                     ))}
                 </div>
                 <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-                    <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
-                        Log in <span aria-hidden="true">&rarr;</span>
+                    <a href="https://www.linkedin.com/in/segun-oroyo/" target='_blank' className="flex text-md font-semibold leading-6 text-gray-900">
+                        LinkedIn
+                        <Image src={LinkedInLogo} className=' ml-1 w-auto h-5 rounded' alt='LinkedIn'/>
                     </a>
                 </div>
             </nav>

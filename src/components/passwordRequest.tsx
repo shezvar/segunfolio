@@ -1,45 +1,50 @@
 import React, { useState } from 'react';
+import { LockClosedIcon } from '@heroicons/react/16/solid';
 
-const ProtectedPage = () => {
+const LockScreen = () => {
   const [password, setPassword] = useState('');
   const [authenticated, setAuthenticated] = useState(false);
 
-  // Function to handle password submission
   const handleSubmit = (e: { preventDefault: () => void; }) => {
     e.preventDefault();
-    // Check if the password is correct
-    if (password === 'yourpassword') {
+    // Check if the entered password is correct
+    if (password === '1234') { // Replace 'yourpassword' with the actual password
       setAuthenticated(true);
     } else {
       alert('Incorrect password. Please try again.');
     }
   };
 
-  // If user is authenticated, display the content
   if (authenticated) {
+    // Render the main content if authenticated
     return (
-        <div className='mx-auto max-w-2xl'>
-        <h1>Welcome to the Protected Page!</h1>
-        <p>This is some sensitive information.</p>
+      <div>
+        <h1></h1>
+        {/* Add your main content here */}
       </div>
     );
   }
 
-  // If user is not authenticated, display the password form
+  // Render the lock screen if not authenticated
   return (
-    <div className='mx-auto max-w-2xl z-[999]'>
-      <h1>Please Enter the Password</h1>
-      <form onSubmit={handleSubmit}>
+    <div className='fixed top-0 left-0 bottom-0 right-0 bg-white z-50 overflow-hidden'>
+      <div className='mx-auto max-w-xs content-center text-center h-full'>
+        <LockClosedIcon className='h-12 text-zinc-600 w-full mb-5'/>
+      <h1 className='text-gray-900 font-semibold text-2xl mb-2'>Password protected</h1>
+      <p className='text-gray-500 mb-6'>To view content, enter the password provided or send a request</p>
+      <form onSubmit={handleSubmit} className='w-full grid grid-cols-1'>
         <input
           type="password"
           value={password}
           onChange={(e) => setPassword(e.target.value)}
           placeholder="Enter password"
+          className='border p-2 rounded-lg'
         />
-        <button type="submit">Submit</button>
+        <button type="submit" className='bg-indigo-600 text-gray-200 rounded-lg mt-3 p-2'>Unlock page</button>
       </form>
+      </div>
     </div>
   );
 };
 
-export default ProtectedPage;
+export default LockScreen;
