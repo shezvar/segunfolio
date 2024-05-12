@@ -49,29 +49,29 @@ export default function Booosta() {
                         />
                         ))}
 
-                        <div className='mx-auto max-w-7xl px-6 sm:pt-60 lg:px-8 lg:pt-10'>
+                        <div className='mx-auto max-w-5xl px-6 sm:pt-60 lg:px-8 lg:pt-10'>
                             <h5 className='uppercase text-lg font-medium text-gray-600'>Background</h5>
                             <h5 className='text-2xl font-medium pt-3 pb-4'>Monnify has simplified how businesses accept payments in Nigeria</h5>
-                            <div className='grid grid-cols-1 md:grid-cols-2 pb-16 space-0'>
-                                <p className="text-base text-gray-600">Nigerians used online payment methods more in 2019. Customers might pay from home with a click. Businesses may receive payments via web/mobile applications, cash, and POS transfers with this feature. Nigerians used online payment methods more in 2019. Customers might pay from home with a click. Businesses may receive payments via web/mobile applications, cash, and POS transfers with this feature.</p>
-                                <p className="text-base text-gray-600">Nigerians used online payment methods more in 2019. Customers might pay from home with a click. Businesses may receive payments via web/mobile applications, cash, and POS transfers with this feature.</p>
+                            <div className='grid grid-cols-1 md:grid-cols-2 pb-16 space-x-10'>
+                                <p className="text-gray-600">Nigerians used online payment methods more in 2019. Customers might pay from home with a click. Businesses may receive payments via web/mobile applications, cash, and POS transfers with this feature. Nigerians used online payment methods more in 2019. Customers might pay from home with a click. Businesses may receive payments via web/mobile applications, cash, and POS transfers with this feature.</p>
+                                <p className="text-gray-600">Nigerians used online payment methods more in 2019. Customers might pay from home with a click. Businesses may receive payments via web/mobile applications, cash, and POS transfers with this feature.</p>
                             </div>
                         </div>
 
-                        <div className='mx-auto max-w-7xl px-6 pb-[2rem] sm:pt-60 lg:px-8 lg:pt-10'>
+                        <div className='mx-auto max-w-5xl px-6 sm:pt-60 lg:px-8 lg:pt-10'>
                             <h5 className='uppercase text-lg font-medium text-gray-600'>Design Process</h5>
-                            <h5 className='text-2xl font-medium pt-3 pb-4'>Monnify has simplified how businesses accept payments in Nigeria</h5>
-                            <div className='grid grid-cols-1 pb-16 space-0'>
-                                <p className="text-base text-gray-600">Nigerians used online payment methods more in 2019. Customers might pay from home with a click. Businesses may receive payments via web/mobile applications, cash, and POS transfers with this feature. Nigerians used online payment methods more in 2019. Customers might pay from home with a click. Businesses may receive payments via web/mobile applications, cash, and POS transfers with this feature.</p>
-                                <p className="text-base text-gray-600">Nigerians used online payment methods more in 2019. Customers might pay from home with a click. Businesses may receive payments via web/mobile applications, cash, and POS transfers with this feature.</p>
+                            <h5 className='text-2xl font-medium pt-3 pb-4'>I used the below research method as I feel this process is the best way to accumulate quantitative and qualitative data on users and competitors in the retail industry. This in turns informs my design decisions with a research and evidence based solution.</h5>
+                            <div className='grid grid-cols-1 pb-16 space-y-6'>
+                                <p className="text-gray-600">Nigerians used online payment methods more in 2019. Customers might pay from home with a click. Businesses may receive payments via web/mobile applications, cash, and POS transfers with this feature. Nigerians used online payment methods more in 2019. Customers might pay from home with a click. Businesses may receive payments via web/mobile applications, cash, and POS transfers with this feature.</p>
+                                <p className="text-gray-600">Nigerians used online payment methods more in 2019. Customers might pay from home with a click. Businesses may receive payments via web/mobile applications, cash, and POS transfers with this feature.</p>
                             </div>
                         </div>
 
                         {/* Project starts here */}
-                        <div className="mx-auto max-w-7xl px-6 lg:px-8 mt-16">
+                        <div className="mx-auto max-w-5xl px-6 lg:px-8 mt-12">
                             <div className='mx-auto max-w-2xl lg:max-w-none'>
                                 <div className='grid grid-cols-1 gap-8 lg:grid-cols-2'>
-
+                                    jkuh
                                 </div>
                             </div>
                         </div>
@@ -81,7 +81,7 @@ export default function Booosta() {
                 </div>
             </main>
 
-            <LockScreen />
+            {/* <LockScreen /> */}
         </div>
     )
 }
