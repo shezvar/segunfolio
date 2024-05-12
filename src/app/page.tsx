@@ -5,8 +5,8 @@ import ProjectCard from '@/components/project-card'
 
 const projectData = [
   { image: 'images/fullgapcover.png', alt: 'first image', title: 'Fullgap', description: 'Creative Economy', link: '/projects/fullgap' },
-  { image: 'https://tailwindui.com/img/component-images/dark-project-app-screenshot.png', alt: 'first image', title: 'Prowoks', description: 'Automated Budget System in State Governance', link: 'projects/booosta' },
-  { image: 'https://tailwindui.com/img/component-images/dark-project-app-screenshot.png', alt: 'first image', title: 'Booosta', description: 'The #1 Operating System For E-commerce In Africa', link: '#' },
+  { image: 'https://tailwindui.com/img/component-images/dark-project-app-screenshot.png', alt: 'first image', title: 'Booosta', description: 'The #1 Operating System For E-commerce In Africa', link: 'projects/booosta' },
+  { image: 'https://tailwindui.com/img/component-images/dark-project-app-screenshot.png', alt: 'first image', title: 'Prowoks', description: 'Automated Budget System in State Governance', link: 'projects/prowoks' },
   { image: 'https://tailwindui.com/img/component-images/dark-project-app-screenshot.png', alt: 'first image', title: 'Century Tech', description: 'Optimising The Onboarding Processes', link: '#' }
 ]
 
