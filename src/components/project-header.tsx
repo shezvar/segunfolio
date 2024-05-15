@@ -4,12 +4,12 @@ export default function ProjectHeader(props: { title: any; subtext: any; imageUr
     const { title, subtext, imageUrl, alt, role1, role2, role3, role4, role5, platform1, platform2, platform3 } = props;
     return (
         <div className="">
-            <div className='mx-auto flex items-center max-w-2xl md:max-w-3xl xl:max-w-5xl px-6 pb-[2rem] pt-56 sm:pt-60 lg:px-8 lg:pt-[15rem]'>
+            <div className='mx-auto flex items-center max-w-2xl md:max-w-3xl xl:max-w-6xl px-6 pb-[2rem] pt-56 sm:pt-60 lg:px-8 lg:pt-[15rem]'>
                 <div className='w-full'>
-                    <h1 className='text-6xl font-medium'>{title}</h1>
-                    <h3 className='text-2xl font-normal mt-8 text-slate-600'>{subtext}</h3>
-                    <div className='relative w-full h-[40rem] mt-16 group'>
-                        <div className='absolute top-0 right-0 left-0 bottom-0 p-2 border bg-slate-100 rounded-3xl shadow-2xl'>
+                    <h1 className='text-3xl lg:text-6xl font-medium'>{title}</h1>
+                    <h3 className='text-xl lg:text-2xl font-normal mt-8 text-slate-600'>{subtext}</h3>
+                    <div className='relative w-full min-h-[1rem] mt-16 group'>
+                        <div className='p-2 border bg-slate-100 rounded-3xl shadow-2xl'>
                             <img src={imageUrl} alt='' className='transition group-hover:scale-110 rounded-2xl h-full w-full block object-cover object-center' />
                         </div>
                     </div>

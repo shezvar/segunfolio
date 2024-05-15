@@ -176,17 +176,17 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="mx-auto max-w-7xl mt-[15rem] px-6 lg:px-8">
+            <div className="mx-auto max-w-4xl mt-[15rem] px-6 lg:px-8">
               <div className="mx-auto max-w-2xl lg:mx-0">
                 <h2 className="text-3xl font-medium tracking-tight text-gray-900 sm:text-4xl">Selected projects.</h2>
-                <p className="mt-6 text-lg leading-8 text-gray-600">Things I’ve made trying to put my dent in the universe. I’ve worked on tons of little projects over the years but these are the ones that I’m most proud of. Many of them are open-source, so if you see something that piques your interest, check out the code and contribute if you have ideas for how it can be improved.</p>
+                <p className="mt-6 text-lg leading-8 text-gray-600">Things I&apos;ve made trying to put my dent in the universe. I’ve worked on tons of little projects over the years but these are the ones that I’m most proud of.</p>
               </div>
             </div>
 
             {/* Project starts here */}
-            <div className="mx-auto max-w-7xl px-6 lg:px-8 mt-16">
+            <div className="mx-auto max-w-4xl px-6 lg:px-8 mt-16">
               <div className='mx-auto max-w-2xl lg:max-w-none'>
-                <div className='grid grid-cols-1 gap-8 lg:grid-cols-2'>
+                <div className='grid grid-cols-1 gap-8 lg:grid-cols-1'>
                   {projectData.map((item) => (
                     <ProjectCard
                       key={item.image}
