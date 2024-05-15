@@ -15,7 +15,16 @@ const imagePaths = [
     '/images/prowoks-designui-2.png',
     '/images/prowoks-designui-3.png',
     // Add more image paths as needed
-  ];
+];
+
+const imageRecon = [
+    '/images/prowoks-rec-1.png',
+    '/images/prowoks-rec-2.png',
+    '/images/prowoks-rec-3.png',
+    '/images/prowoks-rec-4.png',
+    '/images/prowoks-rec-5.png',
+    // Add more image paths as needed
+];
 export default function Prowoks() {
 
     return (
@@ -68,7 +77,7 @@ export default function Prowoks() {
                             <h5 className='uppercase text-lg font-medium text-gray-600'>Design Process</h5>
                             <h5 className='text-2xl font-medium pt-3 pb-4'>Comprehensive Research Unveils Budget Process Dynamics: Insights & Personas Revealed</h5>
                             <div className='grid grid-cols-1 pb-16 space-y-6 text-gray-500'>
-                                <p>To address the challenges at hand, I crafted an enterprise-level solution aimed at enhancing transparency and accountability in budget and expenditure management processes.</p>
+                                <p>To address the challenges at hand, I designed an enterprise-level solution aimed at enhancing transparency and accountability in budget and expenditure management processes.</p>
                                 <p>My approach began with a comprehensive series of interviews to grasp the intricacies of user workflows. These interviews provided insights into user interactions, tasks, emotions, and timeframes involved in their processes. Through meticulous data collection and analysis, I identified key user roles and constructed an informative process flowchart illustrating their interactions and workflows.</p>
                             </div>
                         </div>
@@ -128,44 +137,74 @@ export default function Prowoks() {
 
                         <div className='mx-auto max-w-4xl px-6 sm:pt-60 lg:px-8 lg:pt-20'>
                             <h5 className='uppercase text-lg font-medium text-gray-600'>Moving into design</h5>
-                            <h5 className='text-2xl font-medium pt-3 pb-4'>To maintain consistency, I created a design system for this enterprise solution using atomic design approach.</h5>
-                            <div className='grid grid-cols-1 pb-16 space-y-6 text-gray-500'>
-                                <p>To address the challenges at hand, I crafted an enterprise-level solution aimed at enhancing transparency and accountability in budget and expenditure management processes.</p>
-                                <p>My approach began with a comprehensive series of interviews to grasp the intricacies of user workflows. These interviews provided insights into user interactions, tasks, emotions, and timeframes involved in their processes. Through meticulous data collection and analysis, I identified key user roles and constructed an informative process flowchart illustrating their interactions and workflows.</p>
-                            </div>
-                            <div className='relative w-full mt-16 group'>
-                                <img src='/images/prowoks-buttons.png' alt='' className='transition group-hover:scale-110 h-full w-full block object-contain object-center' />
-                            </div>
-                            <div className='relative w-full mt-16 group'>
-                                <img src='/images/prowoks-features.png' alt='' className='transition group-hover:scale-110 h-full w-full block object-contain object-center' />
-                            </div>
-                            <div className='relative w-full mt-16 group'>
-                                <img src='/images/prowoks-workbench-taskdetails.png' alt='' className='transition group-hover:scale-110 h-full w-full block object-contain object-center' />
+                            <h5 className='text-2xl font-medium pt-3 pb-4'>Pivoting to using a timeline approach to manage their activities</h5>
+                            <div className='grid grid-cols-1 space-y-6 text-gray-500'>
+                                <p>Having explored series of UI designs, starting from wireframes with the technical team to creating hi-fidelity for the larger stakeholder, we pivoted to using <strong>A-Timeline approach</strong> for managing their day-to-day activities.</p>
+                                <p>Due to the needed flexibility within each departments, I created process management tool, where users with the right access can specifiy the flow of certain tasks using some parameter</p>
                             </div>
                         </div>
 
-                        <div className='mx-auto max-w-4xl px-6 sm:pt-60 lg:px-8 lg:pt-20'>
-                            <h5 className='text-2xl font-medium pt-3 pb-4'>Reconciliation</h5>
-                            <div className='grid grid-cols-1 pb-8 space-y-6 text-gray-500'>
+                        <div className='mx-auto max-w-4xl px-6 sm:pt-10 lg:px-8 lg:pt-10'>
+                            <h5 className='text-2xl font-medium pt-3 pb-4'>Starting A Process</h5>
+                            <div className='grid grid-cols-1 text-gray-500'>
+                                <p>Process by an officer to balance the state ledger and bank statement of account for the state.</p>
+                            </div>
+                        </div>
+
+                        <div className='mx-auto max-w-4xl sm:pt-60 lg:px-8 lg:pt-10'>
+                            <div className='relative w-full min-h-[1rem] group'>
+                                <div className=''>
+                                    <img src='/images/prowoks-create.png' alt='' className='rounded-2xl h-full w-full block object-cover object-center' />
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className='mx-auto max-w-4xl px-6 sm:pt-60 lg:px-8 lg:pt-10'>
+                            <h5 className='text-2xl font-medium pt-3 pb-4'>Approval Process</h5>
+                            <div className='grid grid-cols-1 text-gray-500'>
                                 <p>Process by an officer to balance the state ledger and bank statement of account for the state.</p>
                             </div>
                         </div>
 
                         {/* Project starts here */}
-                        <div className="mx-auto max-w-4xl px-6 lg:px-8 mb-8">
+                        <div className="mx-auto max-w-4xl px-6 lg:px-8 mb-8 lg:pt-10">
                             <ImageGallery imagePaths={imagePaths} />
                         </div>
                         {/* Projects ends here */}
 
-                        <div className='mx-auto max-w-4xl px-6 sm:pt-60 lg:px-8 lg:pt-20'>
-                            <h5 className='text-2xl font-medium pt-3 pb-4'>Approval Process</h5>
+                        <div className='mx-auto max-w-4xl px-6 sm:pt-60 lg:px-8 lg:pt-10'>
+                            <h5 className='text-2xl font-medium pt-3 pb-4'>Reconcilliation Process</h5>
                             <div className='grid grid-cols-1 pb-8 space-y-6 text-gray-500'>
                                 <p>Process by an officer to balance the state ledger and bank statement of account for the state.</p>
                             </div>
                         </div>
 
                         <div className="mx-auto max-w-4xl px-6 lg:px-8 mb-8">
-                            <ImageGallery imagePaths={imagePaths} />
+                            <ImageGallery imagePaths={imageRecon} />
+                        </div>
+
+                        <div className='mx-auto max-w-4xl px-6 sm:pt-60 lg:px-8 lg:pt-20'>
+                            <h5 className='uppercase text-lg font-medium text-gray-600'>Conclusion</h5>
+                            <h5 className='text-2xl font-medium pt-3 pb-4'>Design an enterprise solution that offers improved transparency and accountability in the budget and expenditure management process.</h5>
+                            <div className='grid grid-cols-1 md:grid-cols-3 pb-16 gap-6 text-gray-500'>
+                                <div className='p-6 rounded-3xl bg-green-50 text-green-700'><strong className='text-7xl text-green-500'>90%</strong><br />budget automation in 3 states and counting</div>
+                                <div className='p-6 rounded-3xl bg-green-50 text-green-700'><strong className='text-7xl text-green-500'>95%</strong><br />reduction in wait time for tasks completion and feedback</div>
+                                <div className='p-6 rounded-3xl bg-green-50 text-green-700'><strong className='text-7xl text-green-500'>₦50m</strong><br />saved due to the reduction in the usage of paper and printing</div>
+                            </div>
+                        </div>
+
+                        <div className='mx-auto max-w-4xl px-6 sm:pt-60 lg:px-8 lg:pt-1'>
+                            <h5 className='text-2xl font-medium pt-3 pb-4'>Metric used in measuring success</h5>
+                            <div className='grid grid-cols-1 pb-8 space-y-6 text-gray-500'>
+                                <div className='grid grid-cols-2 gap-5 text-gray-700'>
+                                    <div className='p-6 rounded-3xl bg-gray-50'><strong className='block pb-2 font-semibold'>Task Completion Rate: </strong>This metric measures the percentage of tasks completed successfully by users. It helps to determine if users can use the system to accomplish their goals effectively.</div>
+                                    <div className='p-6 rounded-3xl bg-gray-50'><strong className='block pb-2 font-semibold'>Time on Task: </strong>This metric measures the amount of time it takes for users to complete tasks in the system. It helps to determine if the system is efficient and easy to use.</div>
+                                    <div className='p-6 rounded-3xl bg-gray-50'><strong className='block pb-2 font-semibold'>Error Rate: </strong>This metric measures the percentage of errors made by users while completing tasks. It helps to identify areas of the system that are confusing or difficult to use.</div>
+                                    <div className='p-6 rounded-3xl bg-gray-50'><strong className='block pb-2 font-semibold'>System Usability Scale (SUS): </strong>This metric is a standardised questionnaire used to measure the usability of a system. It helps to determine the overall usability of the system.</div>
+                                    <div className='p-6 rounded-3xl bg-gray-50'><strong className='block pb-2 font-semibold'>User Satisfaction: </strong>This metric measures how satisfied users are with the system. It helps to determine if the system is meeting user needs and expectations.</div>
+                                    <div className='p-6 rounded-3xl bg-gray-50'><strong className='block pb-2 font-semibold'>Feedback and Suggestions: </strong>This metric collects feedback and suggestions from users about the system. It helps to identify areas of improvement and new features that could be added to the system.</div>
+                                </div>
+                            </div>
                         </div>
 
                     </div>
