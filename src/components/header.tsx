@@ -5,8 +5,8 @@ import Image from 'next/image'
 import LinkedInLogo from "@/assets/Linkedin-Logo.png"
 
 const navigation = [
-    { name: 'About me', href: '/about' },
-    { name: 'My Experience', href: '/contact' }
+    { name: 'Download CV', href: 'https://drive.google.com/file/d/1046vZMvXbljzhS3w_TVM8GFK0R0B9jkp/view?usp=sharing' },
+    // { name: 'My Experience', href: '/contact' }
   ]
 
 export default function Header() {
@@ -23,7 +23,7 @@ export default function Header() {
                             src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
                             alt=""
                         /> */}
-                        <div className='text-md font-semibold leading-6'>shezvar@gmail.com</div>
+                        <div className='text-md font-semibold leading-6'>segun oroyo</div>
                     </a>
                 </div>
                 <div className="flex lg:hidden">
@@ -86,7 +86,8 @@ export default function Header() {
                             </div>
                             <div className="py-6">
                                 <a
-                                    href="#"
+                                    href="https://drive.google.com/file/d/1046vZMvXbljzhS3w_TVM8GFK0R0B9jkp/view?usp=sharing"
+                                    target='_blank'
                                     className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                                 >
                                     Download CV
