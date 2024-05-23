@@ -3,11 +3,11 @@ import React from 'react'
 import Header from '@/components/header'
 import LockScreen from '@/components/passwordRequest'
 import ProjectHeader from '@/components/project-header'
-import { CheckIcon } from '@heroicons/react/16/solid'
+import { CheckIcon, InformationCircleIcon } from '@heroicons/react/16/solid'
 import ImageGallery from '@/components/image-gallery'
 
 const projectData = [
-    { title: 'Automated Budget System In State Governance', subtext: 'An enterprise solution that offers improved transparency and accountability in the budget and expenditure management process.', imageUrl: '/images/sampleimage.png', alt: 'Prowoks EMS', role1: 'Research', role2: 'Information Architecture', role3: '', role4: '', role5: '', platform1: 'Desktop', platform2: 'Mobile Responsive', platform3: '' },
+    { goBackUrl: '/', title: 'Automated Budget System In State Governance', subtext: 'An enterprise solution that offers improved transparency and accountability in the budget and expenditure management process.', imageUrl: '/images/sampleimage.png', alt: 'Prowoks EMS', role1: 'Research', role2: 'Information Architecture', role3: '', role4: '', role5: '', platform1: 'Desktop', platform2: 'Mobile Responsive', platform3: '' },
 ]
 
 const imagePaths = [
@@ -49,6 +49,7 @@ export default function Prowoks() {
                         {projectData.map((item) => (
                             <ProjectHeader
                                 key={item.imageUrl}
+                                goBackUrl={item.goBackUrl}
                                 title={item.title}
                                 subtext={item.subtext}
                                 imageUrl={item.imageUrl}
@@ -65,26 +66,107 @@ export default function Prowoks() {
                         ))}
 
                         <div className='mx-auto max-w-4xl px-6 sm:pt-60 lg:px-8 lg:pt-10'>
-                            <h5 className='uppercase text-lg font-medium text-gray-600'>Summary</h5>
-                            <h5 className='text-2xl font-medium pt-3 pb-4'>Nigeria&apos;s budget challenges and potential reforms:</h5>
+                            <h5 className='uppercase text-md font-medium text-zinc-400'>Summary</h5>
+                            <h5 className='text-2xl font-sans pt-3 pb-4'>Nigeria&apos;s budget challenges and potential reforms: Nigeria faces significant challenges in managing its budget effectively, leading to inefficiencies and hindrances in economic growth and development.</h5>
                             <div className='grid grid-cols-1 pb-16 space-y-6 text-gray-500'>
-                                <p>Nigeria faces significant challenges in managing its budget effectively, leading to inefficiencies and hindrances in economic growth and development. Civil servants grapple with outdated financial data and decentralized information across government departments, contributing to a lack of transparency and accountability. These issues are further compounded by corruption, inadequate revenue, and high expenses, resulting in a substantial budget deficit of ₦5.60 trillion in 2021. To address these challenges, the World Bank is sponsoring projects aimed at promoting transparency and accountability within state governance.</p>
-                                <p>This external support underscores the international recognition of the importance of tackling these issues for Nigeria&apos;s development. The collaboration with the World Bank brings additional resources and expertise to the table, facilitating the implementation of reforms and strengthening the country&apos;s capacity to manage its budget effectively.</p>
+                                <div className='grid grid-cols-1'>
+                                    <div className='grid grid-cols-8 items-center mt-12'>
+                                        <div className='overflow-hidden col-span-3'>
+                                            <img src='/images/pw-outdated.png' alt='' className='rounded-md h-full w-full block object-cover object-center shadow-md' />
+                                        </div>
+                                        <div className='col-end-9 col-span-4 text-gray-900'>
+                                            <h5 className='text-2xl font-sans'>Tackling Financial Data Issue</h5>
+                                            <h5 className='text-4xl font-semibold py-2'>Outdated & Decentralized Data</h5>
+                                            <h5 className='font-sans text-sm pb-4 text-zinc-500'>Civil servants grapple with outdated financial data and decentralized information across government departments, contributing to a lack of transparency and accountability.</h5>
+                                        </div>
+                                    </div>
+                                    <div className='grid grid-cols-8 items-center mt-12'>
+                                        <div className='col-span-4 text-gray-900'>
+                                            <h5 className='text-2xl font-sans text-zinc-400'>These issues are further compounded by corruption, inadequate revenue, and high expenses, resulting in a substantial budget <strong className='text-gray-900'> deficit of ₦5.60 trillion in 2021.</strong></h5>
+                                            <div className='flex bg-green-100 p-5 mt-4 rounded-lg'>
+                                                <InformationCircleIcon className='h-full w-[3rem] mr-3 mt-1 fill-green-600' />
+                                                <p className='text-sm'>To address these challenges, the <strong>World Bank</strong> is sponsoring projects aimed at promoting transparency and accountability within state governance.</p>
+                                            </div>
+                                        </div>
+                                        <div className='overflow-hidden col-end-9 col-span-3'>
+                                            <img src='/images/pw-business-crash.png' alt='' className='rounded-md h-full w-full block object-cover object-center shadow-md' />
+                                        </div>
+                                    </div>
+                                    <hr className='my-6' />
+                                    <p className='text-sm text-gray-400'>This external support underscores the international recognition of the importance of tackling these issues for Nigeria&apos;s development. The collaboration with the World Bank brings additional resources and expertise to the table, facilitating the implementation of reforms and strengthening the country&apos;s capacity to manage its budget effectively.</p>
+                                </div>
                             </div>
                         </div>
 
                         <div className='mx-auto max-w-4xl px-6 sm:pt-60 lg:px-8 lg:pt-10'>
-                            <h5 className='uppercase text-lg font-medium text-gray-600'>Design Process</h5>
-                            <h5 className='text-2xl font-medium pt-3 pb-4'>Comprehensive Research Unveils Budget Process Dynamics: Insights & Personas Revealed</h5>
-                            <div className='grid grid-cols-1 pb-16 space-y-6 text-gray-500'>
-                                <p>To address the challenges at hand, I designed an enterprise-level solution aimed at enhancing transparency and accountability in budget and expenditure management processes.</p>
-                                <p>My approach began with a comprehensive series of interviews to grasp the intricacies of user workflows. These interviews provided insights into user interactions, tasks, emotions, and timeframes involved in their processes. Through meticulous data collection and analysis, I identified key user roles and constructed an informative process flowchart illustrating their interactions and workflows.</p>
+                            <h5 className='uppercase text-lg font-medium text-zinc-400'>Design Process</h5>
+                            <h5 className='text-2xl font-sans pt-3 pb-4'>Comprehensive Research Unveils Budget Process Dynamics: Insights & Personas Revealed</h5>
+                            <div className='grid grid-cols-1 space-y-6 text-gray-400'>
+                                <p className='text-sm'>To address the challenges at hand, I designed an enterprise-level solution aimed at enhancing transparency and accountability in budget and expenditure management processes.</p>
                             </div>
                         </div>
 
-                        <div className='mx-auto max-w-4xl px-6 sm:pt-60 lg:px-8 lg:pt-10'>
-                            <h5 className='uppercase text-lg font-medium text-gray-600'>What we uncovered</h5>
-                            <h5 className='text-2xl font-medium pt-3 pb-8'>Additionally, field surveys were conducted across two states to further refine our understanding and identify potential user personas:</h5>
+                        <div className='mx-auto max-w-4xl pt-6 lg:px-8'>
+                            <p className='text-sm text-gray-400'>My approach began with a comprehensive series of interviews to grasp the intricacies of user workflows. These interviews provided insights into user interactions, tasks, emotions, and timeframes involved in their processes. Through meticulous data collection and analysis, I identified key user roles and constructed an informative process flowchart illustrating their interactions and workflows.</p>
+                            <h5 className='text-2xl font-sans pt-3 pb-4 mt-6'>Quick stats</h5>
+                            <div className='grid grid-cols-4 gap-6'>
+                                <div className='border p-2 bg-zinc-100 rounded-lg'>
+                                    <div className='p-5 bg-white rounded-md shadow'>
+                                        <p className='text-lg'><strong className='text-5xl'>2 <br /></strong>States</p>
+                                    </div>
+                                </div>
+                                <div className='border p-2 bg-zinc-100 rounded-lg'>
+                                    <div className='p-5 bg-white rounded-md shadow'>
+                                        <p className='text-lg'><strong className='text-5xl'>53 <br /></strong>Participants</p>
+                                    </div>
+                                </div>
+                                <div className='border p-2 bg-zinc-100 rounded-lg'>
+                                    <div className='p-5 bg-white rounded-md shadow'>
+                                        <p className='text-lg'><strong className='text-5xl'>23 <br /></strong>MDAs</p>
+                                    </div>
+                                </div>
+                                <div className='border p-2 bg-zinc-100 rounded-lg'>
+                                    <div className='p-5 bg-white rounded-md shadow'>
+                                        <p className='text-lg'><strong className='text-5xl'>5.5 <br /></strong>Weeks</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className='mx-auto max-w-4xl pt-6 lg:px-8'>
+                            <h5 className='text-2xl font-sans pt-3 pb-4 mt-6'>User persona</h5>
+                            <div className='relative w-full min-h-[1rem] group'>
+                                <div className=''>
+                                    <img src='/images/pw-persona.png' alt='' className='rounded-2xl h-full w-full block object-cover object-center' />
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className='mx-auto max-w-4xl pt-6 lg:px-8'>
+                            <h5 className='text-2xl font-sans pt-3 pb-2 mt-6'>Features</h5>
+                            <p className='text-sm text-gray-500 mb-6'>During the ideation stage, we generated potential features and ideas for the budget and expenditure module. This list is not exhaustive.</p>
+                            <div className='relative w-full min-h-[1rem] group'>
+                                <div className=''>
+                                    <img src='/images/pw-ideation.png' alt='' className='rounded-2xl h-full w-full block object-cover object-center' />
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <div className='bg-zinc-50 mt-10'>
+                            <div className='mx-auto max-w-7xl sm:pt-60 lg:px-8 lg:py-20'>
+                                <div className='relative w-full min-h-[1rem] group'>
+                                    <div className=''>
+                                        <img src='/images/pw-process-flow.png' alt='' className='rounded-2xl h-full w-full block object-cover object-center' />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className='mx-auto max-w-4xl px-6 sm:pt-60 lg:px-8 lg:pt-20'>
+                            <h5 className='uppercase text-lg font-medium text-zinc-400'>What we uncovered</h5>
+                            <h5 className='text-2xl font-sans pt-3 pb-8'>Additionally, field surveys were conducted across two states to further refine our understanding and identify potential user personas:</h5>
                             <div className='grid grid-cols-3 space-x-5 text-gray-700'>
                                 <div className='p-6 rounded-3xl bg-gray-50'><strong className='block pb-2 font-semibold'>Administrators: </strong>Responsible for configuring statewide processes.</div>
                                 <div className='p-6 rounded-3xl bg-indigo-50'><strong className='block pb-2 font-semibold'>Actors: </strong>Engage with the system for day-to-day tasks.</div>
