@@ -156,8 +156,7 @@ export default function Fullgap() {
                                             <img src='/images/fg-mixpanel.png' alt='' className='rounded-md h-full w-full block object-cover object-center shadow-md' />
                                         </div>
                                     </div>
-                                    <h2 className='text-md pb-2 pt-4'>Data Analysis</h2>
-                                    <p className='text-gray-500 text-sm'>Like detectives, we scoured Mixpanel data to track user movements and pinpoint where they dropped off. We discovered that many users abandoned the project creation process halfway through.</p>
+                                    <p className='text-gray-500 text-sm mt-2'><strong>Data analysis:</strong> Like detectives, we scoured Mixpanel data to track user movements and pinpoint where they dropped off. We discovered that many users abandoned the project creation process halfway through.</p>
                                 </div>
                                 <div className=''>
                                     <div className='relative w-full min-h-[1rem] mt-8 group'>
@@ -165,8 +164,7 @@ export default function Fullgap() {
                                             <img src='/images/fg-notion-interview.png' alt='' className='rounded-md h-full w-full block object-cover object-center shadow-md' />
                                         </div>
                                     </div>
-                                    <h2 className='text-md pb-2 pt-4'>Users Interview</h2>
-                                    <p className='text-gray-500 text-sm'>We reached out to users, inviting them to share their stories. Their feedback revealed that the multi-page project creation was overwhelming, and they often didn&apos;t have tasks ready at the project&apos;s inception. The view captures some of the script I created using Notion Doc.</p>
+                                    <p className='text-gray-500 text-sm mt-2'><strong>User interview:</strong> We reached out to users, inviting them to share their stories. Their feedback revealed that the multi-page project creation was overwhelming, and they often didn&apos;t have tasks ready at the project&apos;s inception. The view captures some of the script I created using Notion Doc.</p>
                                 </div>
                                 <div className=''>
                                     <div className='relative w-full min-h-[1rem] mt-8 group'>
@@ -174,8 +172,7 @@ export default function Fullgap() {
                                             <img src='/images/fg-notion-calls.png' alt='' className='rounded-md h-full w-full block object-cover object-center shadow-md -mb-1' />
                                         </div>
                                     </div>
-                                    <h2 className='text-md pb-2 pt-4'>User Feedback</h2>
-                                    <p className='text-gray-500 text-sm'>Our community forums and call center logs became treasure troves of insights. Sifting through these logs, though tedious, was crucial in understanding recurring complaints and frustrations.</p>
+                                    <p className='text-gray-500 text-sm mt-2'><strong>User Feedback:</strong>Our community forums and call center logs became treasure troves of insights. Sifting through these logs, though tedious, was crucial in understanding recurring complaints and frustrations.</p>
                                 </div>
                                 <div className=''>
                                     <div className='relative w-full min-h-[1rem] mt-8 group'>
@@ -183,8 +180,7 @@ export default function Fullgap() {
                                             <img src='/images/fg-iterations.png' alt='' className='rounded-md h-full w-full block object-cover object-center shadow-md' />
                                         </div>
                                     </div>
-                                    <h2 className='text-md pb-2 pt-4'>Design testing</h2>
-                                    <p className='text-gray-500 text-sm'>We sketched out new designs and tested them with users. Each iteration brought us closer to a solution that felt just right.</p>
+                                    <p className='text-gray-500 text-sm mt-2'><strong>Design testing</strong>We sketched out new designs and tested them with users. Each iteration brought us closer to a solution that felt just right.</p>
                                 </div>
                             </div>
                         </div>

@@ -15,7 +15,7 @@ const projectData = [
 export default function Home() {
 
   return (
-    <div className="bg-white">
+    <div style={{backgroundColor: '#FEFDF8'}}>
 
       <Header />
 
