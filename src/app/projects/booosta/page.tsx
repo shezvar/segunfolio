@@ -129,8 +129,7 @@ export default function Booosta() {
                                                 <img src='/images/bs-survey.png' alt='' className='rounded-2xl h-full w-full block object-cover object-center' />
                                             </div>
                                         </div>
-                                        <h2 className='text-md pb-2 pt-4'>Ethnographic Research:</h2>
-                                        <p className='text-gray-500 text-sm'>This shows some of the research I did during <strong>field survey</strong>. I asked some users to perform certain task and <strong>recorded their interactions and cadence</strong>. I then later asked them some questions like how they would have expected some features to work and also issues about <strong>normenclature</strong>.</p>
+                                        <p className='text-gray-500 text-sm mt-2'><strong>Ethnographic Research:</strong> This shows some of the research I did during <strong>field survey</strong>. I asked some users to perform certain task and <strong>recorded their interactions and cadence</strong>. I then later asked them some questions like how they would have expected some features to work and also issues about <strong>normenclature</strong>.</p>
                                     </div>
                                     <div className=''>
                                         <div className='relative w-full min-h-[1rem] mt-8 group'>
@@ -138,8 +137,7 @@ export default function Booosta() {
                                                 <img src='/images/bs-journeymap.png' alt='' className='rounded-2xl h-full w-full block object-cover object-center' />
                                             </div>
                                         </div>
-                                        <h2 className='text-md pb-2 pt-4'>Usability Testing:</h2>
-                                        <p className='text-gray-500 text-sm'>I also did usability testing in conjunction with the previous research, the type of users and technical savviness determined the type of research and interview I employed</p>
+                                        <p className='text-gray-500 text-sm mt-2'><strong>Usability Testing:</strong> I also did usability testing in conjunction with the previous research, the type of users and technical savviness determined the type of research and interview I employed</p>
                                     </div>
 
                                     <div className=''>
@@ -148,8 +146,7 @@ export default function Booosta() {
                                                 <img src='/images/bs-marketcomp.png' alt='' className='rounded-md h-full w-full block object-cover object-center shadow-md' />
                                             </div>
                                         </div>
-                                        <h2 className='text-md pb-2 pt-4'>Competitive Benchmarking:</h2>
-                                        <p className='text-gray-500 text-sm'>During the Competitive Benchmarking phase, I meticulously examined some retail mobile apps and went deeper on four. I aimed to understand their strength and weaknesses in the retail industry.</p>
+                                        <p className='text-gray-500 text-sm mt-2'><strong>Competitive Benchmarking:</strong> During the Competitive Benchmarking phase, I meticulously examined some retail mobile apps and went deeper on four. I aimed to understand their strength and weaknesses in the retail industry.</p>
                                     </div>
 
                                     <div className=''>
@@ -158,8 +155,7 @@ export default function Booosta() {
                                                 <img src='/images/bs-persona.png' alt='' className='rounded-2xl h-full w-full block object-cover object-center' />
                                             </div>
                                         </div>
-                                        <h2 className='text-md pb-2 pt-4'>Personas:</h2>
-                                        <p className='text-gray-500 text-sm'>Having gathered valuable insights from my research, I created user personas. This helped throughout the design and development process, it ensures that the product is tailored to the specific needs and preferences of our target audience, leading to better user satisfaction and engagement.</p>
+                                        <p className='text-gray-500 text-sm mt-2'><strong>Persona:</strong> Having gathered valuable insights from my research, I created user personas. This helped throughout the design and development process, it ensures that the product is tailored to the specific needs and preferences of our target audience, leading to better user satisfaction and engagement.</p>
                                     </div>
                                     <hr className='my-8' />
                                 </div>
