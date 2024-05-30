@@ -1,6 +1,6 @@
 'use client'
 import React from 'react'
-import Header from '@/components/header'
+import { HeaderLight, HeaderDark } from '@/components/header'
 import LockScreen from '@/components/passwordRequest'
 import ProjectHeader from '@/components/project-header'
 import { CheckIcon, UserCircleIcon } from '@heroicons/react/16/solid'
@@ -28,7 +28,7 @@ export default function Fullgap() {
     return (
         <div className="bg-white">
 
-            <Header />
+            <HeaderLight />
 
             <main>
                 <div className="relative isolate">

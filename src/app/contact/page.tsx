@@ -1,6 +1,6 @@
 'use client'
-import Header from '@/components/header'
-import ProjectCard from '@/components/project-card'
+import { HeaderLight, HeaderDark } from '@/components/header'
+import { ProjectCard1 } from '@/components/itemCards'
 import Image from 'next/image'
 
 const projectData = [
@@ -15,7 +15,7 @@ export default function Contact() {
   return (
     <div className="bg-white">
 
-      <Header />
+      <HeaderLight />
 
       <main>
         <div className="relative isolate">
@@ -150,7 +150,7 @@ export default function Contact() {
               <div className='mx-auto max-w-2xl lg:max-w-none'>
                 <div className='grid grid-cols-1 gap-8 lg:grid-cols-2'>
                   {projectData.map((item) => (
-                    <ProjectCard
+                    <ProjectCard1
                     key={item.image}
                     imageUrl={item.image}
                     alt={item.alt}

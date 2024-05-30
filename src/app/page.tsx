@@ -1,28 +1,33 @@
 'use client'
 import React from 'react'
-import Header from '@/components/header'
-import ProjectCard from '@/components/project-card'
+import { HeaderLight, HeaderDark } from '@/components/header'
+import { ComingSoon, ProjectCard2 } from '@/components/itemCards'
 import { ArrowDownRightIcon } from '@heroicons/react/24/outline'
 import Footer from '@/components/footer'
 
 const projectData = [
-  { image: 'images/fg-cover.png', alt: 'first image', title: 'Operating System For The Freelance Economy', description: 'Product Design at Fullgap', link: '/projects/fullgap' },
-  { image: 'images/bs-cover.png', alt: 'first image', title: 'The #1 Operating System For E-commerce In Africa', description: 'Booosta by Prunedge', link: 'projects/booosta' },
-  { image: 'images/pw-cover.png', alt: 'first image', title: 'Automated Budget System in State Governance', description: 'Prowoks by World Bank', link: 'projects/prowoks' },
-  { image: 'images/ct-cover.png', alt: 'first image', title: 'Optimising The Onboarding Processes', description: 'Century Tech (COMING SOON)', link: '#' }
+  { image: 'images/fg-cover1.png', alt: 'first image', title: 'System for the freelance economy, designed to help creatives in managing their clients and projects effectively.', description: 'Product Design at Fullgap', link: '/projects/fullgap' },
+  { image: 'images/bs-cover.png', alt: 'first image', title: 'Optimizing the onboarding processes means no more navigating complex menus, deciphering jargon, or wrestling with confusing interfaces.', description: 'Booosta by Prunedge', link: 'projects/booosta' },
+  { image: 'images/pw-cover1.png', alt: 'first image', title: 'The automated budget system in state governance is an enterprise solution that offers improved transparency and accountability in the budget and expenditure management process.', description: 'Prowoks by World Bank', link: 'projects/prowoks' }
+]
+
+const comingSoon = [
+  { image: 'images/ct-cover.png', alt: 'first image', title: 'Century Tech', description: 'Optimizing the onboarding processes means no more navigating complex menus, deciphering jargon, or wrestling with confusing interfaces.', industry: 'Edutech', year: '2023' },
+  { image: 'images/ip-cover.png', alt: 'first image', title: 'iPOS by Walure', description: 'IPOS by Smartware offers powerful and flexible products to automate your retail management processes.', industry: 'E-commerce', year: '2024' },
+  { image: 'images/mt-cover.png', alt: 'first image', title: 'MTN Nigeria', description: 'System for the freelance economy, designed to help creatives in managing their clients and projects effectively.', industry: 'Finance', year: '2020' }
 ]
 
 export default function Home() {
 
   return (
-    <div style={{backgroundColor: '#FEFDF8'}}>
+    <div className='bg-black'>
 
-      <Header />
+      <HeaderDark />
 
       <main>
         <div className="relative isolate">
           <svg
-            className="absolute inset-x-0 top-0 -z-10 h-[68rem] w-full stroke-gray-200 [mask-image:radial-gradient(32rem_32rem_at_center,white,transparent)]"
+            className="hidden absolute inset-x-0 top-0 -z-10 h-[68rem] w-full stroke-gray-200 [mask-image:radial-gradient(32rem_32rem_at_center,white,transparent)]"
             aria-hidden="true"
           >
             <defs>
@@ -47,7 +52,7 @@ export default function Home() {
           </svg>
 
           <div
-            className="absolute left-1/2 right-0 top-0 -z-10 -ml-24 transform-gpu overflow-hidden blur-3xl lg:ml-24 xl:ml-48"
+            className="hidden absolute left-1/2 right-0 top-0 -z-10 -ml-24 transform-gpu overflow-hidden blur-3xl lg:ml-24 xl:ml-48"
             aria-hidden="true"
           >
             <div className="aspect-[801/1036] w-[59rem] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30"
@@ -60,29 +65,39 @@ export default function Home() {
 
           <div className="overflow-hidden">
 
-            <div className='mx-auto flex items-center mt-16 max-w-2xl h-[55vh] md:max-w-3xl xl:max-w-7xl px-6 lg:px-8'>
-              <div className='w-full'>
-                <h1 className='text-4xl lg:text-7xl font-semibold'>Meet Segun - Product Designer working and living in London</h1>
-                <h3 className='text-3xl lg:text-4xl font-medium mt-5 lg:mt-8'>I crafting innovation using design</h3>
-                <p className="text-md lg:text-lg leading-8 text-gray-600 mt-4 max-w-5xl font-mono">When I am not designing, you will find me exploring London looking for basketball courts, writing lines of codes using Next JS, like I did this site, jogging and hitting new milestones. I love listening to music (Old Blues)</p>
+            <div className='mx-auto flex items-center mt-16 h-[75vh] xl:max-w-7xl px-6 lg:px-8'>
+              <div className='w-full space-y-8'>
+                <h1 className='text-4xl lg:text-8xl font-semibold text-white'>Meet Segun - Product Designer working and living in London</h1>
+                <p className="text-lg text-gray-200 max-w-3xl leading-relaxed">When I am not designing, you will find me exploring London looking for basketball courts, writing lines of codes using Next JS, like I did this site, jogging and hitting new milestones. I love listening to music (Old Blues)</p>
               </div>
             </div>
 
-            <div className="mx-auto max-w-7xl mt-[2rem] lg:mt-[15rem] px-6 lg:px-8">
-              <div className="mx-auto max-w-5xl lg:mx-0">
-                <h2 className="text-xl font-mono text-gray-900 sm:text-2xl">
-                  <ArrowDownRightIcon className='h-5 w-5'/>
-                  View projects</h2>
-                <p className="mt-6 text-md text-gray-600">Things I&apos;ve made trying to put my dent in the universe. I&apos;ve worked on tons of little projects over the years but these are the ones that I’m most proud of.</p>
+            <div className="hidden flex mx-auto max-w-7xl px-6 lg:px-8 justify-center text-center mb-16">
+              <div className="mx-auto max-w-4xl lg:mx-0 space-y-6">
+                <h2 className="text-4xl lg:text-8xl font-semibold text-white">
+                  {/* <ArrowDownRightIcon className='h-5 w-5'/> */}
+                  My list of <br />selected projects
+                </h2>
+                <p className="mx-auto text-lg text-gray-200 max-w-3xl leading-relaxed">These are the ones that I’m most proud of, trying to put my dent in the universe</p>
+              </div>
+            </div>
+
+            <div className="flex mx-auto max-w-7xl px-6 lg:px-8 mb-12">
+              <div className="mx-auto max-w-4xl lg:mx-0 space-y-6">
+                <h2 className="text-4xl font-semibold text-white">
+                  {/* <ArrowDownRightIcon className='h-5 w-5'/> */}
+                  My list of selected projects
+                </h2>
+                <p className="hidden mx-auto text-lg text-gray-200 max-w-3xl leading-relaxed">These are the ones that I’m most proud of, trying to put my dent in the universe</p>
               </div>
             </div>
 
             {/* Project starts here */}
-            <div className="mx-auto max-w-7xl px-6 lg:px-8 mt-8">
+            <div className="mx-auto max-w-7xl px-6 lg:px-8 mb-40">
               <div className='mx-auto max-w-2xl lg:max-w-none'>
-                <div className='grid grid-cols-1 gap-8 lg:grid-cols-2'>
+                <div className='grid grid-cols-1 gap-8'>
                   {projectData.map((item) => (
-                    <ProjectCard
+                    <ProjectCard2
                       key={item.image}
                       imageUrl={item.image}
                       alt={item.alt}
@@ -95,6 +110,35 @@ export default function Home() {
               </div>
             </div>
             {/* Projects ends here */}
+
+            {/* Project starts here */}
+            <div className="flex mx-auto max-w-7xl px-6 lg:px-8 mb-12">
+              <div className="mx-auto max-w-4xl lg:mx-0 space-y-6">
+                <h2 className="text-4xl font-semibold text-white">
+                  {/* <ArrowDownRightIcon className='h-5 w-5'/> */}
+                  Coming soon
+                </h2>
+              </div>
+            </div>
+
+            {/* Coming soon starts here */}
+            <div className="mx-auto max-w-7xl px-6 lg:px-8 mb-40">
+              <div className='mx-auto max-w-2xl lg:max-w-none'>
+                <div className='grid grid-cols-1 gap-8 lg:grid-cols-3'>
+                  {comingSoon.map((item) => (
+                    <ComingSoon
+                      key={item.image}
+                      imageUrl={item.image}
+                      title={item.title}
+                      description={item.description}
+                      industry={item.industry}
+                      year={item.year}
+                      />
+                  ))}
+                </div>
+              </div>
+            </div>
+            {/* Coming soon ends here */}
 
           </div>
         </div>
