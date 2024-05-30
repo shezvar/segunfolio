@@ -31,7 +31,7 @@ const LockScreen = () => {
       <div className='mx-auto max-w-xs content-center text-center h-full'>
         <LockClosedIcon className='h-12 text-zinc-600 w-full mb-5'/>
       <h1 className='text-gray-900 font-semibold text-2xl mb-2'>Password protected</h1>
-      <p className='text-gray-500 mb-6'>To view content, enter the password provided or send a request</p>
+      <p className='text-gray-500 mb-6'>To view content, enter the password provided</p>
       <form onSubmit={handleSubmit} className='w-full grid grid-cols-1'>
         <input
           type="password"
@@ -40,8 +40,9 @@ const LockScreen = () => {
           placeholder="Enter password"
           className='border p-2 rounded-lg'
         />
-        <button type="submit" className='bg-indigo-600 text-gray-200 rounded-lg mt-3 p-2'>Unlock page</button>
+        <button type="submit" className='bg-indigo-600 text-gray-100 rounded-lg mt-3 p-2'>Unlock page</button>
       </form>
+      <p className='text-gray-500 mt-6'>Don&apos;t have a password?  <a href='mailto:shezvar@gmail.com' className='underline text-indigo-700'>Click here</a></p>
       </div>
     </div>
   );
