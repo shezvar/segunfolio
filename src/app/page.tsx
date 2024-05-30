@@ -14,7 +14,7 @@ const projectData = [
 const comingSoon = [
   { image: 'images/ct-cover.png', alt: 'first image', title: 'Century Tech', description: 'Optimizing the onboarding processes means no more navigating complex menus, deciphering jargon, or wrestling with confusing interfaces.', industry: 'Edutech', year: '2023' },
   { image: 'images/ip-cover.png', alt: 'first image', title: 'iPOS by Walure', description: 'IPOS by Smartware offers powerful and flexible products to automate your retail management processes.', industry: 'E-commerce', year: '2024' },
-  { image: 'images/mt-cover.png', alt: 'first image', title: 'MTN Nigeria', description: 'System for the freelance economy, designed to help creatives in managing their clients and projects effectively.', industry: 'Finance', year: '2020' }
+  { image: 'images/mt-cover.png', alt: 'first image', title: 'MTN Nigeria', description: 'Invest in MTN with the MTN Loan Application Management Solution and Stanbic loans, simplifying share ownership and investing in you.', industry: 'Finance', year: '2020' }
 ]
 
 export default function Home() {
