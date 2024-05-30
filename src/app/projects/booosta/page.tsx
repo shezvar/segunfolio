@@ -1,6 +1,6 @@
 'use client'
 import React from 'react'
-import Header from '@/components/header'
+import { HeaderLight, HeaderDark } from '@/components/header'
 import LockScreen from '@/components/passwordRequest'
 import ProjectHeader from '@/components/project-header'
 // import ImageGallery from '@/components/image-gallery'
@@ -27,7 +27,7 @@ export default function Booosta() {
     return (
         <div className="bg-white">
 
-            <Header />
+            <HeaderLight />
 
             <main>
                 <div className="relative isolate">

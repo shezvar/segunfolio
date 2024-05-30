@@ -1,5 +1,5 @@
 'use client'
-import Header from '@/components/header'
+import { HeaderLight, HeaderDark } from '@/components/header'
 import ProjectCard from '@/components/project-card'
 import Image from 'next/image'
 
@@ -15,7 +15,7 @@ export default function Contact() {
   return (
     <div className="bg-white">
 
-      <Header />
+      <HeaderLight />
 
       <main>
         <div className="relative isolate">

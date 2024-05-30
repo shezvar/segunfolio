@@ -1,6 +1,6 @@
 'use client'
 import React from 'react'
-import Header from '@/components/header'
+import { HeaderLight, HeaderDark } from '@/components/header'
 import LockScreen from '@/components/passwordRequest'
 import ProjectHeader from '@/components/project-header'
 import { CheckIcon } from '@heroicons/react/16/solid'
@@ -21,7 +21,7 @@ export default function ProjectList() {
     return (
         <div className="bg-white">
 
-            <Header />
+            <HeaderLight />
 
             <main>
                 <div className="relative isolate">
