@@ -31,3 +31,7 @@
     text-wrap: balance;
   }
 }
+
+.bg-page {
+  background-color: #080808 !important;
+}

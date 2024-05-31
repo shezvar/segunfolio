@@ -5,8 +5,8 @@ import Image from 'next/image'
 import LinkedInLogo from "@/assets/Linkedin-Logo.png"
 
 const navigation = [
-    { name: 'Download CV', href: 'https://drive.google.com/file/d/1046vZMvXbljzhS3w_TVM8GFK0R0B9jkp/view?usp=sharing' },
-    // { name: 'My Experience', href: '/contact' }
+    { name: 'About me', href: '/about', target: '_self' },
+    { name: 'Download CV', href: 'https://drive.google.com/file/d/1046vZMvXbljzhS3w_TVM8GFK0R0B9jkp/view?usp=sharing', target: '_blank' }
   ]
 
 export function HeaderLight() {
@@ -105,8 +105,8 @@ export function HeaderDark() {
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
     return (
-        <header className="fixed inset-x-0 top-0 z-50 border-b border-gray-800 ">
-            <nav className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8 bg-black" aria-label="Global">
+        <header className="fixed inset-x-0 top-0 z-50 border-b border-gray-800 bg-page">
+            <nav className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8 bg-page" aria-label="Global">
                 <div className="flex lg:flex-1 text-white">
                     <a href="/" className="-m-1.5 p-1.5">
                         <span className="sr-only">Segun Oroyo</span>
@@ -115,7 +115,7 @@ export function HeaderDark() {
                             src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
                             alt=""
                         /> */}
-                        <div className='text-md font-semibold leading-6'>segun oroyo</div>
+                        <div className='text-xl font-semibold leading-6'>segunoroyo</div>
                     </a>
                 </div>
                 <div className="flex lg:hidden">
@@ -130,7 +130,7 @@ export function HeaderDark() {
                 </div>
                 <div className="hidden lg:flex lg:gap-x-12">
                     {navigation.map((item) => (
-                        <a key={item.name} href={item.href} className="text-md font-normal text-white">
+                        <a key={item.name} href={item.href} className="text-md font-normal text-white" target={item.target}>
                             {item.name}
                         </a>
                     ))}
