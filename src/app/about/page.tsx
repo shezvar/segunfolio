@@ -1,7 +1,7 @@
 'use client'
 import React from 'react'
 import { HeaderLight, HeaderDark } from '@/components/header'
-import { ComingSoon, ProjectCard2 } from '@/components/itemCards'
+import ExperienceBlock from '@/app/about/ExperienceBlock'
 import Footer from '@/components/footer'
 import Biography from '@/app/about/biography'
 
@@ -95,9 +95,21 @@ export default function Home() {
               </div>
             </div>
 
+            {/* Experience starts */}
             <div className='mx-auto flex items-center my-48 xl:max-w-7xl px-6 lg:px-8'>
               <div className='w-full space-y-8'>
-                <h1 className='text-5xl font-bold text-white'>Key things I&quot;ve learnt</h1>
+                <h1 className='text-5xl font-bold text-white'>Experience</h1>
+                <p className="text-lg text-gray-200 max-w-3xl leading-relaxed">A timeline view of some of the companies I have worked with</p>
+                <ExperienceBlock />
+              </div>
+            </div>
+            {/* Experience ends */}
+
+
+            {/* What I have learnt */}
+            <div className='mx-auto flex items-center my-48 xl:max-w-7xl px-6 lg:px-8'>
+              <div className='w-full space-y-8'>
+                <h1 className='text-5xl font-bold text-white'>Key things I&apos;ve learnt</h1>
                 <p className="text-lg text-gray-200 max-w-3xl leading-relaxed">Here are a few key takeaways I’ve learned over my years as a designer. They’ve come in handy for me, hopefully they’ll come in handy for you too.</p>
                 <div className='grid grid-cols-1 lg:grid-cols-2 gap-6 text-gray-400'>
 
@@ -145,6 +157,7 @@ export default function Home() {
                 </div>
               </div>
             </div>
+            {/* What I have learnt ends here */}
 
           </div>
         </div>
