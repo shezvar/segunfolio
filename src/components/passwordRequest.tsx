@@ -30,19 +30,18 @@ const LockScreen = () => {
     <div className='fixed top-0 left-0 bottom-0 right-0 bg-white z-50 overflow-hidden'>
       <div className='mx-auto max-w-xs content-center text-center h-full'>
         <LockClosedIcon className='h-12 text-zinc-600 w-full mb-5'/>
-      <h1 className='text-gray-900 font-semibold text-2xl mb-2'>Password protected</h1>
-      <p className='text-gray-500 mb-6'>To view content, enter the password provided</p>
+        <p className='mb-6 text-2xl text-gray-700'><span className='italic'>Sorry!</span> you need a <span className='italic'>password</span> to see project</p>
       <form onSubmit={handleSubmit} className='w-full grid grid-cols-1'>
         <input
           type="password"
           value={password}
           onChange={(e) => setPassword(e.target.value)}
           placeholder="Enter password"
-          className='border p-2 rounded-lg'
+          className='border px-4 py-3 rounded-lg'
         />
-        <button type="submit" className='bg-indigo-600 text-gray-100 rounded-lg mt-3 p-2'>Unlock page</button>
+        <button type="submit" className='bg-indigo-600 text-gray-100 rounded-lg mt-3 p-3'>Unlock page</button>
       </form>
-      <p className='text-gray-500 mt-6'>Don&apos;t have a password?  <a href='mailto:shezvar@gmail.com' className='underline text-indigo-700'>Click here</a></p>
+      {/* <p className='text-gray-700 mt-6'>Don&apos;t have a password?  <a href='mailto:shezvar@gmail.com' className='underline text-indigo-700'>Click here</a></p> */}
       </div>
     </div>
   );

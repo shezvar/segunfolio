@@ -81,7 +81,7 @@ export function ComingSoon(props: { imageUrl: any; title: any; description: any;
 
     return (
         <div className="" role="itemlist">
-            <div className="relative flex w-full max-w-full flex-col border border-zinc-800 hover:bg-zinc-900/50 rounded transition duration-500 text-left overflow-hidden shadow hover:shadow-2xl">
+            <div className="relative flex w-full max-w-full h-full flex-col border border-zinc-800 hover:bg-zinc-900/50 rounded transition duration-500 text-left overflow-hidden shadow hover:shadow-2xl">
                 <div style={{backgroundImage: `url(${imageUrl})`, backgroundPosition: "50%" }} className="border-b border-gray-800 object-cover bg-cover relative aspect-[2]"></div>
                 <div className="flex gap-2 flex-col p-6">
                     <h3 className="text-gray-200 font-bold my-0">{title}</h3>
