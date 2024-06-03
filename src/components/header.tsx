@@ -6,6 +6,7 @@ import LinkedInLogo from "@/assets/Linkedin-Logo.png"
 
 const navigation = [
     { name: 'About me', href: '/about', target: '_self' },
+    { name: 'My Process', href: '/process', target: '_self' },
     { name: 'Download CV', href: 'https://drive.google.com/file/d/1046vZMvXbljzhS3w_TVM8GFK0R0B9jkp/view?usp=sharing', target: '_blank' }
   ]
 
@@ -18,12 +19,7 @@ export function HeaderLight() {
                 <div className="flex lg:flex-1">
                     <a href="/" className="-m-1.5 p-1.5">
                         <span className="sr-only">Segun Oroyo</span>
-                        {/* <img
-                            className="h-8 w-auto"
-                            src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
-                            alt=""
-                        /> */}
-                        <div className='text-md font-semibold leading-6'>segun oroyo</div>
+                        <img src="segunoroyologo.svg" className="w-12" alt='segunoroyo' />
                     </a>
                 </div>
                 <div className="flex lg:hidden">
@@ -56,11 +52,7 @@ export function HeaderLight() {
                     <div className="flex items-center justify-between">
                         <a href="/" className="-m-1.5 p-1.5">
                             <span className="sr-only">Segun Oroyo</span>
-                            <img
-                                className="h-8 w-auto"
-                                src="#"
-                                alt="segun oroyo"
-                            />
+                            <img src="segunoroyologo.svg" className="w-12" alt='segunoroyo' />
                         </a>
                         <button
                             type="button"
@@ -110,12 +102,8 @@ export function HeaderDark() {
                 <div className="flex lg:flex-1 text-white">
                     <a href="/" className="-m-1.5 p-1.5">
                         <span className="sr-only">Segun Oroyo</span>
-                        {/* <img
-                            className="h-8 w-auto"
-                            src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
-                            alt=""
-                        /> */}
-                        <div className='text-xl font-semibold leading-6'>segunoroyo</div>
+                        <img src="segunoroyologo.svg" className="w-12" alt='segunoroyo' />
+                        {/* <div className='text-xl font-semibold leading-6'>segunoroyo</div> */}
                     </a>
                 </div>
                 <div className="flex lg:hidden">
@@ -125,7 +113,7 @@ export function HeaderDark() {
                         onClick={() => setMobileMenuOpen(true)}
                     >
                         <span className="sr-only">Open main menu</span>
-                        <Bars3Icon className="h-6 w-6" aria-hidden="true" />
+                        <Bars3Icon className="h-6 w-6 text-white" aria-hidden="true" />
                     </button>
                 </div>
                 <div className="hidden lg:flex lg:gap-x-12">
@@ -143,34 +131,36 @@ export function HeaderDark() {
                 </div>
             </nav>
             <Dialog as="div" className="lg:hidden" open={mobileMenuOpen} onClose={setMobileMenuOpen}>
-                <div className="fixed inset-0 z-50" />
-                <Dialog.Panel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+                <div className="fixed inset-0 z-50 transition ease-in-out duration-700" />
+                <Dialog.Panel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-black px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
                     <div className="flex items-center justify-between">
-                        <a href="/" className="-m-1.5 p-1.5">
+                        <a href="/" className="-m-1.5 p-1.5 text-black fill-black stroke-black">
                             <span className="sr-only">segun oroyo</span>
                             <img
-                                className="h-8 w-auto"
-                                src="/"
-                                alt="segun oroyo"
+                                className="h-8 w-auto text-black fill-black stroke-black"
+                                src="segunoroyologo.svg"
+                                alt="segunoroyo"
+                                style={{fill: '#000'}}
                             />
                         </a>
                         <button
                             type="button"
-                            className="-m-2.5 rounded-md p-2.5 text-gray-700"
+                            className="-m-2.5 rounded-md p-2.5 text-black"
                             onClick={() => setMobileMenuOpen(false)}
                         >
                             <span className="sr-only">Close menu</span>
-                            <XMarkIcon className="h-6 w-6" aria-hidden="true" />
+                            <XMarkIcon className="h-6 w-6 text-white" aria-hidden="true" />
                         </button>
                     </div>
                     <div className="mt-6 flow-root">
-                        <div className="-my-6 divide-y divide-gray-500/10">
-                            <div className="space-y-2 py-6">
+                        <div className="-my-6 divide-y divide-zinc-700">
+                            <div className="space-y-2 py-6 mt-12">
                                 {navigation.map((item) => (
                                     <a
                                         key={item.name}
                                         href={item.href}
-                                        className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                                        target={item.target}
+                                        className="-mx-3 block rounded-lg px-3 py-2 text-2xl font-semibold leading-7 text-indigo-700 hover:bg-gray-50"
                                     >
                                         {item.name}
                                     </a>
@@ -178,11 +168,12 @@ export function HeaderDark() {
                             </div>
                             <div className="py-6">
                                 <a
-                                    href="https://drive.google.com/file/d/1046vZMvXbljzhS3w_TVM8GFK0R0B9jkp/view?usp=sharing"
+                                    href="https://www.linkedin.com/in/segun-oroyo/"
                                     target='_blank'
-                                    className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                                    className="-mx-3 block rounded-lg px-3 py-2.5 text-2xl align font-semibold leading-7 text-white hover:bg-gray-50"
                                 >
-                                    Download CV
+                                    <Image src={LinkedInLogo} className=' ml-1 mr-2 -mt-1 w-auto h-5 rounded inline-flex' alt='LinkedIn'/>
+                                    LinkedIn
                                 </a>
                             </div>
                         </div>
