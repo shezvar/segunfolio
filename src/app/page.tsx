@@ -104,7 +104,7 @@ export default function Home() {
             {/* Project starts here */}
             <div className="flex mx-auto max-w-7xl px-6 lg:px-8 mb-12">
               <div className="mx-auto max-w-4xl lg:mx-0 space-y-6">
-                <h1 className="text-5xl font-bold text-white">
+                <h2 className="text-5xl font-bold text-white">
                   {/* <ArrowDownRightIcon className='h-5 w-5'/> */}
                   Coming soon case studies
                 </h2>
