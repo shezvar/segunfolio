@@ -72,19 +72,9 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="hidden mx-auto max-w-7xl px-6 lg:px-8 justify-center text-center mb-16">
-              <div className="mx-auto max-w-4xl lg:mx-0 space-y-6">
-                <h2 className="text-4xl lg:text-8xl font-semibold text-white">
-                  {/* <ArrowDownRightIcon className='h-5 w-5'/> */}
-                  My list of <br />selected projects
-                </h2>
-                <p className="mx-auto text-lg text-gray-200 max-w-3xl leading-relaxed">These are the ones that I’m most proud of, trying to put my dent in the universe</p>
-              </div>
-            </div>
-
             <div className="flex mx-auto max-w-7xl px-6 lg:px-8 mb-12">
               <div className="mx-auto max-w-4xl lg:mx-0 space-y-6">
-                <h2 className="text-4xl font-semibold text-white">
+                <h2 className="text-5xl font-bold text-white">
                   {/* <ArrowDownRightIcon className='h-5 w-5'/> */}
                   My list of selected projects
                 </h2>
@@ -114,7 +104,7 @@ export default function Home() {
             {/* Project starts here */}
             <div className="flex mx-auto max-w-7xl px-6 lg:px-8 mb-12">
               <div className="mx-auto max-w-4xl lg:mx-0 space-y-6">
-                <h2 className="text-4xl font-semibold text-white">
+                <h1 className="text-5xl font-bold text-white">
                   {/* <ArrowDownRightIcon className='h-5 w-5'/> */}
                   Coming soon case studies
                 </h2>
