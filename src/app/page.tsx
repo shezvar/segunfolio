@@ -68,7 +68,7 @@ export default function Home() {
             <div className='mx-auto flex items-center mt-48 mb-48 xl:max-w-7xl px-6 lg:px-8'>
               <div className='w-full space-y-8'>
                 <h1 className='text-4xl lg:text-8xl font-bold text-white'>Meet Segun - Product Designer working and living in London</h1>
-                <p className="text-lg text-gray-200 max-w-3xl leading-relaxed">When I am not designing, you will find me exploring London looking for basketball courts, writing lines of codes using Next JS, like I did this site, jogging and hitting new milestones. I love listening to music (Old Blues)</p>
+                <p className="text-lg text-gray-200 max-w-3xl leading-relaxed font-serif tracking-wide">When I am not designing, you will find me exploring London looking for basketball courts, writing lines of codes using Next JS, like I did this site, jogging and hitting new milestones. I love listening to music (Old Blues)</p>
               </div>
             </div>
 
@@ -116,7 +116,7 @@ export default function Home() {
               <div className="mx-auto max-w-4xl lg:mx-0 space-y-6">
                 <h2 className="text-4xl font-semibold text-white">
                   {/* <ArrowDownRightIcon className='h-5 w-5'/> */}
-                  Coming soon
+                  Coming soon case studies
                 </h2>
               </div>
             </div>

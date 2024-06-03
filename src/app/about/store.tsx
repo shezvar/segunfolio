@@ -3,6 +3,7 @@ import React from 'react'
 import { HeaderLight, HeaderDark } from '@/components/header'
 import ExperienceBlock from '@/app/about/ExperienceBlock'
 import Footer from '@/components/footer'
+import Biography from '@/app/about/biography'
 
 const projectData = [
   { image: 'images/fg-cover1.png', alt: 'first image', title: 'System for the freelance economy, designed to help creatives in managing their clients and projects effectively.', description: 'Product Design at Fullgap', link: '/projects/fullgap' },
@@ -16,17 +17,17 @@ const comingSoon = [
   { image: 'images/mt-cover.png', alt: 'first image', title: 'MTN Nigeria', description: 'Invest in MTN with the MTN Loan Application Management Solution and simplify share ownership with Stanbic loans.', industry: 'Fintech', year: '2020' }
 ]
 
-export default function About() {
+export default function Store() {
 
   return (
-    <div className="bg-page">
+    <div className="bg-page hidden">
 
       <HeaderDark />
 
       <main>
         <div className="relative isolate">
           <svg
-            className="hidden absolute inset-x-0 top-0 -z-10 h-[68rem] w-full stroke-gray-800 [mask-image:radial-gradient(32rem_32rem_at_center,white,transparent)]"
+            className="absolute inset-x-0 top-0 -z-10 h-[68rem] w-full stroke-gray-800 [mask-image:radial-gradient(32rem_32rem_at_center,white,transparent)]"
             aria-hidden="true"
           >
             <defs>
@@ -51,7 +52,7 @@ export default function About() {
           </svg>
 
           <div
-            className="hidden absolute left-1/2 right-0 -top-60 -z-10 -ml-24 transform-gpu overflow-hidden blur-3xl lg:ml-24 xl:ml-48"
+            className="absolute left-1/2 right-0 -top-60 -z-10 -ml-24 transform-gpu overflow-hidden blur-3xl lg:ml-24 xl:ml-48"
             aria-hidden="true"
           >
             <div className="aspect-[801/1036] w-[59rem] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-10"
@@ -64,33 +65,34 @@ export default function About() {
 
           <div className="overflow-hidden">
 
-            <div className='mx-auto flex items-center my-48 xl:max-w-7xl px-6 lg:px-8'>
-              <div className='flex flex-col lg:flex-row text-white w-full gap-12'>
-                <div className='basis-full lg:basis-1/3'>
-                  <div className='h-full bg-cover text-white'>
-                    <div className='h-[24rem] lg:h-full w-full bg-[center_top_30%]' style={{backgroundImage: 'url(images/my-image-1.png)'}}></div>
+            <Biography />
+
+            <div className='mx-auto flex items-center my-48 xl:max-w-7xl px-6 lg:px-8 hidden'>
+              <div className='w-full space-y-16'>
+                <h1 className='text-4xl lg:text-8xl font-bold text-white'>About me</h1>
+                <div className='max-w-3xl leading-relaxed text-gray-400 text-lg space-y-12'>
+                  <div className='space-y-4'>
+                    <h3 className='text-gray-100 text-3xl font-medium'>A curious begining</h3>
+                    <p className="">My name is Segun, and I hail from a small town in Nigeria. From a young age, my curiosity led me to dismantle and fix everything I could find around the house, earning me the nickname &quot;the tech guy&quot; among my peers. They joked that to be my friend, all you needed was a laptop—a luxury I cherished, spending hours exploring Windows OS and its myriad applications.</p>
                   </div>
-                </div>
-                <div className='basis-full lg:basis-4/6'>
-                  <div className='h-full'>
-                    <div className='space-y-4'>
-                      <h1 className='text-5xl font-sans text-white'>Hello, I'm Segun Oroyo, but you can call me "Segun." <span className='text-[2rem]'>😜</span></h1>
-                      <p className="text-lg text-gray-200 max-w-3xl leading-relaxed">/sheh•goon/</p>
-                      <p className='text-lg tracking-wide font-serif'>I am a product designer based in Nigeria. I value curiosity, creativity, user-centered design, and making technology intuitive and accessible. I enjoy transforming complex problems into simple, beautiful solutions.</p>
-                      <div className='text-gray-400 space-y-8'>
-                        <p className=''>Previously, I was a graphic and frontend designer, diving deep into HTML, CSS, SCSS/SASS, Angular JS, and Vue. I attended the Federal University of Technology, Akure (FUTA), where I studied Environmental Design and funded my studies through graphic design and WordPress development.</p>
-                        <p className=''>With a background in graphic design and frontend development, I am well-equipped to connect design and development teams. I leverage my diverse skills to make well-informed decisions efficiently. To learn more about working with me, feel free to reach out on <a href='https://www.linkedin.com/in/segun-oroyo/' target='_blank' className='text-indigo-600'>LinkedIn.</a></p>
-                        <p className=''>When I'm not tackling design challenges, you can find me in London either hunting for a basketball court, playing basketball, swimming, drawing, cooking, or exploring new technology.</p>
-                        <p className=''>I aim to be an exemplary designer and mentor. My aspiration is to become a compassionate, open-minded, and accessible design leader in the future. For now, I am wholeheartedly enjoying creating and implementing innovative solutions.</p>
-                      </div>
-                    </div>
+                  <div className='space-y-4'>
+                    <h3 className='text-gray-100 text-3xl font-medium'>Creative endeavors</h3>
+                    <p className="">My creativity extended beyond tech. I loved drawing and constructing things, and one of my favorite projects was building a mini airplane from PVC and aluminum propellers. Though it crashed just centimeters off the ground, it sparked my passion for making things.</p>
+                  </div>
+                  <div className='space-y-4'>
+                    <h3 className='text-gray-100 text-3xl font-medium'>Athletic aspirations</h3>
+                    <p className="">When I wasn&quot;t building or tinkering, I was either playing basketball or swimming. I even dreamed of going pro, but fate had other plans. Just as I was set to join a major basketball club, I got accepted into the Federal University of Technology, Akure (FUTA), where I studied Environmental Design.</p>
+                  </div>
+                  <div className='space-y-4'>
+                    <h3 className='text-gray-100 text-3xl font-medium'>Discovering design</h3>
+                    <p className="">Two years into my studies, I discovered graphic design and used it to fund my education. This led me to learn HTML, CSS, and eventually SCSS/SASS, diving deeper into frontend development. However, I often felt my designs lacked the finesse I envisioned, pushing me towards UI design.</p>
+                  </div>
+                  <div className='space-y-4'>
+                    <h3 className='text-gray-100 text-3xl font-medium'>Finding my true calling</h3>
+                    <p className="">In 2016, I made a significant leap from graphic and frontend design to product design. Here, I found my true calling—transforming complex problems into simple, beautiful, user-centered solutions. My journey, fueled by relentless curiosity and creativity, continues to evolve as I strive to make technology more intuitive and accessible.</p>
                   </div>
                 </div>
               </div>
-            </div>
-
-            <div className='mx-auto flex items-center my-48 xl:max-w-7xl px-6 lg:px-8 hidden'>
-              
             </div>
 
             {/* Experience starts */}
