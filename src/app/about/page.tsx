@@ -74,13 +74,13 @@ export default function About() {
                 <div className='basis-full lg:basis-4/6'>
                   <div className='h-full'>
                     <div className='space-y-4'>
-                      <h1 className='text-5xl font-sans text-white'>Hello, I'm Segun Oroyo, but you can call me "Segun." <span className='text-[2rem]'>😜</span></h1>
+                      <h1 className='text-5xl font-sans text-white'>Hello, I&apos;m Segun Oroyo, but you can call me &quot;Segun.&quot; <span className='text-[2rem]'>😜</span></h1>
                       <p className="text-lg text-gray-200 max-w-3xl leading-relaxed">/sheh•goon/</p>
                       <p className='text-lg tracking-wide font-serif'>I am a product designer based in Nigeria. I value curiosity, creativity, user-centered design, and making technology intuitive and accessible. I enjoy transforming complex problems into simple, beautiful solutions.</p>
                       <div className='text-gray-400 space-y-8'>
                         <p className=''>Previously, I was a graphic and frontend designer, diving deep into HTML, CSS, SCSS/SASS, Angular JS, and Vue. I attended the Federal University of Technology, Akure (FUTA), where I studied Environmental Design and funded my studies through graphic design and WordPress development.</p>
                         <p className=''>With a background in graphic design and frontend development, I am well-equipped to connect design and development teams. I leverage my diverse skills to make well-informed decisions efficiently. To learn more about working with me, feel free to reach out on <a href='https://www.linkedin.com/in/segun-oroyo/' target='_blank' className='text-indigo-600'>LinkedIn.</a></p>
-                        <p className=''>When I'm not tackling design challenges, you can find me in London either hunting for a basketball court, playing basketball, swimming, drawing, cooking, or exploring new technology.</p>
+                        <p className=''>When I&apos;m not tackling design challenges, you can find me in London either hunting for a basketball court, playing basketball, swimming, drawing, cooking, or exploring new technology.</p>
                         <p className=''>I aim to be an exemplary designer and mentor. My aspiration is to become a compassionate, open-minded, and accessible design leader in the future. For now, I am wholeheartedly enjoying creating and implementing innovative solutions.</p>
                       </div>
                     </div>
