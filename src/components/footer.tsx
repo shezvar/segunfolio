@@ -26,7 +26,7 @@ export default function Footer() {
                         </div>
 
                         <div className="">
-                            <a href="" ><EnvelopeIcon className="text-white w-8"/></a>
+                            <a href="mailto:shezvar@gmail.com?Subject=Hello!" target="_blank"><EnvelopeIcon className="text-white w-8 hover:text-indigo-500 hover:blur-xs" /></a>
                         </div>
                     </div>
                 </div>
