@@ -13,7 +13,7 @@ export default function Footer() {
                 <div className="mx-auto max-w-7xl px-6 lg:px-8">
                     {/* <a href="mailto:shezvar@gmail.com?Subject=Hello!" target="_blank" className="text-white font-bold text-4xl lg:text-6xl hover:text-indigo-500 hover:blur-xs">Thanks for visiting my portfolio</a> */}
                     <img src="segunoroyologo.svg" className="w-12 mb-8" />
-                    <p className="text-5xl font-bold text-white max-w-md leading-normal">Thanks for visiting my portfolio</p>
+                    <p className="text-5xl font-bold text-white max-w-md leading-normal bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-indigo-500">Thanks for visiting my portfolio</p>
                 </div>
             </div>
 

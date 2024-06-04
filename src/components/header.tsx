@@ -8,6 +8,7 @@ import SegunOroyoLogo from "@/assets/segunoroyo.svg"
 const navigation = [
     { name: 'About me', href: '/about', target: '_self' },
     { name: 'My Process', href: '/process', target: '_self' },
+    { name: 'Archive', href: '/archive', target: '_self' },
     { name: 'Download CV', href: 'https://drive.google.com/file/d/1046vZMvXbljzhS3w_TVM8GFK0R0B9jkp/view?usp=sharing', target: '_blank' }
   ]
 

@@ -6,8 +6,8 @@ import Footer from '@/components/footer'
 
 const projectData = [
   { image: 'images/fg-cover1.png', alt: 'first image', title: 'System for the freelance economy, designed to help creatives in managing their clients and projects effectively.', description: 'Product Design at Fullgap', link: '/projects/fullgap' },
-  { image: 'images/bs-cover.png', alt: 'first image', title: 'Optimizing the onboarding processes means no more navigating complex menus, deciphering jargon, or wrestling with confusing interfaces.', description: 'Booosta by Prunedge', link: 'projects/booosta' },
-  { image: 'images/pw-cover1.png', alt: 'first image', title: 'The automated budget system in state governance is an enterprise solution that offers improved transparency and accountability in the budget and expenditure management process.', description: 'Prowoks by World Bank', link: 'projects/prowoks' }
+  { image: 'images/bs-cover.png', alt: 'first image', title: 'RMS provides an all-in-one platform for retailers to run their businesses more efficiently and profitably.', description: 'Booosta by Prunedge', link: 'projects/booosta' },
+  { image: 'images/pw-cover1.png', alt: 'first image', title: 'Streamlined business process automation and document management for SMEs and the public sector.', description: 'Prowoks by World Bank', link: 'projects/prowoks' }
 ]
 
 const comingSoon = [
@@ -66,7 +66,7 @@ export default function Home() {
 
             <div className='mx-auto flex items-center mt-48 mb-48 xl:max-w-7xl px-6 lg:px-8'>
               <div className='w-full space-y-8'>
-                <h1 className='text-4xl lg:text-8xl font-bold text-white'>Meet Segun - Product Designer working and living in London</h1>
+                <h1 className='text-4xl lg:text-8xl font-bold text-white'>Meet <span className='bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-indigo-500'>Segun</span> - Product Designer working and living in London</h1>
                 <p className="text-lg text-gray-200 max-w-3xl leading-relaxed font-serif tracking-wide">When I am not designing, you will find me exploring London looking for basketball courts, writing lines of codes using Next JS, like I did this site, jogging and hitting new milestones. I love listening to music (Old Blues)</p>
               </div>
             </div>
