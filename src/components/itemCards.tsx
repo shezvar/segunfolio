@@ -1,6 +1,5 @@
 import React from "react";
 import { ArrowLongRightIcon } from "@heroicons/react/24/outline";
-import { url } from "inspector";
 
 export function ProjectCard1(props: { imageUrl: any; alt: any; title: any; description: any; link: any; }) {
     const { imageUrl, alt, title, description, link } = props;
@@ -56,21 +55,6 @@ export function ProjectCard2(props: { imageUrl: any; alt: any; title: any; descr
                         />
                     </div>
                 </div>
-
-                <a href={link} className="group hidden">
-                    <img
-                        className="transition max-w-full ease-in-out rounded-xl bg-gray-900 shadow-xl ring-1 ring-gray-400/10 group-hover:scale-[1.05]"
-                        src={imageUrl}
-                        alt={alt}
-                    />
-                    <div className="flex flex-col justify-between sm:flex-row">
-                        <div className="pb-3 sm:pb-0">
-                            <p className="text-base mt-6 font-mono text-gray-500">{description}</p>
-                            <h3 className="text-lg font-medium text-gray-800 group-hover:text-indigo-500">{title}</h3>
-                        </div>
-
-                    </div>
-                </a>
             </article>
         </div>
     );
@@ -82,10 +66,10 @@ export function ComingSoon(props: { imageUrl: any; title: any; description: any;
     return (
         <div className="" role="itemlist">
             <div className="relative flex w-full max-w-full h-full flex-col border border-zinc-800 hover:bg-zinc-900/50 rounded transition duration-500 text-left overflow-hidden shadow hover:shadow-2xl">
-                <div style={{backgroundImage: `url(${imageUrl})`, backgroundPosition: "50%" }} className="border-b border-gray-800 object-cover bg-cover relative aspect-[2]"></div>
+                <div style={{ backgroundImage: `url(${imageUrl})`, backgroundPosition: "50%" }} className="border-b border-gray-800 object-cover bg-cover relative aspect-[2]"></div>
                 <div className="flex gap-2 flex-col p-6">
                     <h3 className="text-gray-200 font-bold my-0">{title}</h3>
-                    <p className=" overflow-hidden mb-0 text-sm text-zinc-400/80">{description}</p>
+                    <p className=" overflow-hidden mb-0 text-sm text-zinc-400/80 leading-relaxed">{description}</p>
                 </div>
                 <div className="gap-2 border-t border-zinc-800 flex mt-auto">
                     <div className="flex-1 px-6 py-3 border-r border-zinc-800 items-center flex">
@@ -95,6 +79,22 @@ export function ComingSoon(props: { imageUrl: any; title: any; description: any;
                         <p className="text-xs text-gray-200">{year}</p>
                     </div>
                 </div>
+            </div>
+        </div>
+    );
+}
+
+export function ArchiveCard(props: { number: number; title: any; description: any; }) {
+    const { number, title, description } = props;
+    const formattedNumber = number.toString().padStart(2, "0"); // Pad with '0' if single digit
+
+    return (
+        <div className='overflow-hidden group flex flex-col border border-gray-800 bg-zinc-950 gap-4 rounded h-full ease-in-out transition duration-200 delay-200 p-6 hover:bg-indigo-900'>
+            <h2 className='text-gray-100 text-6xl font-medium mb-4 group-hover:-translate-y-24 ease-in-out transition duration-200 delay-200'>{formattedNumber}</h2>
+
+            <div className='space-y-2 group-hover:-translate-y-24 ease-in-out transition duration-200 delay-200'>
+                <h3 className='text-gray-100 text-xl font-medium group-hover:text-zinc-200'>{title}</h3>
+                <p className=" leading-relaxed group-hover:text-indigo-100/70 ease-in-out transition duration-200 delay-200">{description}</p>
             </div>
         </div>
     );
