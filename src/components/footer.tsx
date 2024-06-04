@@ -22,7 +22,7 @@ export default function Footer() {
                     <div className="flex justify-between items-center w-full">
                         <div className="space-y-2">
                             <span className="font-semibold">Made by me using</span>
-                            <img src="next.svg" className="" alt="Next Js" />
+                            <img src="next.svg" className="w-24" alt="Next Js" />
                         </div>
 
                         <div className="">

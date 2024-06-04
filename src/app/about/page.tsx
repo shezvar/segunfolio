@@ -66,19 +66,19 @@ export default function About() {
           <div className="overflow-hidden">
 
             <div className='mx-auto flex items-center my-48 xl:max-w-7xl px-6 lg:px-8'>
-              <div className='flex flex-col lg:flex-row text-white w-full gap-12'>
+              <div className='group flex flex-col lg:flex-row text-white w-full gap-12'>
                 <div className='basis-full lg:basis-1/3'>
                   <div className='h-full bg-cover text-white'>
-                    <div className='h-[24rem] lg:h-full w-full bg-[center_top_30%]' style={{ backgroundImage: 'url(images/my-image-1.png)' }}></div>
+                    <div className='h-[24rem] lg:h-full w-full bg-[center_top_30%] grayscale group-hover:grayscale-0' style={{ backgroundImage: 'url(images/my-image-1.png)' }}></div>
                   </div>
                 </div>
                 <div className='basis-full lg:basis-4/6'>
                   <div className='h-full'>
                     <div className='space-y-4'>
-                      <h1 className='text-5xl font-sans text-white'>Hello, I&apos;m Segun Oroyo, but you can call me &quot;Segun.&quot; <span className='text-[2rem]'>😜</span></h1>
+                      <h1 className='text-5xl font-sans text-white leading-tight'>Hello, I&apos;m Segun Oroyo, but you can call me &quot;Segun.&quot; <span className='text-[2rem]'>😜</span></h1>
                       <p className="text-lg text-gray-200 max-w-3xl leading-relaxed">/sheh•goon/</p>
-                      <p className='text-lg tracking-wide font-serif'>I am a product designer based in Nigeria. I value curiosity, creativity, user-centered design, and making technology intuitive and accessible. I enjoy transforming complex problems into simple, beautiful solutions.</p>
-                      <div className='text-gray-400 space-y-8'>
+                      <p className='text-lg tracking-wide font-serif leading-relaxed'>I am a product designer based in Nigeria. I value curiosity, creativity, user-centered design, and making technology intuitive and accessible. I enjoy transforming complex problems into simple, beautiful solutions.</p>
+                      <div className='text-gray-400 space-y-8 leading-relaxed'>
                         <p className=''>Previously, I was a graphic and frontend designer, diving deep into HTML, CSS, SCSS/SASS, Angular JS, and Vue. I attended the Federal University of Technology, Akure (FUTA), where I studied Environmental Design and funded my studies through graphic design and WordPress development.</p>
                         <p className=''>With a background in graphic design and frontend development, I am well-equipped to connect design and development teams. I leverage my diverse skills to make well-informed decisions efficiently. To learn more about working with me, feel free to reach out on <a href='https://www.linkedin.com/in/segun-oroyo/' target='_blank' className='text-indigo-600'>LinkedIn.</a></p>
                         <p className=''>When I&apos;m not tackling design challenges, you can find me in London either hunting for a basketball court, playing basketball, swimming, drawing, cooking, or exploring new technology.</p>
@@ -88,10 +88,6 @@ export default function About() {
                   </div>
                 </div>
               </div>
-            </div>
-
-            <div className='mx-auto flex items-center my-48 xl:max-w-7xl px-6 lg:px-8 hidden'>
-
             </div>
 
             {/* Experience starts */}

@@ -3,6 +3,7 @@ import { Dialog } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import Image from 'next/image'
 import LinkedInLogo from "@/assets/Linkedin-Logo.png"
+import SegunOroyoLogo from "@/assets/segunoroyo.svg"
 
 const navigation = [
     { name: 'About me', href: '/about', target: '_self' },
@@ -53,6 +54,7 @@ export function HeaderLight() {
                         <a href="/" className="-m-1.5 p-1.5">
                             <span className="sr-only">Segun Oroyo</span>
                             <img src="segunoroyologo.svg" className="w-12" alt='segunoroyo' />
+                            {/* <Image src={SegunOroyoLogo} alt="segunoroyo" /> */}
                         </a>
                         <button
                             type="button"
@@ -103,7 +105,6 @@ export function HeaderDark() {
                     <a href="/" className="-m-1.5 p-1.5">
                         <span className="sr-only">Segun Oroyo</span>
                         <img src="segunoroyologo.svg" className="w-12" alt='segunoroyo' />
-                        {/* <div className='text-xl font-semibold leading-6'>segunoroyo</div> */}
                     </a>
                 </div>
                 <div className="flex lg:hidden">
@@ -118,7 +119,7 @@ export function HeaderDark() {
                 </div>
                 <div className="hidden lg:flex lg:gap-x-12">
                     {navigation.map((item) => (
-                        <a key={item.name} href={item.href} className="text-md font-normal text-white" target={item.target}>
+                        <a key={item.name} href={item.href} className="text-md font-semibold text-white" target={item.target}>
                             {item.name}
                         </a>
                     ))}

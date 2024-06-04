@@ -158,7 +158,7 @@ const ExperienceBlock: React.FC = () => {
                     </div>
                     {activeIndex === 0 && (
                         <div className="mt-6 space-y-6">
-                            <div className='space-y-4'>
+                            <div className='space-y-4 leading-relaxed'>
                                 <p>As part of the team behind an award-winning learning platform widely used in educational institutions, I had the privilege of contributing to the creation of innovative and engaging learning experiences. The platform leveraged the latest technologies to enhance the teaching and learning process, catering to the diverse needs of students and educators.</p>
                                 <p>In close collaboration with the product manager, I played a pivotal role in planning and executing new releases and features. We conducted extensive research and gathered feedback from users to ensure that the platform addressed real-world challenges and provided valuable solutions.</p>
                                 <p>One of the key aspects of my role was conducting user interviews. I had the opportunity to engage with students, teachers, and administrators to understand their pain points, aspirations, and expectations from the platform. These insights were instrumental in shaping the design and development of new features and improvements.</p>
@@ -193,7 +193,7 @@ const ExperienceBlock: React.FC = () => {
                     </div>
                     {activeIndex === 1 && (
                         <div className="mt-6 space-y-6">
-                            <div className='space-y-4'>
+                            <div className='space-y-4 leading-relaxed'>
                                 <p>As part of the team behind an award-winning learning platform widely used in educational institutions, I had the privilege of contributing to the creation of innovative and engaging learning experiences. The platform leveraged the latest technologies to enhance the teaching and learning process, catering to the diverse needs of students and educators.</p>
                                 <p>In close collaboration with the product manager, I played a pivotal role in planning and executing new releases and features. We conducted extensive research and gathered feedback from users to ensure that the platform addressed real-world challenges and provided valuable solutions.</p>
                                 <p>One of the key aspects of my role was conducting user interviews. I had the opportunity to engage with students, teachers, and administrators to understand their pain points, aspirations, and expectations from the platform. These insights were instrumental in shaping the design and development of new features and improvements.</p>
@@ -228,7 +228,7 @@ const ExperienceBlock: React.FC = () => {
                     </div>
                     {activeIndex === 2 && (
                         <div className="mt-6 space-y-6">
-                            <div className='space-y-4'>
+                            <div className='space-y-4 leading-relaxed'>
                                 <p>In my current role as an individual contributor, I lead a team of designers to maintain and enhance our internal design system, ensuring consistency, usability, and visual coherence across all projects. I oversee the technical aspects of design implementation, collaborating closely with developers to translate concepts into functional prototypes while aligning design decisions with technical feasibility.</p>
                                 <p>I actively participate in product envisioning sessions, facilitating discussions with stakeholders from various disciplines to guide the team toward a shared vision that meets business goals and user needs. Regular design reviews with stakeholders allow for feedback and alignment with project objectives, leading to necessary design modifications.</p>
                                 <p>Collaboration is central to my approach. I work with product managers to understand requirements, user personas, and market trends, creating aesthetically pleasing designs that address real user problems. I stay informed on user research findings to incorporate insights into my designs and collaborate with the marketing team to ensure designs align with marketing strategies and communicate value to customers.</p>
@@ -262,7 +262,7 @@ const ExperienceBlock: React.FC = () => {
                     </div>
                     {activeIndex === 3 && (
                         <div className="mt-6 space-y-6">
-                            <div className='space-y-4'>
+                            <div className='space-y-4 leading-relaxed'>
                                 <p>As a seasoned product designer at Interswitch Group, a leading fintech company in Africa, I undertook a challenging project to develop innovative products aimed at enhancing platform performance and user experience. Through rigorous research and analysis, I identified key pain points and opportunities within the financial sector.</p>
                                 <p>With a clear understanding of market needs, I conceptualized and designed two groundbreaking products tailored to address specific challenges faced by users. These products focused on increasing transaction volumes and improving success rates, ensuring a seamless user experience for all stakeholders.</p>
                                 <p>The successful implementation of these products significantly boosted transaction volumes, establishing Interswitch Group as a key player in the financial sector. They also enhanced platform efficiency and user satisfaction, contributing to increased loyalty.</p>
@@ -297,7 +297,7 @@ const ExperienceBlock: React.FC = () => {
                     </div>
                     {activeIndex === 4 && (
                         <div className="mt-6 space-y-6">
-                            <div className='space-y-4'>
+                            <div className='space-y-4 leading-relaxed'>
                                 <p>As a full-stack design engineer, I overhauled the legacy design systems of the WEMA Corporate Internet Banking Platform, known as ALAT. The existing systems were outdated and hindering the platform&apos;s growth. My goal was to streamline and modernize the design infrastructure to reduce the time needed to add new features and enhance the overall user experience.</p>
                                 <p>I conducted a comprehensive analysis of the existing systems to identify areas for improvement and potential bottlenecks. Collaborating closely with designers and developers, I created a cohesive and user-centered design system aligned with the platform&apos;s goals. Leveraging modern technologies and best practices, I developed a scalable and maintainable design framework to accommodate future growth and changes.</p>
                                 <p>The implementation of the new design system resulted in significant improvements. It reduced the time required to add new features by 30%, enabling the team to respond more quickly to market demands. The platform saw a notable increase in customer engagement and satisfaction, attracting over 10,000 new customers within the first two weeks of launch.</p>
@@ -333,7 +333,7 @@ const ExperienceBlock: React.FC = () => {
                     </div>
                     {activeIndex === 5 && (
                         <div className="mt-6 space-y-6">
-                            <div className='space-y-4'>
+                            <div className='space-y-4 leading-relaxed'>
                                 <p>During my tenure as a User Experience Designer at Distru, I collaborated closely with a talented team of developers and key stakeholders to translate valuable customer feedback into tangible product improvements. Through rigorous analysis and implementation, we extracted actionable insights and witnessed a significant uptick in usability, adoption, and retention rates. These metrics affirmed the positive impact of our efforts on users and the overall success of Distru.</p>
                                 <p>Later, Distru made a bold move into venture capital, securing funding from visionary investors to propel our company to greater heights. This capital infusion enabled us to expand our product offerings, strengthen our team, and pursue ambitious growth initiatives. The VC funding marked a pivotal moment in Distru&apos;s evolution, allowing us to pursue our long-term vision and capitalize on emerging market trends.</p>
                             </div>
@@ -366,7 +366,7 @@ const ExperienceBlock: React.FC = () => {
                     </div>
                     {activeIndex === 6 && (
                         <div className="mt-6 space-y-6">
-                            <div className='space-y-4'>
+                            <div className='space-y-4 leading-relaxed'>
                                 <p>During my time at FourthCanvas, I went beyond designing publications and flyers and working on brand guidelines for clients. I collaborated with talented designers on a significant project—branding for The Future Project, a social enterprise communications firm affiliated with Red Africa. This project aimed to celebrate young achievers aged 18 to 31, showcasing our team&apos;s creative capabilities and securing major projects for FourthCanvas.</p>
                                 <p>We became the design agency for a gubernatorial election campaign and two presidential elections in African countries, all resulting in victories. These achievements highlighted the impact and effectiveness of our branding and design solutions.</p>
                                 <p>In my role, I approached each project with a commitment to exceptional results, leveraging skills in visual communication, typography, and layout. Attention to detail and a strong understanding of client objectives ensured designs resonated with target audiences, achieving desired outcomes.</p>

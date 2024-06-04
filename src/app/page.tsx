@@ -2,7 +2,6 @@
 import React from 'react'
 import { HeaderLight, HeaderDark } from '@/components/header'
 import { ComingSoon, ProjectCard2 } from '@/components/itemCards'
-import { ArrowDownRightIcon } from '@heroicons/react/24/outline'
 import Footer from '@/components/footer'
 
 const projectData = [
