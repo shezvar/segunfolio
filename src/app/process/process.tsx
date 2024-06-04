@@ -39,7 +39,7 @@ const ProcessBlock: React.FC = () => {
                     <div className="group" onClick={() => toggleAccordion(0)}>
                         <div className='flex justify-between items-center cursor-pointer'>
                             <div className='space-y-1'>
-                                <h3 className='uppercase text-gray-400 text-sm font-sans group-hover:text-zinc-100'>PHASE ONE</h3>
+                                <h3 className='uppercase text-gray-400 text-sm font-sans group-hover:text-zinc-100'>Setting the Stage</h3>
                                 <p className='text-gray-100 text-2xl'>Requirement Gathering</p>
                             </div>
                             <StateIndicator isActive={activeIndex === 0} />
@@ -48,7 +48,7 @@ const ProcessBlock: React.FC = () => {
                     {activeIndex === 0 && (
                         <div className="mt-6 space-y-6">
                             <div className='space-y-4'>
-                                <p>The first step I take is to define the business needs and project requirements. This means understanding the deliverables, timeline, and expectations. It’s crucial to stay aligned with the rest of the team. At this stage, I jot down my hypotheses about what the problems might be.</p>
+                                <p className=' leading-relaxed'>Every great story begins with understanding the context, and in design, this means gathering requirements. Picture the scene: a new project lands on my desk. The first step is to sit down with the team and stakeholders, aligning on the business needs, project requirements, deliverables, and timelines. We discuss what success looks like and jot down initial hypotheses about potential problems. It&apos;s like sketching the first outline of a map for our journey—crucial for ensuring we&apos;re all heading in the same direction.</p>
                             </div>
                         </div>
                     )}
@@ -58,8 +58,8 @@ const ProcessBlock: React.FC = () => {
                     <div className="group" onClick={() => toggleAccordion(1)}>
                         <div className='flex justify-between items-center cursor-pointer'>
                             <div className='space-y-2'>
-                                <h3 className='uppercase text-gray-400 text-sm font-sans group-hover:text-zinc-100'>Phase Two</h3>
-                                <p className='text-gray-100 text-2xl'>Discover the Issue</p>
+                                <h3 className='uppercase text-gray-400 text-sm font-sans group-hover:text-zinc-100'>The Exploration</h3>
+                                <p className='text-gray-100 text-2xl'>Discovering the Issue</p>
                             </div>
                             <StateIndicator isActive={activeIndex === 1} />
                         </div>
@@ -67,7 +67,7 @@ const ProcessBlock: React.FC = () => {
                     {activeIndex === 1 && (
                         <div className="mt-6 space-y-6">
                             <div className='space-y-4'>
-                                <p>In this phase, I gather information, talk to people, and explore the problem space. I look into user reports and understand why the product is the way it is. If budget or time constraints prevent formal user research, I conduct ad hoc guerilla interviews to avoid designing blindly.</p>
+                                <p className=' leading-relaxed'>With our map in hand, the next phase is about exploration. This is where I delve into the problem space, gathering information and talking to people to understand the current state of the product. Sometimes, this involves sifting through user reports and other times, it means conducting ad hoc guerilla interviews when time or budget constraints prevent formal user research. Each conversation and piece of data is like a clue, helping to piece together the puzzle of why the product is the way it is. It&apos;s an investigative journey, uncovering the true nature of the problem.</p>
                             </div>
                         </div>
                     )}
@@ -77,8 +77,8 @@ const ProcessBlock: React.FC = () => {
                     <div className="group" onClick={() => toggleAccordion(2)}>
                         <div className='flex justify-between items-center cursor-pointer'>
                             <div className='space-y-2'>
-                                <h3 className='uppercase text-gray-400 text-sm font-sans group-hover:text-zinc-100'>Phase Three</h3>
-                                <p className='text-gray-100 text-2xl'>Interpret the Result</p>
+                                <h3 className='uppercase text-gray-400 text-sm font-sans group-hover:text-zinc-100'>Interpreting Clues</h3>
+                                <p className='text-gray-100 text-2xl'>Understanding Users</p>
                             </div>
                             <StateIndicator isActive={activeIndex === 2} />
                         </div>
@@ -86,7 +86,7 @@ const ProcessBlock: React.FC = () => {
                     {activeIndex === 2 && (
                         <div className="mt-6 space-y-6">
                             <div className='space-y-4'>
-                                <p>Next, I interpret the findings to define the users, their needs, and pain points. This involves creating or refining personas, journey maps, storyboards, and problem statements. I also set goals and success metrics during this insightful phase.</p>
+                                <p className=' leading-relaxed'>Armed with insights from our exploration, the next step is to make sense of the findings. This phase is all about interpreting the data to define who our users are, what they need, and where they face challenges. I create personas, journey maps, storyboards, and problem statements, each one adding depth to our understanding of the user experience. Setting clear goals and success metrics at this stage ensures we have a compass to guide us through the design process. It’s like turning raw data into a coherent story that informs our next steps.</p>
                             </div>
                         </div>
                     )}
@@ -96,8 +96,8 @@ const ProcessBlock: React.FC = () => {
                     <div className="group" onClick={() => toggleAccordion(3)}>
                         <div className='flex justify-between items-center cursor-pointer'>
                             <div className='space-y-2'>
-                                <h3 className='uppercase text-gray-400 text-sm font-sans group-hover:text-zinc-100'>Phase Four</h3>
-                                <p className='text-gray-100 text-2xl'>Ideate over solution</p>
+                                <h3 className='uppercase text-gray-400 text-sm font-sans group-hover:text-zinc-100'>The Creative Burst</h3>
+                                <p className='text-gray-100 text-2xl'>Ideation</p>
                             </div>
                             <StateIndicator isActive={activeIndex === 3} />
                         </div>
@@ -105,7 +105,7 @@ const ProcessBlock: React.FC = () => {
                     {activeIndex === 3 && (
                         <div className="mt-6 space-y-6">
                             <div className='space-y-4'>
-                                <p>The ideation phase is where the fun begins. I bring together developers, designers, stakeholders, and customer support for brainstorming sessions. We explore a wide range of solutions, focusing on quantity over quality at this stage.</p>
+                                <p className=' leading-relaxed'>Now comes the most exhilarating part of the journey—ideation. Imagine a room filled with developers, designers, stakeholders, and customer support, all buzzing with energy and ideas. We brainstorm solutions, focusing on quantity over quality at this stage. It’s a vibrant, collaborative session where no idea is too wild or impractical. This phase is about casting a wide net to capture as many potential solutions as possible, much like exploring various paths on our map before choosing the best route.</p>
                             </div>
                         </div>
                     )}
@@ -115,8 +115,8 @@ const ProcessBlock: React.FC = () => {
                     <div className="group" onClick={() => toggleAccordion(4)}>
                         <div className='flex justify-between items-center cursor-pointer'>
                             <div className='space-y-2'>
-                                <h3 className='uppercase text-gray-400 text-sm font-sans group-hover:text-zinc-100'>Phase Five</h3>
-                                <p className='text-gray-100 text-2xl'>Prototype</p>
+                                <h3 className='uppercase text-gray-400 text-sm font-sans group-hover:text-zinc-100'>Bringing Ideas to Life</h3>
+                                <p className='text-gray-100 text-2xl'>Prototyping</p>
                             </div>
                             <StateIndicator isActive={activeIndex === 4} />
                         </div>
@@ -124,7 +124,7 @@ const ProcessBlock: React.FC = () => {
                     {activeIndex === 4 && (
                         <div className="mt-6 space-y-6">
                             <div className='space-y-4'>
-                                <p>Here, I create interactive prototypes. These can range from high-fidelity Figma prototypes to interactive websites. The level of detail depends on how far along we are in the process and what needs to be tested.</p>
+                                <p className=' leading-relaxed'>With a treasure trove of ideas, it&apos;s time to bring them to life through prototyping. Depending on where we are in the process, these prototypes can range from detailed Figma designs to interactive websites. Each prototype is a tangible representation of our ideas, ready to be tested and refined. It&apos;s akin to building a prototype of our map, creating a miniature version of the world we&apos;re designing.</p>
                             </div>
                         </div>
                     )}
@@ -134,8 +134,8 @@ const ProcessBlock: React.FC = () => {
                     <div className="group" onClick={() => toggleAccordion(5)}>
                         <div className='flex justify-between items-center cursor-pointer'>
                             <div className='space-y-2'>
-                                <h3 className='uppercase text-gray-400 text-sm font-sans group-hover:text-zinc-100'>Phase Six</h3>
-                                <p className='text-gray-100 text-2xl'>Test, iterate and test again</p>
+                                <h3 className='uppercase text-gray-400 text-sm font-sans group-hover:text-zinc-100'>The Reality Check</h3>
+                                <p className='text-gray-100 text-2xl'>Testing and Iteration</p>
                             </div>
                             <StateIndicator isActive={activeIndex === 5} />
                         </div>
@@ -143,7 +143,7 @@ const ProcessBlock: React.FC = () => {
                     {activeIndex === 5 && (
                         <div className="mt-6 space-y-6">
                             <div className='space-y-4'>
-                                <p>Finally, I test the prototypes with users. This could be a quick guerilla test or a comprehensive usability testing session. The results guide us on what needs to be changed and improved, ensuring we deliver the best possible product.</p>
+                                <p className=' leading-relaxed'>No journey is complete without a reality check, and in design, this means testing the prototypes with real users. Whether through quick guerilla tests or comprehensive usability sessions, user feedback is invaluable. The results guide us on what needs to be changed and improved, ensuring that we iterate and refine our design until it&apos;s just right. This phase is often repeated multiple times, each iteration bringing us closer to the perfect product. It&apos;s like fine-tuning our map based on real-world exploration, ensuring it leads to our desired destination.</p>
                             </div>
                         </div>
                     )}

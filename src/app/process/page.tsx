@@ -70,10 +70,10 @@ export default function About() {
                             <div className='w-full space-y-8'>
                                 <h1 className='text-5xl font-bold text-white'>Design Process</h1>
                                 <div className='grid grid-cols-12 text-white'>
-                                    <h2 className='text-3xl font-semibold leading-9 col-span-full lg:col-span-5 mb-6 lg:mb-0'>Every project I take on is unique, but I follow a basic process to ensure I deliver the best results.</h2>
-                                    <div className='space-y-4 text-lg col-span-full lg:col-start-7 lg:col-span-5 leading-7'>
-                                        <p className='font-bold'>This process is rarely linear—steps are often repeated multiple times before the final product is ready.</p>
-                                        <p className=''>Some projects will need card sorting, while others might already have a well-defined information architecture. While the specific methods may differ, my overall approach remains consistent.</p>
+                                    <h2 className='text-3xl font-semibold leading-relaxed col-span-full lg:col-span-5 mb-6 lg:mb-0'>The Journey of Crafting a Perfect Product: A Designer&apos;s Tale</h2>
+                                    <div className='space-y-4 text-lg col-span-full lg:col-start-7 lg:col-span-5 leading-relaxed'>
+                                        <p className='font-bold'>In the dynamic world of product design, every project is unique, bringing its own challenges and opportunities.</p>
+                                        <p className='font-serif'> As a seasoned designer, I&apos;ve developed a structured yet flexible process to ensure each product meets business objectives and delights users. This iterative journey involves discovery, creativity, and refinement, guiding us from concept to completion.</p>
                                     </div>
                                 </div>
 

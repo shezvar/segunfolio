@@ -22,11 +22,11 @@ export default function Footer() {
                     <div className="flex justify-between items-center w-full">
                         <div className="space-y-2">
                             <span className="font-semibold">Made by me using</span>
-                            <img src="next.svg" className="" alt="Next Js" />
+                            <img src="next.svg" className="w-24" alt="Next Js" />
                         </div>
 
                         <div className="">
-                            <a href="" ><EnvelopeIcon className="text-white w-8"/></a>
+                            <a href="mailto:shezvar@gmail.com?Subject=Hello!" target="_blank"><EnvelopeIcon className="text-white w-8 hover:text-indigo-500 hover:blur-xs" /></a>
                         </div>
                     </div>
                 </div>
