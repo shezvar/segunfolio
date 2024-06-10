@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Manrope } from "next/font/google";
 import "./globals.css";
 import { SpeedInsights } from "@vercel/speed-insights/next";
+import GTagScript from "@/components/GTagScript";
 
 const manrope = Manrope({ subsets: ["latin"] });
 
@@ -17,6 +18,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="antialiased">
+      <head>
+        <GTagScript />
+      </head>
       <body className={manrope.className}>
         {children}
         <SpeedInsights/>
