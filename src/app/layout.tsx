@@ -3,6 +3,7 @@ import { Manrope } from "next/font/google";
 import "./globals.css";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import GTagScript from "@/components/GTagScript";
+import { Analytics } from "@vercel/analytics/react"
 
 const manrope = Manrope({ subsets: ["latin"] });
 
