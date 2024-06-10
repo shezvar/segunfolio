@@ -9,7 +9,7 @@ const manrope = Manrope({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Segun Oroyo",
-  description: "My portfolio developed by me",
+  description: "Portfolio developed by me",
 };
 
 export default function RootLayout({
