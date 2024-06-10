@@ -4,13 +4,16 @@ import { ArrowUpIcon, ArrowDownIcon } from '@heroicons/react/24/outline';
 
 
 const fg = [
+    "Design System",
     "Customer-Centric Design",
+    "User research",
+    "Product Design",
     "Cross-Functional Collaboration",
     "Data-Driven Decision Making",
     "Iterative Design and Development",
     "Creating Intuitive and Engaging Experiences",
     "Empathy and Strategic Thinking",
-    "Industry Knowledge and Adaptability"
+    "Adaptability"
 ];
 
 const ct = [
@@ -150,8 +153,8 @@ const ExperienceBlock: React.FC = () => {
                     <div className="group" onClick={() => toggleAccordion(0)}>
                         <div className='flex justify-between items-center cursor-pointer'>
                             <div className='space-y-1'>
-                                <h3 className='text-gray-400 text-sm font-sans group-hover:text-zinc-100'>JAN 2024 - PRESENT, USA</h3>
-                                <p className='text-gray-100 text-2xl'>Fullgap Inc / Senior Product Designer (Contract)</p>
+                                <h3 className='text-gray-400 text-sm font-sans group-hover:text-zinc-100'>PRESENT</h3>
+                                <p className='text-gray-100 text-2xl'>Senior Product Designer (Freelance)</p>
                             </div>
                             <StateIndicator isActive={activeIndex === 0} />
                         </div>
@@ -159,10 +162,7 @@ const ExperienceBlock: React.FC = () => {
                     {activeIndex === 0 && (
                         <div className="mt-6 space-y-6">
                             <div className='space-y-4 leading-relaxed'>
-                                <p>As part of the team behind an award-winning learning platform widely used in educational institutions, I had the privilege of contributing to the creation of innovative and engaging learning experiences. The platform leveraged the latest technologies to enhance the teaching and learning process, catering to the diverse needs of students and educators.</p>
-                                <p>In close collaboration with the product manager, I played a pivotal role in planning and executing new releases and features. We conducted extensive research and gathered feedback from users to ensure that the platform addressed real-world challenges and provided valuable solutions.</p>
-                                <p>One of the key aspects of my role was conducting user interviews. I had the opportunity to engage with students, teachers, and administrators to understand their pain points, aspirations, and expectations from the platform. These insights were instrumental in shaping the design and development of new features and improvements.</p>
-                                <p>Additionally, I was responsible for monitoring how people interacted with the product. Through data analysis and user feedback, I gained valuable insights into user behavior and patterns. This information helped us make informed decisions about product enhancements and prioritize features that would deliver the most impact.</p>
+                                <p>Product designer available for freelance or embedded roles. I collaborate with startups and organizations to elevate their products through design systems, new product development, and optimization of existing offerings. My expertise spans the full product lifecycle, ensuring a seamless journey from ideation to successful launch.</p>
                             </div>
                             <div className='space-y-4'>
                                 <h3 className='text-white'>Key skills</h3>
