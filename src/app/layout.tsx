@@ -24,6 +24,7 @@ export default function RootLayout({
       </head>
       <body className={manrope.className}>
         {children}
+        <Analytics />
         <SpeedInsights/>
       </body>
     </html>
