@@ -74,7 +74,6 @@ export default function Home() {
             <div className="flex mx-auto max-w-7xl px-6 lg:px-8 mb-12">
               <div className="mx-auto max-w-4xl lg:mx-0 space-y-6">
                 <h2 className="text-5xl font-bold text-white">
-                  {/* <ArrowDownRightIcon className='h-5 w-5'/> */}
                   My list of selected projects
                 </h2>
                 <p className="hidden mx-auto text-lg text-gray-200 max-w-3xl leading-relaxed">These are the ones that I’m most proud of, trying to put my dent in the universe</p>
