@@ -1,5 +1,5 @@
 // components/GTagScript.tsx
-'use client'; // Make it a client component for window access
+'use client';
 
 import Script from 'next/script';
 
@@ -15,7 +15,7 @@ export default function GTagScript() {
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
-          gtag('config', 'G-KWX7J8CPLX'); // Replace with your GTM ID
+          gtag('config', 'G-KWX7J8CPLX');
         `}
       </Script>
     </>
