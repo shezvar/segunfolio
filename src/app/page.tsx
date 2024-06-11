@@ -6,7 +6,7 @@ import Footer from '@/components/footer'
 
 const projectData = [
   { image: 'images/fg-cover1.png', alt: 'first image', title: 'System for the freelance economy, designed to help creatives in managing their clients and projects effectively.', description: 'Product Design at Fullgap', link: '/projects/fullgap' },
-  { image: 'images/bs-cover.png', alt: 'first image', title: 'RMS provides an all-in-one platform for retailers to run their businesses more efficiently and profitably.', description: 'Booosta by Prunedge', link: 'projects/booosta' },
+  // { image: 'images/bs-cover.png', alt: 'first image', title: 'RMS provides an all-in-one platform for retailers to run their businesses more efficiently and profitably.', description: 'Booosta by Prunedge', link: 'projects/booosta' },
   { image: 'images/pw-cover1.png', alt: 'first image', title: 'Streamlined business process automation and document management for SMEs and the public sector.', description: 'Prowoks by World Bank', link: 'projects/prowoks' }
 ]
 

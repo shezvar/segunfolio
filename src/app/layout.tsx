@@ -21,6 +21,7 @@ export default function RootLayout({
     <html lang="en" className="antialiased">
       <head>
         <GTagScript />
+        {/* <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="7d7c3cef-fc79-4c45-9d61-543c9d63a22e"  type="text/javascript"></script> */}
       </head>
       <body className={manrope.className}>
         {children}
