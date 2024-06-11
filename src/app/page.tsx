@@ -5,9 +5,9 @@ import { ComingSoon, ProjectCard2 } from '@/components/itemCards'
 import Footer from '@/components/footer'
 
 const projectData = [
-  { image: 'images/fg-cover1.png', alt: 'first image', title: 'System for the freelance economy, designed to help creatives in managing their clients and projects effectively.', description: 'Product Design at Fullgap', link: '/projects/fullgap' },
+  { image: 'images/fg-cover1.png', alt: 'first image', type: 'Case study', title: 'Product Design at Fullgap', description: 'System for the freelance economy, designed to help creatives in managing their clients and projects effectively.', link: '/projects/fullgap' },
   // { image: 'images/bs-cover.png', alt: 'first image', title: 'RMS provides an all-in-one platform for retailers to run their businesses more efficiently and profitably.', description: 'Booosta by Prunedge', link: 'projects/booosta' },
-  { image: 'images/pw-cover1.png', alt: 'first image', title: 'Streamlined business process automation and document management for SMEs and the public sector.', description: 'Prowoks by World Bank', link: 'projects/prowoks' }
+  { image: 'images/pw-cover1.png', alt: 'first image', type: 'Case study', title: 'Prowoks by World Bank', description: 'Streamlined business process automation and document management for SMEs and the public sector.', link: 'projects/prowoks' }
 ]
 
 const comingSoon = [
@@ -89,6 +89,7 @@ export default function Home() {
                       key={item.image}
                       imageUrl={item.image}
                       alt={item.alt}
+                      type={item.type}
                       title={item.title}
                       description={item.description}
                       link={item.link}

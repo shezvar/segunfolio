@@ -28,17 +28,18 @@ export function ProjectCard1(props: { imageUrl: any; alt: any; title: any; descr
     );
 }
 
-export function ProjectCard2(props: { imageUrl: any; alt: any; title: any; description: any; link: any; }) {
-    const { imageUrl, alt, title, description, link } = props;
+export function ProjectCard2(props: { imageUrl: any; alt: any; type: any; title: any; description: any; link: any; }) {
+    const { imageUrl, alt, type, title, description, link } = props;
 
     return (
         <div className='flex opacity-100 transform-none'>
             <article className="relative flex w-full flex-col border border-zinc-800 hover:bg-zinc-900/20 rounded transition duration-500 text-left overflow-hidden shadow hover:shadow-2xl">
                 <div className="flex relative z-10 lg:min-h-[35rem] p-8 items-start">
                     <div className="flex gap-2 items-start flex-col lg:max-w-[20rem]">
-                        <h3 className="text-gray-200 font-semibold text-2xl my-0">{description}</h3>
+                        <span className="inline-flex items-center rounded-md bg-page px-2 py-1 text-xs font-medium text-indigo-400 ring-1 ring-indigo-400 mb-1">{type}</span>
+                        <h3 className="text-gray-200 font-semibold text-2xl my-0">{title}</h3>
                         <p className="my-0 text-md">
-                            <span className="text-zinc-400/80 leading-relaxed">{title}</span>
+                            <span className="text-zinc-400/80 leading-relaxed">{description}</span>
                         </p>
                         <a href={link} className="flex text-gray-200 group mt-2 hover:text-indigo-600">
                             <div className="">Read more</div>
