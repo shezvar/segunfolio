@@ -94,21 +94,21 @@ export default function About() {
 
             <div className='relative mx-auto flex items-center px-6 lg:px-8 h-[100vh] lg:overflow-hidden'>
               <img src="images/my-image-1.png" alt="" className="absolute inset-0 -z-10 h-full w-full object-cover object-right md:object-center"></img>
-              <div className='flex flex-row text-white w-full gap-12 h-full'>
+              <div className='flex flex-col lg:flex-row text-white w-full gap-12 h-full'>
 
                 <div className='relative mx-auto xl:max-w-7xl px-6 lg:px-8'>
-                  <div className='flex flex-col items-baseline justify-center h-[60%] lg:h-[80%]'>
+                  <div className='flex flex-col items-baseline justify-center h-[80%]'>
                     <div className='flex w-full'>
                       <div className='space-y-4 basis-full lg:basis-3/5'>
-                        <h1 className="text-[3rem] text-white font-[Lora] leading-normal font-black">Strategic product designer with focus on digital solutions</h1>
-                        <p className="text-[1.3rem] text-gray-200 leading-[1.7] tracking-wide">I value curiosity, creativity, user-centered design, and making technology intuitive and accessible. I enjoy transforming complex problems into simple, beautiful solutions.</p>
+                        <h1 className="text-3xl lg:text-[3rem] text-white font-[Lora] leading-normal font-black">Strategic product designer with focus on digital solutions</h1>
+                        <p className="text-lg lg:text-[1.5rem] text-gray-200 leading-[1.7] tracking-wide">I value curiosity, creativity, user-centered design, and making technology intuitive and accessible. I enjoy transforming complex problems into simple, beautiful solutions.</p>
                       </div>
                     </div>
 
                     <button type='button' className='mt-12 px-8 py-4 bg-indigo-500 rounded ring-1 ring-indigo-600 hover:bg-indigo-800 focus:outline-indigo-300 uppercase tracking-widest font-extrabold text-sm'>Brief History</button>
                   </div>
-                  <div className='relative lg:bottom-24 lg:flex justify-between items-end w-full'>
-                    <div className='grid lg:grid-cols-2 gap-x-24 gap-y-8 text-2xl lg:text-2xl font-lora font-semibold max-w-sm lg:max-w-2xl text-zinc-300 leading-snug'>
+                  <div className='relative bottom-0 lg:bottom-24 lg:flex justify-between items-end w-full'>
+                    <div className='grid lg:grid-cols-2 gap-x-24 gap-y-4 lg:gap-y-8 text-2xl lg:text-2xl font-lora font-semibold max-w-sm lg:max-w-2xl text-zinc-300 leading-snug'>
                       <span>Experience as a head of product design department</span>
                       <span>Experience as an individual contributor</span>
                       <span>Experience with B2C and B2B product and services</span>
