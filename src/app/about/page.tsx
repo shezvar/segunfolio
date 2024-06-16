@@ -4,6 +4,8 @@ import { HeaderLight, HeaderDark } from '@/components/header'
 import ExperienceBlock from '@/app/about/ExperienceBlock'
 import Footer from '@/components/footer'
 import DesignPhilosophy from '@/components/designPhilosophy'
+import Image from 'next/image'
+import LinkedInLogo from "@/assets/Linkedin-Logo.png"
 
 const projectData = [
   { image: 'images/fg-cover1.png', alt: 'first image', title: 'System for the freelance economy, designed to help creatives in managing their clients and projects effectively.', description: 'Product Design at Fullgap', link: '/projects/fullgap' },
@@ -65,7 +67,7 @@ export default function About() {
 
           <div className="overflow-hidden">
 
-            <div className='mx-auto flex items-center my-48 xl:max-w-7xl px-6 lg:px-8'>
+            <div className='hidden mx-auto flex items-center my-48 xl:max-w-7xl px-6 lg:px-8'>
               <div className='group flex flex-col lg:flex-row text-white w-full gap-12'>
                 <div className='basis-full lg:basis-1/3'>
                   <div className='h-full bg-cover text-white'>
@@ -77,7 +79,7 @@ export default function About() {
                     <div className='space-y-4'>
                       <h1 className='text-5xl font-sans text-white leading-tight'>Hello, I&apos;m Segun Oroyo, but you can call me &quot;Segun.&quot; <span className='text-[2rem]'>😜</span></h1>
                       <p className="text-lg text-gray-200 max-w-3xl leading-relaxed">/sheh•goon/</p>
-                      <p className='text-lg tracking-wide font-serif leading-relaxed'>I am a product designer based in Nigeria. I value curiosity, creativity, user-centered design, and making technology intuitive and accessible. I enjoy transforming complex problems into simple, beautiful solutions.</p>
+                      <p className='text-lg tracking-wide font-serif leading-relaxed'>I am a product designer based in London. I value curiosity, creativity, user-centered design, and making technology intuitive and accessible. I enjoy transforming complex problems into simple, beautiful solutions.</p>
                       <div className='text-gray-400 space-y-8 leading-relaxed'>
                         <p className=''>Previously, I was a graphic and frontend designer, diving deep into HTML, CSS, SCSS/SASS, Angular JS, and Vue. I attended the Federal University of Technology, Akure (FUTA), where I studied Environmental Design and funded my studies through graphic design and WordPress development.</p>
                         <p className=''>With a background in graphic design and frontend development, I am well-equipped to connect design and development teams. I leverage my diverse skills to make well-informed decisions efficiently. To learn more about working with me, feel free to reach out on <a href='https://www.linkedin.com/in/segun-oroyo/' target='_blank' className='text-indigo-600'>LinkedIn.</a></p>
@@ -90,10 +92,45 @@ export default function About() {
               </div>
             </div>
 
+            <div className='relative mx-auto flex items-center px-6 lg:px-8 h-[100vh] lg:overflow-hidden'>
+              <img src="images/my-image-1.png" alt="" className="absolute inset-0 -z-10 h-full w-full object-cover object-right md:object-center"></img>
+              <div className='flex flex-row text-white w-full gap-12 h-full'>
+
+                <div className='relative mx-auto xl:max-w-7xl px-6 lg:px-8'>
+                  <div className='flex flex-col items-baseline justify-center h-[60%] lg:h-[80%]'>
+                    <div className='flex w-full'>
+                      <div className='space-y-4 basis-full lg:basis-3/5'>
+                        <h1 className="text-[3rem] text-white font-[Lora] leading-normal font-black">Strategic product designer with focus on digital solutions</h1>
+                        <p className="text-[1.3rem] text-gray-200 leading-[1.7] tracking-wide">I value curiosity, creativity, user-centered design, and making technology intuitive and accessible. I enjoy transforming complex problems into simple, beautiful solutions.</p>
+                      </div>
+                    </div>
+
+                    <button type='button' className='mt-12 px-8 py-4 bg-indigo-500 rounded ring-1 ring-indigo-600 hover:bg-indigo-800 focus:outline-indigo-300 uppercase tracking-widest font-extrabold text-sm'>Brief History</button>
+                  </div>
+                  <div className='relative lg:bottom-24 lg:flex justify-between items-end w-full'>
+                    <div className='grid lg:grid-cols-2 gap-x-24 gap-y-8 text-2xl lg:text-2xl font-lora font-semibold max-w-sm lg:max-w-2xl text-zinc-300 leading-snug'>
+                      <span>Experience as a head of product design department</span>
+                      <span>Experience as an individual contributor</span>
+                      <span>Experience with B2C and B2B product and services</span>
+                      <span>Experience working on web and mobile</span>
+                    </div>
+
+                    <div className='mt-6'>
+                      <a href="https://www.linkedin.com/in/segun-oroyo/" target='_blank' className="flex text-md font-semibold leading-6 text-white">
+                        LinkedIn
+                        <Image src={LinkedInLogo} className=' ml-1 w-auto h-5 rounded' alt='LinkedIn' />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
             {/* Experience starts */}
             <div className='mx-auto flex items-center my-48 xl:max-w-7xl px-6 lg:px-8'>
               <div className='w-full space-y-8'>
-                <h1 className='text-5xl font-bold text-white'>Experience</h1>
+                <h1 className='text-[3rem] text-white font-[Lora] leading-normal font-black'>Experience</h1>
                 <p className="text-lg text-gray-200 max-w-3xl leading-relaxed">A timeline view of some of the companies I have worked with</p>
                 <ExperienceBlock />
               </div>

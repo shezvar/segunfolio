@@ -68,7 +68,7 @@ export default function About() {
                         {/* Experience starts */}
                         <div className='mx-auto flex items-center my-48 xl:max-w-7xl px-6 lg:px-8'>
                             <div className='w-full space-y-8'>
-                                <h1 className='text-5xl font-bold text-white'>Design Process</h1>
+                                <h1 className='text-[3rem] text-white font-[Lora] leading-normal font-black'>Design Process</h1>
                                 <div className='grid grid-cols-12 text-white'>
                                     <h2 className='text-3xl font-semibold leading-relaxed col-span-full lg:col-span-5 mb-6 lg:mb-0'>The Journey of Crafting a Perfect Product: A Designer&apos;s Tale</h2>
                                     <div className='space-y-4 text-lg col-span-full lg:col-start-7 lg:col-span-5 leading-relaxed'>

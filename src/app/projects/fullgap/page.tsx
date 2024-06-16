@@ -1,7 +1,7 @@
 'use client'
 import React from 'react'
 import { HeaderLight, HeaderDark } from '@/components/header'
-import LockScreen from '@/components/passwordRequest'
+// import LockScreen from '@/components/passwordRequest'
 import ProjectHeader from '@/components/project-header'
 import { CheckIcon, UserCircleIcon } from '@heroicons/react/16/solid'
 import ImageGallery from '@/components/image-gallery'
@@ -319,7 +319,7 @@ export default function Fullgap() {
                 </div>
             </main>
 
-            <LockScreen />
+            {/* <LockScreen /> */}
         </div>
     )
 }
