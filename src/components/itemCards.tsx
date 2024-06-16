@@ -33,18 +33,18 @@ export function ProjectCard2(props: { imageUrl: any; alt: any; type: any; title:
 
     return (
         <div className='flex opacity-100 transform-none'>
-            <article className="relative flex w-full flex-col border border-zinc-800 hover:bg-zinc-900/20 rounded transition duration-500 text-left overflow-hidden shadow hover:shadow-2xl">
+            <a href={link} className="group relative flex w-full flex-col border border-zinc-800 hover:bg-zinc-900/20 rounded transition duration-500 text-left overflow-hidden shadow hover:shadow-2xl">
                 <div className="flex relative z-10 lg:min-h-[35rem] p-8 items-start">
                     <div className="flex gap-2 items-start flex-col lg:max-w-[20rem]">
-                        <span className="inline-flex items-center rounded-md bg-page px-2 py-1 text-xs font-medium text-indigo-400 ring-1 ring-indigo-400 mb-1">{type}</span>
-                        <h3 className="text-gray-200 font-semibold text-2xl my-0">{title}</h3>
+                        <span className="inline-flex items-center rounded-md px-2 py-1 text-xs font-extrabold text-slate-300 bg-indigo-900 mb-2 uppercase">{type}</span>
+                        <h3 className="text-gray-200 font-[lora] font-bold text-3xl my-0">{title}</h3>
                         <p className="my-0 text-md">
                             <span className="text-zinc-400/80 leading-relaxed">{description}</span>
                         </p>
-                        <a href={link} className="flex text-gray-200 group mt-2 hover:text-indigo-600">
-                            <div className="">Read more</div>
+                        <div className="flex text-gray-200 group mt-2 group-hover:text-indigo-600 items-center">
+                            <div className=" font-extrabold uppercase text-sm">Read more</div>
                             <ArrowLongRightIcon className="transition w-6 group-hover:translate-x-2 ml-1" />
-                        </a>
+                        </div>
                     </div>
                 </div>
                 <div className="flex relative lg:absolute top-8 left-8 lg:left-1/3 right-auto">
@@ -56,7 +56,7 @@ export function ProjectCard2(props: { imageUrl: any; alt: any; type: any; title:
                         />
                     </div>
                 </div>
-            </article>
+            </a>
         </div>
     );
 }
@@ -81,6 +81,29 @@ export function ComingSoon(props: { imageUrl: any; title: any; description: any;
                     </div>
                 </div>
             </div>
+        </div>
+    );
+}
+
+export function Articles(props: { imageUrl: any; title: any; description: any; link: any; }) {
+    const { imageUrl, title, description, link } = props;
+
+    return (
+        <div className="" role="itemlist">
+            <a href={link} target="_blank" className="group relative flex w-full max-w-full h-full flex-col border border-zinc-800 hover:bg-zinc-900/50 rounded transition duration-500 text-left overflow-hidden shadow hover:shadow-2xl">
+                <div style={{ backgroundImage: `url(${imageUrl})`, backgroundPosition: "50%" }} className="border-b border-gray-800 object-cover bg-cover relative aspect-[2]"></div>
+                <div className="flex flex-col justify-between h-full">
+                    <div className="flex gap-2 flex-col p-6 pb-0">
+                        <h3 className="text-lg text-gray-200 font-bold my-0">{title}</h3>
+                        <p className="font-medium overflow-hidden mb-0 text-md text-zinc-400 leading-relaxed line-clamp-3">{description}</p>
+                    </div>
+                    <div className="p-6 pt-0 flex text-gray-200 group group-hover:text-indigo-600 items-center">
+                        <div className=" font-extrabold uppercase text-sm">Read more</div>
+                        <ArrowLongRightIcon className="transition w-6 group-hover:translate-x-2 ml-1" />
+                    </div>
+                </div>
+
+            </a>
         </div>
     );
 }

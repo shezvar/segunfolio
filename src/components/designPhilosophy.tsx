@@ -1,7 +1,7 @@
 export default function DesignPhilosophy() {
     return (
         <div className='w-full space-y-8'>
-                <h1 className='text-5xl font-bold text-white'>Key things I&apos;ve learnt</h1>
+                <h1 className='text-[3rem] text-white font-[Lora] leading-normal font-black'>Key things I&apos;ve learnt</h1>
                 <p className="text-lg text-gray-200 max-w-3xl leading-relaxed">Here are a few key takeaways I’ve learned over my years as a designer. They’ve come in handy for me, hopefully they’ll come in handy for you too.</p>
                 <div className='grid grid-cols-1 lg:grid-cols-2 gap-6 text-zinc-400'>
 
