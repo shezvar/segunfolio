@@ -110,7 +110,7 @@ export default function Home() {
 
             <div className='bg-indigo-950 py-32 lg;py-56'>
               <div className="mx-auto max-w-7xl px-6 lg:px-8">
-                <h1 className='text-white text-3xl lg:text-4xl font-lora font-black max-w-4xl leading-relaxed lg:leading-[1.4]'>In the dynamic world of product design, every project brings unique challenges and opportunities. As a seasoned designer, I've developed a structured yet <a href='/process'><span className='underline underline-offset-8 decoration-indigo-500 decoration-4'>flexible process</span></a> that meets business objectives and delights users. This journey of discovery, creativity, and refinement guides me from concept to completion.</h1>
+                <h1 className='text-white text-3xl lg:text-4xl font-lora font-black max-w-4xl leading-relaxed lg:leading-[1.4]'>In the dynamic world of product design, every project brings unique challenges and opportunities. As a seasoned designer, I&apos;ve developed a structured yet <a href='/process'><span className='underline underline-offset-8 decoration-indigo-500 decoration-4'>flexible process</span></a> that meets business objectives and delights users. This journey of discovery, creativity, and refinement guides me from concept to completion.</h1>
               </div>
             </div>
 
