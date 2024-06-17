@@ -86,7 +86,7 @@ export default function Archive() {
                     <div className="overflow-hidden">
 
                         {/* Experience starts */}
-                        <div className='mx-auto flex items-center mt-48 mb-16 xl:max-w-7xl px-6 lg:px-8'>
+                        <div className='mx-auto flex items-center mt-32 mb-16 xl:max-w-7xl px-6 lg:px-8'>
                             <div className='w-full space-y-8'>
                                 <h1 className='text-3xl lg:text-[3rem] text-white font-[Lora] leading-normal font-black'>Archive</h1>
                                 <div className='grid grid-cols-12 text-white'>
