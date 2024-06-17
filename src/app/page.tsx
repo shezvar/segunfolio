@@ -8,7 +8,10 @@ import { ArrowDownIcon } from '@heroicons/react/24/outline'
 const projectData = [
   { image: 'images/fg-cover1.png', alt: 'first image', type: 'Case study', title: 'Product Design at Fullgap', description: 'System for the freelance economy, designed to help creatives in managing their clients and projects effectively.', link: '/projects/fullgap' },
   { image: 'images/bs-cover.png', alt: 'first image', type: 'Case study', title: 'Booosta by Prunedge', description: 'RMS provides an all-in-one platform for retailers to run their businesses more efficiently and profitably.', link: 'projects/booosta' },
-  { image: 'images/pw-cover1.png', alt: 'first image', type: 'Case study', title: 'Prowoks by World Bank', description: 'Streamlined business process automation and document management for SMEs and the public sector.', link: 'projects/prowoks' }
+  { image: 'images/pw-cover1.png', alt: 'first image', type: 'Case study', title: 'Prowoks by World Bank', description: 'Streamlined business process automation and document management for SMEs and the public sector.', link: 'projects/prowoks' },
+  { image: 'images/ip-cover.png', alt: 'first image', type: 'Coming soon', title: 'iPOS by Walure', description: 'IPOS by Walure offers powerful and flexible products to automate your retail management processes.', link: '#' },
+  { image: 'images/cp-cover.png', alt: 'first image', type: 'Coming soon', title: 'Campaign manager', description: 'Manage your campaign with ease integrating with your workflow', link: '#' },
+  { image: 'images/pc-cover.png', alt: 'first image', type: 'Coming soon', title: 'Pneuma Care', description: 'A digital full-service pharmacy for quality and affordable medications delivered at your convenience. ', link: '#' },
 ]
 
 const articles = [
@@ -124,7 +127,7 @@ export default function Home() {
                 </div>
               </div>
 
-              {/* Coming soon starts here */}
+              {/* Article starts here */}
               <div className="mx-auto max-w-7xl px-6 lg:px-8 mb-40">
                 <div className='mx-auto max-w-2xl lg:max-w-none'>
                   <div className='grid grid-cols-1 gap-8 lg:grid-cols-3'>
@@ -140,7 +143,7 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-              {/* Coming soon ends here */}
+              {/* Article ends here */}
             </div>
 
           </div>

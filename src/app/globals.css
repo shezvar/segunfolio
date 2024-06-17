@@ -1,7 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
 
 :root {
   --foreground-rgb: 0, 0, 0;
@@ -34,6 +34,5 @@ body {
 }
 
 .bg-page {
-  /* background-color: #080808 !important; */
   background-color: #0E111B;
 }

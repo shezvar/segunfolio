@@ -6,6 +6,7 @@ import Footer from '@/components/footer'
 import DesignPhilosophy from '@/components/designPhilosophy'
 import Image from 'next/image'
 import LinkedInLogo from "@/assets/Linkedin-Logo.png"
+import { BookOpenIcon } from '@heroicons/react/16/solid'
 
 const projectData = [
   { image: 'images/fg-cover1.png', alt: 'first image', title: 'System for the freelance economy, designed to help creatives in managing their clients and projects effectively.', description: 'Product Design at Fullgap', link: '/projects/fullgap' },
@@ -105,7 +106,7 @@ export default function About() {
                       </div>
                     </div>
 
-                    <button type='button' className='mt-12 px-8 py-4 bg-indigo-500 rounded ring-1 ring-indigo-600 hover:bg-indigo-800 focus:outline-indigo-300 uppercase tracking-widest font-extrabold text-sm'>Brief History</button>
+                    <a href='#aboutme' type='button' className='mt-12 px-8 py-4 bg-indigo-500 rounded ring-1 ring-indigo-600 hover:bg-indigo-800 focus:outline-indigo-300 uppercase tracking-widest font-extrabold text-sm'>Brief History</a>
                   </div>
                   <div className='mt-40 w-full'>
                     <div className='flex flex-col lg:flex-row justify-between lg:items-end'>
@@ -116,7 +117,7 @@ export default function About() {
                         <span>Experience working with other designers</span>
                       </div>
 
-                      <div className='mt-12'>
+                      <div className='mt-12 mb-12 lg:mb-0'>
                         <a href="https://www.linkedin.com/in/segun-oroyo/" target='_blank' className="flex text-md font-semibold leading-6 text-white">
                           LinkedIn
                           <Image src={LinkedInLogo} className=' ml-1 w-auto h-5 rounded' alt='LinkedIn' />
@@ -129,10 +130,38 @@ export default function About() {
               </div>
             </div>
 
+            <div className='bg-slate-100 py-48' id='aboutme'>
+              <div className='mx-auto items-center xl:max-w-7xl px-6 lg:px-8'>
+                <h1 className='text-5xl text-zinc-700 font-lora leading-normal font-black mb-8'><span className='text-[3rem] mr-4'>👋🏼</span>About me</h1>
+                <div className='grid lg:grid-cols-2 gap-6 lg:gap-16 text-zinc-600 leading-relaxed text-lg'>
+                  <div className=''>
+                    <p className='pb-6'>Previously, I was a graphic and frontend designer, diving deep into HTML, CSS, SCSS/SASS, Angular JS, and Vue. I attended the Federal University of Technology, Akure (FUTA), where I studied Environmental Design and funded my studies through graphic design and WordPress development.</p>
+                    <p className=''>With a background in graphic design and frontend development, I am well-equipped to connect design and development teams. I leverage my diverse skills to make well-informed decisions efficiently. To learn more about working with me, feel free to reach out on <a href='https://www.linkedin.com/in/segun-oroyo/' target='_blank' className='text-indigo-600'>LinkedIn.</a></p>
+                  </div>
+                  <div className=''>
+                    <p className='pb-6'>When I&apos;m not tackling design challenges, you can find me in London either hunting for a basketball court, playing basketball, swimming, drawing, cooking, or exploring new technology.</p>
+                    <p className=''>I aim to be an exemplary designer and mentor. My aspiration is to become a compassionate, open-minded, and accessible design leader in the future. For now, I am wholeheartedly enjoying creating and implementing innovative solutions.</p>
+                    <a href='' className='hidden'>
+                      <div className="flex text-gray-200 group items-center mt-12 pl-6 pr-8 py-4 bg-indigo-500 rounded ring-1 ring-indigo-600 hover:bg-indigo-800 focus:outline-indigo-300 uppercase tracking-widest font-extrabold text-sm">
+                        <BookOpenIcon className="transition w-6 group-hover:translate-x-2 mr-2" />
+                        <div className=" font-extrabold uppercase text-sm">VIEW MY RESUME</div>
+                      </div>
+                    </a>
+                    <a href='https://drive.google.com/file/d/1046vZMvXbljzhS3w_TVM8GFK0R0B9jkp/view?usp=sharing' target='_blank' className='inline-flex'>
+                      <div className="flex items-center mt-6 text-indigo-500 uppercase tracking-widest font-extrabold text-sm">
+                        <BookOpenIcon className="transition w-6 mr-2" />
+                        <div className="font-extrabold uppercase text-sm">VIEW MY RESUME</div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
             {/* Experience starts */}
             <div className='mx-auto flex items-center my-48 xl:max-w-7xl px-6 lg:px-8'>
               <div className='w-full space-y-8'>
-                <h1 className='text-[3rem] text-white font-[Lora] leading-normal font-black'>Experience</h1>
+                <h1 className='text-[3rem] text-white font-lora leading-normal font-black'>Experience</h1>
                 <p className="text-lg text-gray-200 max-w-3xl leading-relaxed">A timeline view of some of the companies I have worked with</p>
                 <ExperienceBlock />
               </div>
