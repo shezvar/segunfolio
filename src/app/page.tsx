@@ -73,7 +73,7 @@ export default function Home() {
 
             <div className='mx-auto flex xl:max-w-5xl px-6 lg:px-8'>
               <div className='h-[100lvh] lg:h-[95lvh] flex-col justify-center items-center flex relative'>
-                <div className='relative flex flex-col items-center my-4 lg:my-24 py-2 lg:py-24 self-stretch mx-auto max-w-5xl text-center space-y-4 top-[-8rem] lg:top-0'>
+                <div className='relative flex flex-col items-center my-4 lg:my-24 py-4 lg:py-24 self-stretch mx-auto max-w-5xl text-center space-y-4 top-[-8rem] lg:top-0'>
                   <h1 className="text-3xl lg:text-[3rem] text-white font-[Lora] leading-normal font-black">I&lsquo;m <a href='https://www.linkedin.com/in/segun-oroyo/' target='_blank'>
                     <span className='underline underline-offset-8 decoration-indigo-500 decoration-4'>Segun</span></a>, a product designer with practical experience working and living in London</h1>
                   <p className="text-lg lg:text-[1.5rem] text-gray-200 mx-auto max-w-2xl leading-[1.7] tracking-wide">My expertise spans the <strong className='font-extrabold'>entire design process</strong>, from conducting research and gathering insights to creating wireframes and bringing digital products to life.</p>

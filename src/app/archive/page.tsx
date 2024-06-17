@@ -88,12 +88,14 @@ export default function Archive() {
                         {/* Experience starts */}
                         <div className='mx-auto flex items-center mt-48 mb-16 xl:max-w-7xl px-6 lg:px-8'>
                             <div className='w-full space-y-8'>
-                                <h1 className='text-5xl font-bold text-white'>Archive</h1>
+                                <h1 className='text-3xl lg:text-[3rem] text-white font-[Lora] leading-normal font-black'>Archive</h1>
                                 <div className='grid grid-cols-12 text-white'>
-                                    <h2 className='text-3xl font-semibold leading-relaxed col-span-full lg:col-span-5 mb-6 lg:mb-0'>These are some projects I&apos;ve worked on trying to put my dent in the universe</h2>
+                                    <div className='mx-auto max-w-2xl col-span-full lg:col-span-5 mb-6 lg:mb-0'>
+                                        <h2 className='text-lg lg:text-[1.5rem] text-gray-200 leading-[1.7] tracking-wide'>These are some projects I&apos;ve worked on trying to put my dent in the universe</h2>
+                                    </div>
                                     <div className='space-y-4 text-lg col-span-full lg:col-start-7 lg:col-span-5 leading-relaxed'>
                                         <p className='font-bold'>The list includes internal tooling applications spanning web, mobile, and IoT.</p>
-                                        <p className='font-serif'> Most were solo projects; others involved collaboration with fellow designers. Leveraging my engineering background, I also implemented designs using JavaScript frameworks.</p>
+                                        <p className=''> Most were solo projects; others involved collaboration with fellow designers. Leveraging my engineering background, I also implemented designs using JavaScript frameworks.</p>
                                     </div>
                                 </div>
 

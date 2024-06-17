@@ -70,10 +70,12 @@ export default function About() {
                             <div className='w-full space-y-8'>
                                 <h1 className='text-[3rem] text-white font-[Lora] leading-normal font-black'>Design Process</h1>
                                 <div className='grid grid-cols-12 text-white'>
-                                    <h2 className='text-3xl font-semibold leading-relaxed col-span-full lg:col-span-5 mb-6 lg:mb-0'>The Journey of Crafting a Perfect Product: A Designer&apos;s Tale</h2>
+                                    <div className='mx-auto max-w-2xl col-span-full lg:col-span-5 mb-6 lg:mb-0'>
+                                        <h2 className='text-lg lg:text-[1.5rem] text-gray-200 leading-[1.7] tracking-wide'>The Journey of Crafting a Perfect Product: A Designer&apos;s Tale</h2>
+                                    </div>
                                     <div className='space-y-4 text-lg col-span-full lg:col-start-7 lg:col-span-5 leading-relaxed'>
                                         <p className='font-bold'>In the dynamic world of product design, every project is unique, bringing its own challenges and opportunities.</p>
-                                        <p className='font-serif'> As a seasoned designer, I&apos;ve developed a structured yet flexible process to ensure each product meets business objectives and delights users. This iterative journey involves discovery, creativity, and refinement, guiding us from concept to completion.</p>
+                                        <p className=''> As a seasoned designer, I&apos;ve developed a structured yet flexible process to ensure each product meets business objectives and delights users. This iterative journey involves discovery, creativity, and refinement, guiding us from concept to completion.</p>
                                     </div>
                                 </div>
 

@@ -154,7 +154,7 @@ const ExperienceBlock: React.FC = () => {
                         <div className='flex justify-between items-center cursor-pointer'>
                             <div className='space-y-1'>
                                 <h3 className='text-gray-400 text-sm font-sans group-hover:text-zinc-100'>PRESENT</h3>
-                                <p className='text-gray-100 text-2xl'>Senior Product Designer (Freelance)</p>
+                                <p className='text-gray-100 text-2xl font-lora font-bold'>Senior Product Designer (Freelance)</p>
                             </div>
                             <StateIndicator isActive={activeIndex === 0} />
                         </div>
@@ -186,7 +186,7 @@ const ExperienceBlock: React.FC = () => {
                         <div className='flex justify-between items-center cursor-pointer'>
                             <div className='space-y-2'>
                                 <h3 className='text-gray-400 text-sm font-sans group-hover:text-zinc-100'>FEB 2023 - JAN 2024, United Kingdom</h3>
-                                <p className='text-gray-100 text-2xl'>Century Tech / Senior Product Designer</p>
+                                <p className='text-gray-100 text-2xl font-lora font-bold'>Century Tech / Senior Product Designer</p>
                             </div>
                             <StateIndicator isActive={activeIndex === 1} />
                         </div>
@@ -221,7 +221,7 @@ const ExperienceBlock: React.FC = () => {
                         <div className='flex justify-between items-center cursor-pointer'>
                             <div className='space-y-2'>
                                 <h3 className='text-gray-400 text-sm font-sans group-hover:text-zinc-100'>SEP 2019 - JAN 2023, NIGERIA.</h3>
-                                <p className='text-gray-100 text-2xl'>Prunedge / Senior Product Designer</p>
+                                <p className='text-gray-100 text-2xl font-lora font-bold'>Prunedge / Senior Product Designer</p>
                             </div>
                             <StateIndicator isActive={activeIndex === 2} />
                         </div>
@@ -255,7 +255,7 @@ const ExperienceBlock: React.FC = () => {
                         <div className='flex justify-between items-center cursor-pointer'>
                             <div className='space-y-2'>
                                 <h3 className='text-gray-400 text-sm font-sans group-hover:text-zinc-100'>MAR 2019 - AUG 2019, NIGERIA.</h3>
-                                <p className='text-gray-100 text-2xl'>Interswitch Group / Product Designer / Frontend (Contract)</p>
+                                <p className='text-gray-100 text-2xl font-lora font-bold'>Interswitch Group / Product Designer / Frontend (Contract)</p>
                             </div>
                             <StateIndicator isActive={activeIndex === 3} />
                         </div>
@@ -290,7 +290,7 @@ const ExperienceBlock: React.FC = () => {
                         <div className='flex justify-between items-center cursor-pointer'>
                             <div className='space-y-2'>
                                 <h3 className='text-gray-400 text-sm font-sans group-hover:text-zinc-100'>APR 2018 - SEP 2018, NIGERIA.</h3>
-                                <p className='text-gray-100 text-2xl'>WEMA Bank Plc / Product Designer / Frontend (Contract)</p>
+                                <p className='text-gray-100 text-2xl font-lora font-bold'>WEMA Bank Plc / Product Designer / Frontend (Contract)</p>
                             </div>
                             <StateIndicator isActive={activeIndex === 4} />
                         </div>
@@ -326,7 +326,7 @@ const ExperienceBlock: React.FC = () => {
                         <div className='flex justify-between items-center cursor-pointer'>
                             <div className='space-y-2'>
                                 <h3 className='text-gray-400 text-sm font-sans group-hover:text-zinc-100'>APR 2016 - DEC 2018, CALIFORNIA, USA</h3>
-                                <p className='text-gray-100 text-2xl'>Distru Inc / UX Designer</p>
+                                <p className='text-gray-100 text-2xl font-lora font-bold'>Distru Inc / UX Designer</p>
                             </div>
                             <StateIndicator isActive={activeIndex === 5} />
                         </div>
@@ -359,7 +359,7 @@ const ExperienceBlock: React.FC = () => {
                         <div className='flex justify-between items-center cursor-pointer'>
                             <div className='space-y-2'>
                                 <h3 className='text-gray-400 text-sm font-sans group-hover:text-zinc-100'>MAR 2014 - DEC 2017, NIGERIA.</h3>
-                                <p className='text-gray-100 text-2xl'>FourthCanvas / Design Consultant</p>
+                                <p className='text-gray-100 text-2xl font-lora font-bold'>FourthCanvas / Design Consultant</p>
                             </div>
                             <StateIndicator isActive={activeIndex === 6} />
                         </div>
