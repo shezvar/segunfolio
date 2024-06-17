@@ -1,5 +1,5 @@
 import React from "react";
-import { ArrowLongRightIcon } from "@heroicons/react/24/outline";
+import { ArrowLongRightIcon, ArrowUpRightIcon } from "@heroicons/react/24/outline";
 
 export function ProjectCard1(props: { imageUrl: any; alt: any; title: any; description: any; link: any; }) {
     const { imageUrl, alt, title, description, link } = props;
@@ -94,12 +94,12 @@ export function Articles(props: { imageUrl: any; title: any; description: any; l
                 <div style={{ backgroundImage: `url(${imageUrl})`, backgroundPosition: "50%" }} className="border-b border-gray-800 object-cover bg-cover relative aspect-[2]"></div>
                 <div className="flex flex-col justify-between h-full">
                     <div className="flex gap-2 flex-col p-6 pb-0">
-                        <h3 className="text-lg text-gray-200 font-bold my-0">{title}</h3>
+                        <h3 className="font-[Lora] leading-normal font-black text-gray-200 my-0">{title}</h3>
                         <p className="font-medium overflow-hidden mb-0 text-md text-zinc-400 leading-relaxed line-clamp-3">{description}</p>
                     </div>
                     <div className="p-6 pt-0 flex text-gray-200 group group-hover:text-indigo-600 items-center">
                         <div className=" font-extrabold uppercase text-sm">Read more</div>
-                        <ArrowLongRightIcon className="transition w-6 group-hover:translate-x-2 ml-1" />
+                        <ArrowUpRightIcon className="transition w-6 group-hover:translate-x-2 ml-1" />
                     </div>
                 </div>
 
@@ -113,11 +113,11 @@ export function ArchiveCard(props: { number: number; title: any; description: an
     const formattedNumber = number.toString().padStart(2, "0"); // Pad with '0' if single digit
 
     return (
-        <div className='overflow-hidden group flex flex-col border border-gray-800 bg-zinc-950 gap-4 rounded h-full ease-in-out transition duration-200 delay-200 p-6 hover:bg-indigo-900'>
+        <div className='overflow-hidden group flex flex-col border border-gray-800 bg-page gap-4 rounded h-full ease-in-out transition duration-200 delay-200 p-6 hover:bg-indigo-900'>
             <h2 className='text-gray-100 text-6xl font-medium mb-4 group-hover:-translate-y-24 ease-in-out transition duration-200 delay-200'>{formattedNumber}</h2>
 
             <div className='space-y-2 group-hover:-translate-y-24 ease-in-out transition duration-200 delay-200'>
-                <h3 className='text-gray-100 text-xl font-medium group-hover:text-zinc-200'>{title}</h3>
+                <h3 className='text-gray-100 text-xl font-lora font-bold group-hover:text-zinc-200'>{title}</h3>
                 <p className=" leading-relaxed group-hover:text-indigo-100/70 ease-in-out transition duration-200 delay-200">{description}</p>
             </div>
         </div>

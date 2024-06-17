@@ -40,7 +40,7 @@ const ProcessBlock: React.FC = () => {
                         <div className='flex justify-between items-center cursor-pointer'>
                             <div className='space-y-1'>
                                 <h3 className='uppercase text-gray-400 text-sm font-sans group-hover:text-zinc-100'>Setting the Stage</h3>
-                                <p className='text-gray-100 text-2xl'>Requirement Gathering</p>
+                                <p className='text-gray-100 text-2xl font-lora font-bold'>Requirement Gathering</p>
                             </div>
                             <StateIndicator isActive={activeIndex === 0} />
                         </div>
@@ -59,7 +59,7 @@ const ProcessBlock: React.FC = () => {
                         <div className='flex justify-between items-center cursor-pointer'>
                             <div className='space-y-2'>
                                 <h3 className='uppercase text-gray-400 text-sm font-sans group-hover:text-zinc-100'>The Exploration</h3>
-                                <p className='text-gray-100 text-2xl'>Discovering the Issue</p>
+                                <p className='text-gray-100 text-2xl font-lora font-bold'>Discovering the Issue</p>
                             </div>
                             <StateIndicator isActive={activeIndex === 1} />
                         </div>
@@ -78,7 +78,7 @@ const ProcessBlock: React.FC = () => {
                         <div className='flex justify-between items-center cursor-pointer'>
                             <div className='space-y-2'>
                                 <h3 className='uppercase text-gray-400 text-sm font-sans group-hover:text-zinc-100'>Interpreting Clues</h3>
-                                <p className='text-gray-100 text-2xl'>Understanding Users</p>
+                                <p className='text-gray-100 text-2xl font-lora font-bold'>Understanding Users</p>
                             </div>
                             <StateIndicator isActive={activeIndex === 2} />
                         </div>
@@ -97,7 +97,7 @@ const ProcessBlock: React.FC = () => {
                         <div className='flex justify-between items-center cursor-pointer'>
                             <div className='space-y-2'>
                                 <h3 className='uppercase text-gray-400 text-sm font-sans group-hover:text-zinc-100'>The Creative Burst</h3>
-                                <p className='text-gray-100 text-2xl'>Ideation</p>
+                                <p className='text-gray-100 text-2xl font-lora font-bold'>Ideation</p>
                             </div>
                             <StateIndicator isActive={activeIndex === 3} />
                         </div>
@@ -116,7 +116,7 @@ const ProcessBlock: React.FC = () => {
                         <div className='flex justify-between items-center cursor-pointer'>
                             <div className='space-y-2'>
                                 <h3 className='uppercase text-gray-400 text-sm font-sans group-hover:text-zinc-100'>Bringing Ideas to Life</h3>
-                                <p className='text-gray-100 text-2xl'>Prototyping</p>
+                                <p className='text-gray-100 text-2xl font-lora font-bold'>Prototyping</p>
                             </div>
                             <StateIndicator isActive={activeIndex === 4} />
                         </div>
@@ -135,7 +135,7 @@ const ProcessBlock: React.FC = () => {
                         <div className='flex justify-between items-center cursor-pointer'>
                             <div className='space-y-2'>
                                 <h3 className='uppercase text-gray-400 text-sm font-sans group-hover:text-zinc-100'>The Reality Check</h3>
-                                <p className='text-gray-100 text-2xl'>Testing and Iteration</p>
+                                <p className='text-gray-100 text-2xl font-lora font-bold'>Testing and Iteration</p>
                             </div>
                             <StateIndicator isActive={activeIndex === 5} />
                         </div>
