@@ -7,7 +7,7 @@ import { ArrowDownIcon } from '@heroicons/react/24/outline'
 
 const projectData = [
   { image: 'images/fg-cover1.png', alt: 'first image', type: 'Case study', title: 'Product Design at Fullgap', description: 'System for the freelance economy, designed to help creatives in managing their clients and projects effectively.', link: '/projects/fullgap' },
-  // { image: 'images/bs-cover.png', alt: 'first image', title: 'RMS provides an all-in-one platform for retailers to run their businesses more efficiently and profitably.', description: 'Booosta by Prunedge', link: 'projects/booosta' },
+  { image: 'images/bs-cover.png', alt: 'first image', type: 'Case study', title: 'Booosta by Prunedge', description: 'RMS provides an all-in-one platform for retailers to run their businesses more efficiently and profitably.', link: 'projects/booosta' },
   { image: 'images/pw-cover1.png', alt: 'first image', type: 'Case study', title: 'Prowoks by World Bank', description: 'Streamlined business process automation and document management for SMEs and the public sector.', link: 'projects/prowoks' }
 ]
 
@@ -73,7 +73,7 @@ export default function Home() {
 
             <div className='mx-auto flex xl:max-w-5xl px-6 lg:px-8'>
               <div className='h-[100lvh] lg:h-[95lvh] flex-col justify-center items-center flex relative'>
-                <div className='relative flex flex-col items-center my-4 lg:my-24 py-4 lg:py-24 self-stretch mx-auto max-w-5xl text-center space-y-4 top-[-8rem] lg:top-0'>
+                <div className='relative flex flex-col items-center my-4 lg:my-24 py-4 lg:py-24 self-stretch mx-auto max-w-5xl text-center space-y-4 -mt-24 lg:mt-0'>
                   <h1 className="text-3xl lg:text-[3rem] text-white font-[Lora] leading-normal font-black">I&lsquo;m <a href='https://www.linkedin.com/in/segun-oroyo/' target='_blank'>
                     <span className='underline underline-offset-8 decoration-indigo-500 decoration-4'>Segun</span></a>, a product designer with practical experience working and living in London</h1>
                   <p className="text-lg lg:text-[1.5rem] text-gray-200 mx-auto max-w-2xl leading-[1.7] tracking-wide">My expertise spans the <strong className='font-extrabold'>entire design process</strong>, from conducting research and gathering insights to creating wireframes and bringing digital products to life.</p>
@@ -81,8 +81,8 @@ export default function Home() {
 
                 <div className='items-center w-full h-32 mx-auto py-4 block absolute top-auto bottom-0 left-0 right-0 animate-bounce'>
                   <a href='#cases' className="text-white text-center mx-auto">
-                    <span className='w-full appearance-auto'>scroll down</span>
-                    <ArrowDownIcon className='w-full h-4 appearance-auto' />
+                    <span className='w-full appearance-auto text-center'>scroll down</span>
+                    <ArrowDownIcon className='w-full h-4 appearance-auto text-center' />
                   </a>
                 </div>
               </div>

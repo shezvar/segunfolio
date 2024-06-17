@@ -96,7 +96,7 @@ export default function About() {
               <img src="images/my-image-1.png" alt="" className="absolute inset-0 -z-10 h-full w-full object-cover object-right md:object-center"></img>
               <div className='flex flex-col lg:flex-row text-white w-full gap-12'>
 
-                <div className='relative mx-auto xl:max-w-7xl'>
+                <div className='relative mx-auto xl:max-w-7xl  px-0 lg:px-8'>
                   <div className='relative flex flex-col items-baseline justify-center mt-24 lg:mt-0'>
                     <div className='flex w-full'>
                       <div className='space-y-4 basis-full lg:basis-3/5'>

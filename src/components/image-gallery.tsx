@@ -16,10 +16,10 @@ const ImageGallery: React.FC<{ imagePaths: ImagePathsProp }> = ({ imagePaths }) 
         <img src={imagePaths[activeIndex]} alt={`Image ${activeIndex}`} className='transition group-hover:scale-110 w-full object-contain object-center' />
       </div>
       
-      <div className="grid grid-cols-7 gap-5 pt-5 px-1 lg:px-10 overflow-hidden">
+      <div className="flex gap-5 pt-5 px-1 lg:px-10 overflow-hidden">
         {imagePaths.map((imagePath, index) => (
           <div key={index} className={`thumbnail ${activeIndex === index ? 'border-4 border-indigo-500 p-1 rounded-xl' : 'cursor-pointer border-4 border-grey-500 p-1 rounded-xl'}`} onClick={() => handleImageClick(index)}>
-            <img src={imagePath} alt={`Thumbnail ${index}`} />
+            <img src={imagePath} alt={`Thumbnail ${index}`} className='w-[7rem]'/>
           </div>
         ))}
       </div>

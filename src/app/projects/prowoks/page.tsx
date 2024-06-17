@@ -71,24 +71,24 @@ export default function Prowoks() {
                             <div className='grid grid-cols-1 pb-16 space-y-6 text-gray-500'>
                                 <div className='grid grid-cols-1'>
                                     <div className='grid grid-cols-8 items-center mt-12'>
-                                        <div className='overflow-hidden col-span-3'>
+                                        <div className='overflow-hidden col-span-3 lg:col-span-3 mb-8 lg:mb-0'>
                                             <img src='/images/pw-outdated.png' alt='' className='rounded-md h-full w-full block object-cover object-center shadow-md' />
                                         </div>
-                                        <div className='col-end-9 col-span-4 text-gray-900'>
+                                        <div className='lg:col-end-9 col-span-8 lg:col-span-4 text-gray-900'>
                                             <h5 className='text-2xl font-sans'>Tackling Financial Data Issue</h5>
                                             <h5 className='text-4xl font-semibold py-2'>Outdated & Decentralized Data</h5>
                                             <h5 className='font-sans text-sm pb-4 text-zinc-500'>Civil servants grapple with outdated financial data and decentralized information across government departments, contributing to a lack of transparency and accountability.</h5>
                                         </div>
                                     </div>
                                     <div className='grid grid-cols-8 items-center mt-12'>
-                                        <div className='col-span-4 text-gray-900'>
+                                        <div className='col-span-8 lg:col-span-4 text-gray-900'>
                                             <h5 className='text-2xl font-sans text-zinc-400'>These issues are further compounded by corruption, inadequate revenue, and high expenses, resulting in a substantial budget <strong className='text-gray-900'> deficit of ₦5.60 trillion in 2021.</strong></h5>
                                             <div className='flex bg-green-100 p-5 mt-4 rounded-lg'>
                                                 <InformationCircleIcon className='h-full w-[3rem] mr-3 mt-1 fill-green-600' />
                                                 <p className='text-sm'>To address these challenges, the <strong>World Bank</strong> is sponsoring projects aimed at promoting transparency and accountability within state governance.</p>
                                             </div>
                                         </div>
-                                        <div className='overflow-hidden col-end-9 col-span-3'>
+                                        <div className='overflow-hidden lg:col-end-9 col-span-8 lg:col-span-3 hidden lg:block'>
                                             <img src='/images/pw-business-crash.png' alt='' className='rounded-md h-full w-full block object-cover object-center shadow-md' />
                                         </div>
                                     </div>
@@ -98,7 +98,7 @@ export default function Prowoks() {
                             </div>
                         </div>
 
-                        <div className='mx-auto max-w-4xl px-6 sm:pt-60 lg:px-8 lg:pt-10'>
+                        <div className='mx-auto max-w-4xl px-6 pt-4 lg:px-8 lg:pt-10'>
                             <h5 className='uppercase text-lg font-medium text-zinc-400'>Design Process</h5>
                             <h5 className='text-2xl font-sans pt-3 pb-4'>Comprehensive Research Unveils Budget Process Dynamics: Insights & Personas Revealed</h5>
                             <div className='grid grid-cols-1 space-y-6 text-gray-400'>
@@ -106,10 +106,10 @@ export default function Prowoks() {
                             </div>
                         </div>
 
-                        <div className='mx-auto max-w-4xl pt-6 lg:px-8'>
+                        <div className='mx-auto max-w-4xl px-6 pt-4 lg:px-8 lg:pt-10'>
                             <p className='text-sm text-gray-400'>My approach began with a comprehensive series of interviews to grasp the intricacies of user workflows. These interviews provided insights into user interactions, tasks, emotions, and timeframes involved in their processes. Through meticulous data collection and analysis, I identified key user roles and constructed an informative process flowchart illustrating their interactions and workflows.</p>
                             <h5 className='text-2xl font-sans pt-3 pb-4 mt-6'>Quick stats</h5>
-                            <div className='grid grid-cols-4 gap-6'>
+                            <div className='grid md:grid-cols-2 lg:grid-cols-4 gap-6'>
                                 <div className='border p-2 bg-zinc-100 rounded-lg'>
                                     <div className='p-5 bg-white rounded-md shadow'>
                                         <p className='text-lg'><strong className='text-5xl'>2 <br /></strong>States</p>
@@ -133,7 +133,7 @@ export default function Prowoks() {
                             </div>
                         </div>
 
-                        <div className='mx-auto max-w-4xl pt-6 lg:px-8'>
+                        <div className='mx-auto max-w-4xl px-6 pt-4 lg:px-8 lg:pt-10'>
                             <h5 className='text-2xl font-sans pt-3 pb-4 mt-6'>User persona</h5>
                             <div className='relative w-full min-h-[1rem] group'>
                                 <div className=''>
@@ -142,7 +142,7 @@ export default function Prowoks() {
                             </div>
                         </div>
 
-                        <div className='mx-auto max-w-4xl pt-6 lg:px-8'>
+                        <div className='mx-auto max-w-4xl px-6 pt-4 lg:px-8 lg:pt-10'>
                             <h5 className='text-2xl font-sans pt-3 pb-2 mt-6'>Features</h5>
                             <p className='text-sm text-gray-500 mb-6'>During the ideation stage, we generated potential features and ideas for the budget and expenditure module. This list is not exhaustive.</p>
                             <div className='relative w-full min-h-[1rem] group'>
@@ -155,7 +155,7 @@ export default function Prowoks() {
 
 
                         <div className='bg-zinc-50 mt-10'>
-                            <div className='mx-auto max-w-7xl sm:pt-60 lg:px-8 lg:py-20'>
+                            <div className='mx-auto max-w-7xl px-6 lg:px-8 py-12 lg:py-20'>
                                 <div className='relative w-full min-h-[1rem] group'>
                                     <div className=''>
                                         <img src='/images/pw-process-flow.png' alt='' className='rounded-2xl h-full w-full block object-cover object-center' />
@@ -164,16 +164,16 @@ export default function Prowoks() {
                             </div>
                         </div>
 
-                        <div className='mx-auto max-w-4xl px-6 sm:pt-60 lg:px-8 lg:pt-20'>
+                        <div className='mx-auto max-w-4xl px-6 pt-24 lg:px-8 lg:pt-20'>
                             <h5 className='uppercase text-lg font-medium text-zinc-400'>What we uncovered</h5>
                             <h5 className='text-2xl font-sans pt-3 pb-8'>Additionally, field surveys were conducted across two states to further refine our understanding and identify potential user personas:</h5>
-                            <div className='grid grid-cols-3 space-x-5 text-gray-700'>
-                                <div className='p-6 rounded-3xl bg-gray-50'><strong className='block pb-2 font-semibold'>Administrators: </strong>Responsible for configuring statewide processes.</div>
-                                <div className='p-6 rounded-3xl bg-indigo-50'><strong className='block pb-2 font-semibold'>Actors: </strong>Engage with the system for day-to-day tasks.</div>
-                                <div className='p-6 rounded-3xl bg-gray-50'><strong className='block pb-2 font-semibold'>Moderators: </strong>Manage activities/processes within their respective Ministry, Department, or Agency (MDA).</div>
+                            <div className='grid lg:grid-cols-3 gap-6 text-gray-700'>
+                                <div className='p-6 rounded-3xl bg-gray-50'><strong className='block font-semibold'>Administrators: </strong>Responsible for configuring statewide processes.</div>
+                                <div className='p-6 rounded-3xl bg-indigo-50'><strong className='block font-semibold'>Actors: </strong>Engage with the system for day-to-day tasks.</div>
+                                <div className='p-6 rounded-3xl bg-gray-50'><strong className='block font-semibold'>Moderators: </strong>Manage activities/processes within their respective Ministry, Department, or Agency (MDA).</div>
                             </div>
                             <div className=''>
-                                <div className="mx-auto mt-2 max-w-2xl rounded-3xl ring-1 ring-gray-200 sm:mt-20 lg:mx-0 lg:flex lg:max-w-none">
+                                <div className="mx-auto max-w-2xl rounded-3xl ring-1 ring-gray-200 mt-20 lg:mx-0 lg:flex lg:max-w-none">
                                     <div className="p-8 sm:p-8 lg:flex-auto">
                                         <h3 className="text-2xl font-medium">Expanding the Actors</h3>
                                         <p className="mt-3 text-base leading-7 text-gray-600">Recognizing the diverse responsibilities within the actor role, we subdivided users to ensure system flexibility:</p>
@@ -217,8 +217,8 @@ export default function Prowoks() {
 
                         </div>
 
-                        <div className='mx-auto max-w-4xl px-6 sm:pt-60 lg:px-8 lg:pt-20'>
-                            <h5 className='uppercase text-lg font-medium text-gray-600'>Moving into design</h5>
+                        <div className='mx-auto max-w-4xl px-6 pt-24 lg:px-8'>
+                            <h5 className='uppercase text-lg font-medium text-zinc-400'>Moving into design</h5>
                             <h5 className='text-2xl font-medium pt-3 pb-4'>Pivoting to using a timeline approach to manage their activities</h5>
                             <div className='grid grid-cols-1 space-y-6 text-gray-500'>
                                 <p>Having explored series of UI designs, starting from wireframes with the technical team to creating hi-fidelity for the larger stakeholder, we pivoted to using <strong>A-Timeline approach</strong> for managing their day-to-day activities.</p>
@@ -226,14 +226,14 @@ export default function Prowoks() {
                             </div>
                         </div>
 
-                        <div className='mx-auto max-w-4xl px-6 sm:pt-10 lg:px-8 lg:pt-10'>
+                        <div className='mx-auto max-w-4xl px-6 pt-8 lg:px-8 lg:pt-10'>
                             <h5 className='text-2xl font-medium pt-3 pb-4'>Starting A Process</h5>
                             <div className='grid grid-cols-1 text-gray-500'>
                                 <p>Process by an officer to balance the state ledger and bank statement of account for the state.</p>
                             </div>
                         </div>
 
-                        <div className='mx-auto max-w-4xl sm:pt-60 lg:px-8 lg:pt-10'>
+                        <div className="mx-auto max-w-4xl px-6 lg:px-8 mb-8 pt-6 lg:pt-10">
                             <div className='relative w-full min-h-[1rem] group'>
                                 <div className=''>
                                     <img src='/images/prowoks-create.png' alt='' className='rounded-2xl h-full w-full block object-cover object-center' />
@@ -241,7 +241,7 @@ export default function Prowoks() {
                             </div>
                         </div>
 
-                        <div className='mx-auto max-w-4xl px-6 sm:pt-60 lg:px-8 lg:pt-10'>
+                        <div className='mx-auto max-w-4xl px-6 pt-8 lg:px-8 lg:pt-10'>
                             <h5 className='text-2xl font-medium pt-3 pb-4'>Approval Process</h5>
                             <div className='grid grid-cols-1 text-gray-500'>
                                 <p>Process by an officer to balance the state ledger and bank statement of account for the state.</p>
@@ -249,12 +249,12 @@ export default function Prowoks() {
                         </div>
 
                         {/* Project starts here */}
-                        <div className="mx-auto max-w-4xl px-6 lg:px-8 mb-8 lg:pt-10">
+                        <div className="mx-auto max-w-4xl px-6 lg:px-8 mb-8 pt-6 lg:pt-10">
                             <ImageGallery imagePaths={imagePaths} />
                         </div>
                         {/* Projects ends here */}
 
-                        <div className='mx-auto max-w-4xl px-6 sm:pt-60 lg:px-8 lg:pt-10'>
+                        <div className='mx-auto max-w-4xl px-6 pt-8 lg:px-8 lg:pt-10'>
                             <h5 className='text-2xl font-medium pt-3 pb-4'>Reconcilliation Process</h5>
                             <div className='grid grid-cols-1 pb-8 space-y-6 text-gray-500'>
                                 <p>Process by an officer to balance the state ledger and bank statement of account for the state.</p>
@@ -265,8 +265,8 @@ export default function Prowoks() {
                             <ImageGallery imagePaths={imageRecon} />
                         </div>
 
-                        <div className='mx-auto max-w-4xl px-6 sm:pt-60 lg:px-8 lg:pt-20'>
-                            <h5 className='uppercase text-lg font-medium text-gray-600'>Conclusion</h5>
+                        <div className='mx-auto max-w-4xl px-6 pt-24 lg:px-8 lg:pt-20'>
+                            <h5 className='uppercase text-lg font-medium text-zinc-400'>Conclusion</h5>
                             <h5 className='text-2xl font-medium pt-3 pb-4'>Design an enterprise solution that offers improved transparency and accountability in the budget and expenditure management process.</h5>
                             <div className='grid grid-cols-1 md:grid-cols-3 pb-16 gap-6 text-gray-500'>
                                 <div className='p-6 rounded-3xl bg-green-50 text-green-700'><strong className='text-7xl text-green-500'>90%</strong><br />budget automation in 3 states and counting</div>
@@ -278,7 +278,7 @@ export default function Prowoks() {
                         <div className='mx-auto max-w-4xl px-6 sm:pt-60 lg:px-8 lg:pt-1'>
                             <h5 className='text-2xl font-medium pt-3 pb-4'>Metric used in measuring success</h5>
                             <div className='grid grid-cols-1 pb-8 space-y-6 text-gray-500'>
-                                <div className='grid grid-cols-2 gap-5 text-gray-700'>
+                                <div className='grid lg:grid-cols-2 gap-5 text-gray-700'>
                                     <div className='p-6 rounded-3xl bg-gray-50'><strong className='block pb-2 font-semibold'>Task Completion Rate: </strong>This metric measures the percentage of tasks completed successfully by users. It helps to determine if users can use the system to accomplish their goals effectively.</div>
                                     <div className='p-6 rounded-3xl bg-gray-50'><strong className='block pb-2 font-semibold'>Time on Task: </strong>This metric measures the amount of time it takes for users to complete tasks in the system. It helps to determine if the system is efficient and easy to use.</div>
                                     <div className='p-6 rounded-3xl bg-gray-50'><strong className='block pb-2 font-semibold'>Error Rate: </strong>This metric measures the percentage of errors made by users while completing tasks. It helps to identify areas of the system that are confusing or difficult to use.</div>

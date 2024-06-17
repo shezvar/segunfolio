@@ -39,7 +39,7 @@ export function ProjectCard2(props: { imageUrl: any; alt: any; type: any; title:
                         <span className="inline-flex items-center rounded-md px-2 py-1 text-xs font-extrabold text-slate-300 bg-indigo-900 mb-2 uppercase">{type}</span>
                         <h3 className="text-gray-200 font-[lora] font-bold text-3xl my-0">{title}</h3>
                         <p className="my-0 text-md">
-                            <span className="text-zinc-400/80 leading-relaxed">{description}</span>
+                            <span className="text-zinc-400 leading-relaxed">{description}</span>
                         </p>
                         <div className="flex text-gray-200 group mt-2 group-hover:text-indigo-600 items-center">
                             <div className=" font-extrabold uppercase text-sm">Read more</div>
@@ -48,7 +48,7 @@ export function ProjectCard2(props: { imageUrl: any; alt: any; type: any; title:
                     </div>
                 </div>
                 <div className="flex relative lg:absolute top-8 left-8 lg:left-1/3 right-auto">
-                    <div className="transform overflow-hidden relative bg-gray-950 border border-gray-800 rounded w-[91rem]">
+                    <div className="transform overflow-hidden relative bg-page border border-gray-800 rounded w-[91rem]">
                         <img
                             className="lg:w-[65%] max-w-full rounded bg-gray-900 shadow-xl"
                             src={imageUrl}
