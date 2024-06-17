@@ -64,7 +64,7 @@ export default function Booosta() {
 
                         <div className='mx-auto max-w-4xl px-6 pt-10 lg:px-8 lg:pt-10'>
                             <h5 className='uppercase text-md font-medium text-zinc-400'>The Summary</h5>
-                            <h5 className='text-2xl font-sans pt-3 pb-4'>As the lead product designer for Prunedge&apos;s Retail Management System (RMS), I spearheaded a project that significantly impacted Nigeria&apos;s retail sector.</h5>
+                            <h5 className='text-2xl font-sans pt-3 pb-4 text-gray-900'>As the lead product designer for Prunedge&apos;s Retail Management System (RMS), I spearheaded a project that significantly impacted Nigeria&apos;s retail sector.</h5>
                             <div className='grid grid-cols-1 space-y-6 text-gray-500'>
                                 <p className='text-sm'>The RMS addressed critical pain points for micro, small-scale enterprises, and itinerant retailers, offering a comprehensive solution that includes sales tracking, supply chain management, and value-added services like business financing and insurance.</p>
                                 <hr />
@@ -74,11 +74,11 @@ export default function Booosta() {
 
                         <div className='mx-auto max-w-4xl px-6 pt-20 lg:px-8 lg:pt-40'>
                             <h5 className='uppercase text-md font-medium text-zinc-400'>Problem Framing</h5>
-                            <h5 className='text-2xl font-sans pt-3 pb-4'>Nigeria&apos;s retail sector, while a significant contributor to the nation&apos;s economy, faces numerous challenges, particularly for micro and small-scale enterprises (MSMEs) and itinerant retailers.</h5>
+                            <h5 className='text-2xl font-sans pt-3 pb-4 text-gray-900'>Nigeria&apos;s retail sector, while a significant contributor to the nation&apos;s economy, faces numerous challenges, particularly for micro and small-scale enterprises (MSMEs) and itinerant retailers.</h5>
                             <div className='grid grid-cols-1 space-y-6 text-gray-500'>
-                                <p className='text-sm'>Key issues include lack of access to credit, supply chain inefficiencies, and inadequate tools for business management and financial planning.</p>
+                                <p className='text-sm text-gray-500'>Key issues include lack of access to credit, supply chain inefficiencies, and inadequate tools for business management and financial planning.</p>
                             </div>
-                            <div className='grid grid-cols-1 lg:grid-cols-3 gap-6 mt-8'>
+                            <div className='grid grid-cols-1 lg:grid-cols-3 gap-6 mt-8 text-gray-900'>
                                 <div className='border p-2 bg-zinc-100 rounded-lg'>
                                     <div className='p-5 bg-white rounded-md shadow'>
                                         <p className='text-lg'><strong className='text-5xl'>82%</strong> of MSMEs lack access to credit facilities.</p>
@@ -100,7 +100,7 @@ export default function Booosta() {
                         <div className='mx-auto max-w-4xl px-6 pt-20 lg:px-8 lg:pt-40'>
                             <h5 className='uppercase text-md font-medium text-zinc-400'>Role and Team</h5>
                             <div className=''>
-                                <h5 className='text-2xl font-sans pt-3 pb-4'>My role</h5>
+                                <h5 className='text-2xl font-sans pt-3 pb-4 text-gray-900'>My role</h5>
                                 <div className='text-gray-500'>
                                     <p className='text-sm'>As the senior product designer, I led a team of developers, a product designer, and product managers. My responsibilities included overseeing the design process, conducting research, and ensuring the final product met user needs and business goals.</p>
                                     <hr className='mt-6 mb-8' />
@@ -121,7 +121,7 @@ export default function Booosta() {
                         <div className='mx-auto max-w-4xl px-6 pt-20 lg:px-8 lg:pt-40'>
                             <h5 className='uppercase text-md font-medium text-zinc-400'>Approach</h5>
                             <div className=''>
-                                <h5 className='text-2xl font-sans pt-3 pb-4'>Our approach was centered on user-centric design and iterative feedback. Key strategies included:</h5>
+                                <h5 className='text-2xl font-sans pt-3 pb-4 text-gray-900'>Our approach was centered on user-centric design and iterative feedback. Key strategies included:</h5>
                                 <div className='grid grid-cols-1 gap-5'>
                                     <div className=''>
                                         <div className='relative w-full min-h-[1rem] mt-8 group'>
@@ -182,7 +182,7 @@ export default function Booosta() {
 
                         <div className='mx-auto max-w-4xl px-6 pt-20 lg:px-8 lg:pt-40'>
                             <h5 className='uppercase text-md font-medium text-zinc-400'>Challenges</h5>
-                            <h5 className='text-2xl font-sans pt-3 pb-4'>When integrating digital solutions into retail operations, several significant challenges often arise.</h5>
+                            <h5 className='text-2xl font-sans pt-3 pb-4 text-gray-900'>When integrating digital solutions into retail operations, several significant challenges often arise.</h5>
                             <div className='grid grid-cols-1 lg:grid-cols-3 pt-8 gap-6'>
                                 <div className='p-4 bg-red-50 rounded-lg rotate-6'>
                                     <div className='overflow-hidden'>
@@ -212,7 +212,7 @@ export default function Booosta() {
 
                         <div className='mx-auto max-w-4xl px-6 pt-20 lg:px-8 lg:pt-40'>
                             <h5 className='uppercase text-md font-medium text-zinc-400'>Solution</h5>
-                            <h5 className='text-2xl font-sans pt-3 pb-4'>The Retail Management System (RMS) was developed to address the identified challenges:</h5>
+                            <h5 className='text-2xl font-sans pt-3 pb-4 text-gray-900'>The Retail Management System (RMS) was developed to address the identified challenges:</h5>
                             <div className='grid grid-cols-1 space-y-6 text-gray-500 '>
                                 <p className='text-sm'>Creating the optimal design for Fullgap required <strong className='text-gray-900'>numerous visual drafts and prototypes</strong>. After extensive testing and multiple iterations, we identified the most effective solutions to address user pain points. These chosen designs represent the best of our efforts to enhance the user experience.</p>
                                 <hr />
@@ -221,7 +221,7 @@ export default function Booosta() {
                         </div>
 
                         <div className='mx-auto max-w-4xl px-6 pt-10 lg:px-8 lg:pt-20'>
-                            <h5 className='text-2xl font-sans pt-3 pb-4'>Colourful illustrations</h5>
+                            <h5 className='text-2xl font-sans pt-3 pb-4 text-gray-900'>Colourful illustrations</h5>
                             <div className='grid grid-cols-1 space-y-6 text-gray-500'>
                                 <p className='text-sm'>To capture users&apos; attention based on their ethnography, we used bright and colorful illustrations. Our research showed that most users engage more with visuals than text, which we considered when designing the illustration theme.</p>
                             </div>
@@ -239,7 +239,7 @@ export default function Booosta() {
 
                         <div className='relative'>
                             <div className='mx-auto max-w-4xl px-6 pt-10 lg:px-8 lg:pt-20'>
-                                <h5 className='text-2xl font-sans pt-3 pb-4'>Onboarding solution</h5>
+                                <h5 className='text-2xl font-sans pt-3 pb-4 text-gray-900'>Onboarding solution</h5>
                                 <div className='grid grid-cols-1 space-y-6 text-gray-500'>
                                     <p className='text-sm'>To ensure inclusivity, we allowed users to select their preferred language. For registration, we used mobile numbers instead of email addresses, as the majority of our users have mobile phones but few have email accounts.</p>
                                 </div>
@@ -261,7 +261,7 @@ export default function Booosta() {
 
                         <div className='relative'>
                             <div className='mx-auto max-w-4xl px-6 pt-10 lg:px-8 lg:pt-20'>
-                                <h5 className='text-2xl font-sans pt-3 pb-4'>Inventory</h5>
+                                <h5 className='text-2xl font-sans pt-3 pb-4 text-gray-900'>Inventory</h5>
                                 <div className='grid grid-cols-1 space-y-6 text-gray-500'>
                                     <p className='text-sm'>Users can now see low-stock products from the inventory list and take immediate action, resolving restocking issues. To prevent duplicates, a feature shows matching products when adding new items, allowing updates instead. Key actions can also be performed directly from the product details page.</p>
                                 </div>
@@ -283,7 +283,7 @@ export default function Booosta() {
 
                         <div className='relative'>
                             <div className='mx-auto max-w-4xl px-6 pt-10 lg:px-8 lg:pt-20'>
-                                <h5 className='text-2xl font-sans pt-3 pb-4'>Sales & Debt Recovery</h5>
+                                <h5 className='text-2xl font-sans pt-3 pb-4 text-gray-900'>Sales & Debt Recovery</h5>
                                 <div className='grid grid-cols-1 space-y-6 text-gray-500'>
                                     <p className='text-sm'>We realized sellers often struggle to track partial payments, view sales data, and maintain customer records. The Sales page addresses all these issues, and the data and features are also accessible through other modules.</p>
                                 </div>
@@ -306,7 +306,7 @@ export default function Booosta() {
                         <div className='bg-zinc-50 mt-20'>
                             <div className='mx-auto max-w-4xl px-6 pt-20 lg:px-8 lg:py-20'>
                                 <h5 className='uppercase text-lg font-medium text-zinc-400'>Results and Impact</h5>
-                                <h5 className='text-2xl font-sans pt-3 pb-4'>Key Performance Indicators (KPIs):</h5>
+                                <h5 className='text-2xl font-sans pt-3 pb-4 text-gray-900'>Key Performance Indicators (KPIs):</h5>
                                 <div className='grid grid-cols-1 pb-8 space-y-6 text-gray-500'>
                                     <p className='text-sm'>The results were nothing short of transformative:</p>
                                 </div>
@@ -322,7 +322,7 @@ export default function Booosta() {
 
                         <div className='mx-auto max-w-4xl px-6 pt-10 lg:px-8 lg:pt-40'>
                             <h5 className='uppercase text-lg font-medium text-zinc-400'>Next Steps</h5>
-                            <h5 className='text-2xl font-sans pt-3 pb-4'>Future plans</h5>
+                            <h5 className='text-2xl font-sans pt-3 pb-4 text-gray-900'>Future plans</h5>
                             <div className='grid grid-cols-1 pb-8 space-y-6 text-gray-500'>
                                 <p className='text-sm'>The journey doesn&apos;t end here. I will:</p>
                             </div>
@@ -332,7 +332,7 @@ export default function Booosta() {
                                 <div className='p-6 bg-indigo-200'>Ongoing Support: Provide continuous support and training to ensure successful adoption and usage.</div>
                             </div>
 
-                            <div className='text-2xl font-sans lg:text-3xl mb-20'>By addressing critical pain points and offering a robust solution, the Retail Management System is set to transform Nigeria&apos;s retail landscape, empowering small businesses and driving economic growth.</div>
+                            <div className='text-2xl font-sans lg:text-3xl mb-20 text-gray-900'>By addressing critical pain points and offering a robust solution, the Retail Management System is set to transform Nigeria&apos;s retail landscape, empowering small businesses and driving economic growth.</div>
                         </div>
 
                     </div>
