@@ -33,9 +33,9 @@ const ProcessBlock: React.FC = () => {
     };
 
     return (
-        <div className='mx-auto flex items-center my-48 xl:max-w-7xl'>
+        <div className='mx-auto flex lg:max-w-7xl'>
             <div className="w-full text-gray-400">
-                <div className={`border border-zinc-800 p-6 hover:bg-zinc-900 ${activeIndex === 0 ? 'transition duration-300 ease-in-out' : ''}`}>
+                <div className={`border border-zinc-800 p-6 hover:bg-zinc-950/25 ${activeIndex === 0 ? 'transition duration-300 ease-in-out' : ''}`}>
                     <div className="group" onClick={() => toggleAccordion(0)}>
                         <div className='flex justify-between items-center cursor-pointer'>
                             <div className='space-y-1'>
@@ -54,7 +54,7 @@ const ProcessBlock: React.FC = () => {
                     )}
                 </div>
 
-                <div className={`border border-zinc-800 p-6 hover:bg-zinc-900 ${activeIndex === 0 ? 'transition duration-300 ease-in-out' : ''}`}>
+                <div className={`border border-zinc-800 p-6 hover:bg-zinc-950/25 ${activeIndex === 0 ? 'transition duration-300 ease-in-out' : ''}`}>
                     <div className="group" onClick={() => toggleAccordion(1)}>
                         <div className='flex justify-between items-center cursor-pointer'>
                             <div className='space-y-2'>
@@ -73,7 +73,7 @@ const ProcessBlock: React.FC = () => {
                     )}
                 </div>
 
-                <div className={`border border-zinc-800 p-6 hover:bg-zinc-900 ${activeIndex === 0 ? 'transition duration-300 ease-in-out' : ''}`}>
+                <div className={`border border-zinc-800 p-6 hover:bg-zinc-950/25 ${activeIndex === 0 ? 'transition duration-300 ease-in-out' : ''}`}>
                     <div className="group" onClick={() => toggleAccordion(2)}>
                         <div className='flex justify-between items-center cursor-pointer'>
                             <div className='space-y-2'>
@@ -92,7 +92,7 @@ const ProcessBlock: React.FC = () => {
                     )}
                 </div>
 
-                <div className={`border border-zinc-800 p-6 hover:bg-zinc-900 ${activeIndex === 0 ? 'transition duration-300 ease-in-out' : ''}`}>
+                <div className={`border border-zinc-800 p-6 hover:bg-zinc-950/25 ${activeIndex === 0 ? 'transition duration-300 ease-in-out' : ''}`}>
                     <div className="group" onClick={() => toggleAccordion(3)}>
                         <div className='flex justify-between items-center cursor-pointer'>
                             <div className='space-y-2'>
@@ -111,7 +111,7 @@ const ProcessBlock: React.FC = () => {
                     )}
                 </div>
 
-                <div className={`border border-zinc-800 p-6 hover:bg-zinc-900 ${activeIndex === 0 ? 'transition duration-300 ease-in-out' : ''}`}>
+                <div className={`border border-zinc-800 p-6 hover:bg-zinc-950/25 ${activeIndex === 0 ? 'transition duration-300 ease-in-out' : ''}`}>
                     <div className="group" onClick={() => toggleAccordion(4)}>
                         <div className='flex justify-between items-center cursor-pointer'>
                             <div className='space-y-2'>
@@ -130,7 +130,7 @@ const ProcessBlock: React.FC = () => {
                     )}
                 </div>
 
-                <div className={`border border-zinc-800 p-6 hover:bg-zinc-900 ${activeIndex === 0 ? 'transition duration-300 ease-in-out' : ''}`}>
+                <div className={`border border-zinc-800 p-6 hover:bg-zinc-950/25 ${activeIndex === 0 ? 'transition duration-300 ease-in-out' : ''}`}>
                     <div className="group" onClick={() => toggleAccordion(5)}>
                         <div className='flex justify-between items-center cursor-pointer'>
                             <div className='space-y-2'>

@@ -8,9 +8,9 @@ export default function ProjectHeader(props: { goBackUrl: any; title: any; subte
             <div className='mx-auto flex items-center max-w-2xl md:max-w-3xl xl:max-w-6xl px-6 pb-[2rem] pt-56 sm:pt-60 lg:px-8 lg:pt-[15rem]'>
                 <div className='w-full'>
                     <div className='relative mb-6'>
-                        <a href={goBackUrl} className='inline-flex rounded-full items-center pl-2 pr-4 py-1.5 font-sans text-sm border bg-zinc-100'><ChevronLeftIcon className='h-4 w-4 mr-2' />Back</a>
+                        <a href={goBackUrl} className='inline-flex rounded-full items-center pl-2 pr-4 py-1.5 font-sans text-sm border bg-zinc-100 text-gray-500'><ChevronLeftIcon className='h-4 w-4 mr-2' />Back</a>
                     </div>
-                    <h1 className='text-3xl lg:text-6xl font-medium'>{title}</h1>
+                    <h1 className='text-3xl lg:text-6xl font-medium text-gray-800'>{title}</h1>
                     <h3 className='text-xl lg:text-2xl font-normal mt-8 text-slate-600'>{subtext}</h3>
                     <div className='relative w-full min-h-[1rem] mt-16 group'>
                         <div className='p-2 border bg-slate-100 rounded-3xl shadow-2xl'>

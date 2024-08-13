@@ -67,7 +67,7 @@ export default function Prowoks() {
 
                         <div className='mx-auto max-w-4xl px-6 sm:pt-60 lg:px-8 lg:pt-10'>
                             <h5 className='uppercase text-md font-medium text-zinc-400'>Summary</h5>
-                            <h5 className='text-2xl font-sans pt-3 pb-4'>Nigeria&apos;s budget challenges and potential reforms: Nigeria faces significant challenges in managing its budget effectively, leading to inefficiencies and hindrances in economic growth and development.</h5>
+                            <h5 className='text-2xl font-sans pt-3 pb-4 text-gray-900'>Nigeria&apos;s budget challenges and potential reforms: Nigeria faces significant challenges in managing its budget effectively, leading to inefficiencies and hindrances in economic growth and development.</h5>
                             <div className='grid grid-cols-1 pb-16 space-y-6 text-gray-500'>
                                 <div className='grid grid-cols-1'>
                                     <div className='grid grid-cols-8 items-center mt-12'>
@@ -271,7 +271,7 @@ export default function Prowoks() {
                             <div className='grid grid-cols-1 md:grid-cols-3 pb-16 gap-6 text-gray-500'>
                                 <div className='p-6 rounded-3xl bg-green-50 text-green-700'><strong className='text-7xl text-green-500'>90%</strong><br />budget automation in 3 states and counting</div>
                                 <div className='p-6 rounded-3xl bg-green-50 text-green-700'><strong className='text-7xl text-green-500'>95%</strong><br />reduction in wait time for tasks completion and feedback</div>
-                                <div className='p-6 rounded-3xl bg-green-50 text-green-700'><strong className='text-7xl text-green-500'>₦50m</strong><br />saved due to the reduction in the usage of paper and printing</div>
+                                <div className='p-6 rounded-3xl bg-green-50 text-green-700'><strong className='text-7xl text-green-500'>₦50m</strong><br />in one of the states saved due to the reduction in the usage of paper and printing</div>
                             </div>
                         </div>
 

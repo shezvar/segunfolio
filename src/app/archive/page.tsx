@@ -90,7 +90,7 @@ export default function Archive() {
                             <div className='w-full space-y-8'>
                                 <h1 className='text-3xl lg:text-[3rem] text-white font-[Lora] leading-normal font-black'>Archive</h1>
                                 <div className='grid grid-cols-12 text-white'>
-                                    <div className='mx-auto max-w-2xl col-span-full lg:col-span-5 mb-6 lg:mb-0'>
+                                    <div className='max-w-2xl col-span-full lg:col-span-5 mb-6 lg:mb-0'>
                                         <h2 className='text-lg lg:text-[1.5rem] text-gray-200 leading-[1.7] tracking-wide'>These are some projects I&apos;ve worked on trying to put my dent in the universe</h2>
                                     </div>
                                     <div className='space-y-4 text-lg col-span-full lg:col-start-7 lg:col-span-5 leading-relaxed'>
