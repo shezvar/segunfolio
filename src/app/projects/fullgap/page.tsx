@@ -125,7 +125,7 @@ export default function Fullgap() {
 
                         <div className='mx-auto max-w-4xl px-6 pt-20 lg:px-8 lg:pt-40'>
                             <h5 className='uppercase text-md font-medium text-zinc-400'>Team Composition</h5>
-                            <h5 className='text-2xl font-sans pt-3 pb-4 text-gray-500'>In this story, I was the protagonist—the product designer, researcher, and market strategist.</h5>
+                            <h5 className='text-2xl font-sans pt-3 pb-4 text-gray-500'>In this story, I was the protagonist, the product designer, researcher, and market strategist.</h5>
                             <div className='text-gray-500'>
                                 <p className='text-sm'>My mission was to delve deep into the user experience, uncover their pain points, and craft solutions that would make Fullgap the go-to platform for creatives. But no hero works alone. I collaborated with:</p>
                             </div>
@@ -156,7 +156,7 @@ export default function Fullgap() {
                                             <img src='/images/fg-mixpanel.png' alt='' className='rounded-md h-full w-full block object-cover object-center shadow-md' />
                                         </div>
                                     </div>
-                                    <p className='text-gray-500 text-sm mt-2'><strong>Data analysis:</strong> Like detectives, we scoured Mixpanel data to track user movements and pinpoint where they dropped off. We discovered that many users abandoned the project creation process halfway through.</p>
+                                    <p className='text-gray-500 text-sm mt-2'><strong>Data analysis:</strong> Like detectives, I scoured Mixpanel data to track user movements and pinpoint where they dropped off. I discovered that many users abandoned the project creation process halfway through.</p>
                                 </div>
                                 <div className=''>
                                     <div className='relative w-full min-h-[1rem] mt-8 group'>
@@ -172,7 +172,7 @@ export default function Fullgap() {
                                             <img src='/images/fg-notion-calls.png' alt='' className='rounded-md h-full w-full block object-cover object-center shadow-md -mb-1' />
                                         </div>
                                     </div>
-                                    <p className='text-gray-500 text-sm mt-2'><strong>User Feedback:</strong>Our community forums and call center logs became treasure troves of insights. Sifting through these logs, though tedious, was crucial in understanding recurring complaints and frustrations.</p>
+                                    <p className='text-gray-500 text-sm mt-2'><strong>User Feedback:</strong> Our community forums and call center logs became treasure troves of insights. Sifting through these logs, though tedious, was crucial in understanding recurring complaints and frustrations.</p>
                                 </div>
                                 <div className=''>
                                     <div className='relative w-full min-h-[1rem] mt-8 group'>
@@ -180,7 +180,7 @@ export default function Fullgap() {
                                             <img src='/images/fg-iterations.png' alt='' className='rounded-md h-full w-full block object-cover object-center shadow-md' />
                                         </div>
                                     </div>
-                                    <p className='text-gray-500 text-sm mt-2'><strong>Design testing</strong>We sketched out new designs and tested them with users. Each iteration brought us closer to a solution that felt just right.</p>
+                                    <p className='text-gray-500 text-sm mt-2'><strong>Design testing:</strong> We sketched out new designs and tested them with users. Each iteration brought us closer to a solution that felt just right.</p>
                                 </div>
                             </div>
                         </div>
@@ -226,7 +226,7 @@ export default function Fullgap() {
                         <div className='mx-auto max-w-4xl px-6 pt-10 lg:px-8 lg:pt-10'>
                             <h5 className='text-2xl font-sans pt-3 pb-4 text-gray-500'>Single-Page Project Creation</h5>
                             <div className='grid grid-cols-1 space-y-6 text-gray-500'>
-                                <p className='text-sm'>We transformed the project creation process from a five-page odyssey into a single-page sprint. This streamlined approach made it faster and less intimidating for users.</p>
+                                <p className='text-sm'>I transformed the project creation process from a five-page odyssey into a single-page sprint. This streamlined approach made it faster and less intimidating for users.</p>
                             </div>
                         </div>
 
