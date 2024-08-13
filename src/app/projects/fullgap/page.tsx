@@ -233,7 +233,7 @@ export default function Fullgap() {
                         <div className='mx-auto max-w-4xl px-6'>
                             <div className='relative w-full min-h-[1rem] mt-8 group'>
                                 <div className=''>
-                                    <img src='/images/fullgap-project-creation.png' alt='' className='rounded-2xl h-full w-full block object-cover object-center' />
+                                    <img src='/images/videos/fg-pj-creation-f1.gif' alt='' className='rounded-2xl h-full w-full block object-cover object-center border-4 border-gray-700' />
                                 </div>
                             </div>
                         </div>
@@ -248,7 +248,8 @@ export default function Fullgap() {
                         <div className='mx-auto max-w-4xl px-6'>
                             <div className='relative w-full min-h-[1rem] mt-8 group'>
                                 <div className=''>
-                                    <img src='/images/fullgap-task-creation.png' alt='' className='rounded-2xl h-full w-full block object-cover object-center' />
+                                    <img src='/images/fullgap-task-creation.png' alt='' className='hidden rounded-2xl h-full w-full block object-cover object-center' />
+                                    <img src='/images/videos/fg-tc-flow.gif' alt='' className='rounded-2xl h-full w-full block object-cover object-center border-4 border-gray-700' />
                                 </div>
                             </div>
                         </div>
@@ -260,10 +261,18 @@ export default function Fullgap() {
                             </div>
                         </div>
 
-                        {/* Project starts here */}
-                        <div className="mx-auto max-w-4xl px-6 lg:px-8">
-                            <ImageGallery imagePaths={imageProjects} />
+                        <div className='mx-auto max-w-4xl px-6'>
+                            <div className='relative w-full min-h-[1rem] mt-2 group'>
+                                <div className=''>
+                                    <img src='/images/videos/fg-en-flow.gif' alt='' className='rounded-2xl h-full w-full block object-cover object-center border-4 border-gray-700' />
+                                </div>
+                            </div>
                         </div>
+
+                        {/* Project starts here */}
+                        {/* <div className="mx-auto max-w-4xl px-6 lg:px-8">
+                            <ImageGallery imagePaths={imageProjects} />
+                        </div> */}
                         {/* Projects ends here */}
 
                         <div className='mx-auto max-w-4xl px-6 pt-10 lg:px-8 lg:pt-20'>
@@ -273,9 +282,17 @@ export default function Fullgap() {
                             </div>
                         </div>
 
-                        <div className="mx-auto max-w-4xl px-6 lg:px-8">
-                            <ImageGallery imagePaths={imageInvoices} />
+                        <div className='mx-auto max-w-4xl px-6'>
+                            <div className='relative w-full min-h-[1rem] mt-2 group'>
+                                <div className=''>
+                                    <img src='/images/videos/fg-in-flow.gif' alt='' className='rounded-2xl h-full w-full block object-cover object-center border-4 border-gray-700' />
+                                </div>
+                            </div>
                         </div>
+
+                        {/* <div className="mx-auto max-w-4xl px-6 lg:px-8">
+                            <ImageGallery imagePaths={imageInvoices} />
+                        </div> */}
 
                         <div className='bg-zinc-50 mt-20'>
                             <div className='mx-auto max-w-4xl px-6 pt-20 lg:px-8 lg:py-20'>
