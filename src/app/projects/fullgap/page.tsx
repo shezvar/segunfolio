@@ -7,7 +7,7 @@ import { CheckIcon, UserCircleIcon, TrophyIcon, InformationCircleIcon, XMarkIcon
 import ImageGallery from '@/components/image-gallery'
 
 const projectData = [
-    { goBackUrl: '/', title: 'Operating System For The Creative Economy', subtext: '...', imageUrl: '/images/fg-main.jpeg', alt: 'Fullgap', role1: 'UX Design', role2: 'UI Design', role3: 'Researcher', role4: 'Market Strategist', role5: 'Product Envisioning', platform1: 'Web Application', platform2: 'Mobile Responsive', platform3: '' },
+    { goBackUrl: '/', title: 'Operating System For The Creative Economy', subtext: '...', imageUrl: '/images/fg-cover.png', alt: 'Fullgap', role1: 'UX Design', role2: 'UI Design', role3: 'Researcher', role4: 'Market Strategist', role5: 'Product Envisioning', platform1: 'Web Application', platform2: 'Mobile Responsive', platform3: '' },
 ]
 
 const imageProjects = [
@@ -70,7 +70,7 @@ export default function Fullgap() {
                                     <h5 className='text-6xl font-thin text-slate-950 mb-4'>Introduction</h5>
                                 </div>
                                 <div className='grid grid-cols-1 space-y-6 *:text-slate-950 *:text-lg'>
-                                    <p>Fullgap began as a B2C platform aimed at helping freelancers manage their projects, tasks, and clients. Through research, we expanded it to include a B2B offering, increasing the platform's business reach. Much like Minviro&apos;s mission of helping businesses operate more sustainably, Fullgap sought to streamline operations for both freelancers and businesses by offering a flexible, modular system.</p>
+                                    <p>Fullgap began as a B2C platform aimed at helping freelancers manage their projects, tasks, and clients. Through research, we expanded it to include a B2B offering, increasing the platform&apos;s business reach. Much like Minviro&apos;s mission of helping businesses operate more sustainably, Fullgap sought to streamline operations for both freelancers and businesses by offering a flexible, modular system.</p>
                                     <p>The initial goal was to simplify the project creation process and boost engagement, but we later discovered that freelancers and businesses needed a more flexible system where they could manage projects, invoices, and contracts independently — <strong>a need identified during research and testing.</strong></p>
                                 </div>
                             </div>
