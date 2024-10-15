@@ -3,11 +3,11 @@ import React from 'react'
 import { HeaderLight, HeaderDark } from '@/components/header'
 // import LockScreen from '@/components/passwordRequest'
 import ProjectHeader from '@/components/project-header'
-import { CheckIcon, UserCircleIcon } from '@heroicons/react/16/solid'
+import { CheckIcon, UserCircleIcon, TrophyIcon, InformationCircleIcon, XMarkIcon, CheckBadgeIcon, MinusIcon } from '@heroicons/react/16/solid'
 import ImageGallery from '@/components/image-gallery'
 
 const projectData = [
-    { goBackUrl: '/', title: 'Operating System For The Freelance Economy', subtext: 'Designed to help creative professionals, particularly freelancers, manage their clients and projects effectively', imageUrl: '/images/fg-main.jpeg', alt: 'Fullgap', role1: 'UX Design', role2: 'UI Design', role3: 'Researcher', role4: 'Market Strategist', role5: 'Product Envisioning', platform1: 'Web Application', platform2: 'Mobile Responsive', platform3: '' },
+    { goBackUrl: '/', title: 'Operating System For The Creative Economy', subtext: '...', imageUrl: '/images/fg-cover.png', alt: 'Fullgap', role1: 'UX Design', role2: 'UI Design', role3: 'Researcher', role4: 'Market Strategist', role5: 'Product Envisioning', platform1: 'Web Application', platform2: 'Mobile Responsive', platform3: '' },
 ]
 
 const imageProjects = [
@@ -63,274 +63,907 @@ export default function Fullgap() {
                             />
                         ))}
 
-                        <div className='mx-auto max-w-4xl px-6 pt-10 lg:px-8 lg:pt-10'>
-                            <h5 className='uppercase text-md font-medium text-zinc-400'>The Summary</h5>
-                            <h5 className='text-2xl font-sans pt-3 pb-4 text-gray-500'>Imagine a bustling hive of creative activity, where freelancers and small business owners juggle projects, tasks, and clients daily.</h5>
-                            <div className='grid grid-cols-1 space-y-6 text-gray-400'>
-                                <p className='text-sm'>Fullgap was designed to be this hive—a one-stop platform for all their needs. However, we discovered that our hive wasn&apos;t buzzing as it should. I, as the product designer, researcher, and market strategist, embarked on a journey to transform Fullgap into the vibrant, efficient hub we envisioned.</p>
-                                <hr />
-                                <div className='grid grid-cols-1 lg:grid-cols-6'>
-                                    <div className='col-span-1 lg:col-span-3 content-end'>
-                                        <h5 className='text-2xl font-sans pt-3 pb-4'>This case study tells the <span className='text-gray-900'>story of how we</span> identified the issues, overcame challenges, and implemented solutions that led to a <span className='text-gray-900'>45% increase in user engagement</span> and an <span className='text-gray-900'>85% reduction in project creation time.</span></h5>
-                                    </div>
-                                    <div className='col-span-1 lg:col-end-7 lg:col-span-2 w-full min-h-[1rem]'>
-                                        <div className='overflow-hidden'>
-                                            <img src='/images/fg-pj-success.png' alt='' className='rounded-md h-full w-full block object-cover object-center shadow-md' />
-                                        </div>
-                                    </div>
+                        {/* Introduction */}
+                        <section className='mb-24'>
+                            <div className='mx-auto max-w-4xl px-6 pt-10 lg:px-8 lg:pt-10'>
+                                <div className='border-slate-950 border-b mb-8'>
+                                    <h5 className='text-6xl font-thin text-slate-950 mb-4'>Introduction</h5>
+                                </div>
+                                <div className='grid grid-cols-1 space-y-6 *:text-slate-950 *:text-lg'>
+                                    <p>Fullgap began as a B2C platform aimed at helping freelancers manage their projects, tasks, and clients. Through research, we expanded it to include a B2B offering, increasing the platform&apos;s business reach. Much like Minviro&apos;s mission of helping businesses operate more sustainably, Fullgap sought to streamline operations for both freelancers and businesses by offering a flexible, modular system.</p>
+                                    <p>The initial goal was to simplify the project creation process and boost engagement, but we later discovered that freelancers and businesses needed a more flexible system where they could manage projects, invoices, and contracts independently — <strong>a need identified during research and testing.</strong></p>
                                 </div>
                             </div>
-                        </div>
+                        </section>
 
-                        <div className='mx-auto max-w-4xl px-6 pt-20 lg:px-8 lg:pt-40'>
-                            <h5 className='uppercase text-md font-medium text-zinc-400'>Problem Framing</h5>
-                            <h5 className='text-2xl font-sans pt-3 pb-4 text-gray-500'>Identifying the problem</h5>
-                            <div className='grid grid-cols-1 space-y-6 text-gray-500 pb-6 lg:pb-0'>
-                                <p className='text-sm'>Fullgap was meant to simplify life for creatives, offering tools for project management, task management, client management, invoice management, and collaboration. But the reality was different. Our Mixpanel data and user feedback painted a troubling picture:</p>
-                            </div>
-
-                            <div className="mx-auto mt-2 max-w-2xl rounded-3xl ring-1 ring-gray-200 sm:mt-10 lg:mx-0 lg:flex lg:max-w-none">
-                                <div className="p-8 sm:p-8 lg:flex-auto">
+                        {/* Problem Definition & Research */}
+                        <section className='mb-24'>
+                            <div className='mx-auto max-w-4xl px-6 pt-10 lg:px-8 lg:pt-10'>
+                                <div className='border-slate-950 border-b mb-8'>
+                                    <h5 className='text-6xl font-thin text-slate-950 mb-4'>Problem Definition & Research</h5>
+                                </div>
+                                <div className='grid grid-cols-1 space-y-12 mb-24'>
                                     <div className=''>
-                                        <ul role="list" className="mt-8 grid grid-cols-1 gap-4 text-sm leading-6 text-gray-600 sm:gap-6">
-                                            <li className="flex gap-x-3">
-                                                <CheckIcon className="h-6 w-5 flex-none text-indigo-600" aria-hidden="true" />
-                                                Users couldn&apos;t easily find where to create new projects.
-                                            </li>
-                                            <li className="flex gap-x-3">
-                                                <CheckIcon className="h-6 w-5 flex-none text-indigo-600" aria-hidden="true" />
-                                                The project creation process was daunting, requiring too much information upfront.
-                                            </li>
-                                            <li className="flex gap-x-3">
-                                                <CheckIcon className="h-6 w-5 flex-none text-indigo-600" aria-hidden="true" />
-                                                The absence of a Kanban board made task management cumbersome.
-                                            </li>
-                                            <li className="flex gap-x-3">
-                                                <CheckIcon className="h-6 w-5 flex-none text-indigo-600" aria-hidden="true" />
-                                                The task detail view, displayed in a drawer, didn&apos;t encourage collaboration, leading to poor retention.
-                                            </li>
-                                        </ul>
+                                        <h3 className='text-2xl text-slate-950 font-bold mb-2'>The Challenge</h3>
+                                        <p className='text-lg text-slate-800'>Fullgap initially required users to go through a tightly coupled series of steps—project details, deliverables, payment, agreement, and preview. This structure forced users to complete steps they didn’t always need, which led to frustration and lower engagement.</p>
+                                    </div>
+
+                                    <div className='relative bg-green-200 p-8 rounded-lg flex items-center'>
+                                        <TrophyIcon className='size-12 text-green-700 mr-3' />
+                                        <div className=''>
+                                        <h4 className='text-lg text-green-900 font-bold'>Business Goal</h4>
+                                        <div className='text-lg text-green-900'>Increase engagement and create more revenue opportunities by offering flexibility.</div>
+                                        </div>
                                     </div>
                                 </div>
-                                <div className="p-2 lg:mt-0 lg:w-full lg:max-w-sm lg:flex-shrink-0">
-                                    <div className="rounded-2xl h-full bg-gray-50 py-10 ring-1 ring-inset ring-gray-900/5 lg:flex lg:flex-col lg:py-16">
-                                        <div className="mx-auto max-w-xs px-4">
-                                            <p className="text-base font-semibold text-gray-600">Conclusion</p>
-                                            <p className="text-lg mt-6 flex justify-center gap-x-2 text-gray-500">These issues weren&apos;t just inconveniences; they were roadblocks preventing users from fully embracing our platform, which was supposed to be their ultimate productivity companion.</p>
+
+                                <div className='grid grid-cols-1 mb-24'>
+                                    <div className='border-purple-950 border-l-2 pl-4 mb-12'>
+                                        <h3 className='text-2xl text-slate-950 font-bold mb-2'>User Research</h3>
+                                        <p className='text-lg text-slate-800 max-w-lg'>I want to understand the average user’s profile based on the current customer-base, and prove my hypothesis.</p>
+                                    </div>
+                                    <div className='space-y-6'>
+                                        <div className=''>
+                                            <h3 className='font-bold text-slate-950 mb-2'>Interviews</h3>
+                                            <p className='text-lg text-slate-800 pb-4'>I’ve arranged calls via Google Meet with previous customers to understand what influenced their decision when creating project and what motivates them to return.</p>
+                                            <p className='text-lg text-slate-800'>70% said it’s because they are able to manage most of their activities using one tool (Fullgap) while others said to track their invoice and generate contract</p>
+                                        </div>
+
+                                        <div className=''>
+                                            <h3 className='font-bold text-slate-950 mb-2'>Quantitative Study</h3>
+                                            <p className='text-lg text-slate-800'>I wanted to quantify the feedback on the current platform experience. At the end of my user interviews I’ve asked the attendees to assess the platform by completing a questionnaire that uses System Usability Scale (SUS). I used Google form to gather these insight</p>
+                                        </div>
+
+                                        <div className=''>
+                                            <img src='/images/fg/sus.png' />
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+
+                                <div className='grid grid-cols-1 mb-24'>
+                                    <div className='border-purple-950 border-l-2 pl-4 mb-12'>
+                                        <h3 className='text-2xl text-slate-950 font-bold mb-2'>User Needs</h3>
+                                        <p className='text-lg text-slate-800 max-w-lg'>After analysing the data from previous exercise, I was able to identify some key components</p>
+                                    </div>
+                                    
+                                    <div className='grid grid-cols-1 gap-y-12 md:grid-cols-3 md:gap-x-8'>
+                                        <div className=''>
+                                            <h3 className='flex font-semibold text-slate-900 items-center mb-4'><InformationCircleIcon className='size-5 mr-2 text-purple-600' />Identification of Target Users:</h3>
+                                            <div className='grid grid-cols-1 gap-y-4 *:bg-purple-100/40 *:flex'>
+                                                <div className='p-3 rounded-md'>
+                                                    <span className='text-slate-500 pr-2'>01</span>
+                                                    <span className='text-slate-800'>Freelancers who manage multiple projects and clients.</span>
+                                                </div>
+                                                <div className='p-3 rounded-md'>
+                                                    <span className='text-slate-500 pr-2'>02</span>
+                                                    <span className='text-slate-800'>Small businesses requiring project, invoice, and contract management.</span>
+                                                </div>
+                                                <div className='p-3 rounded-md'>
+                                                    <span className='text-slate-500 pr-2'>03</span>
+                                                    <span className='text-slate-800'>B2B users who need flexibility in managing workflows without unnecessary steps.</span>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div className=''>
+                                            <h3 className='flex font-semibold text-slate-900 items-center mb-4'><InformationCircleIcon className='size-5 mr-2 text-purple-600' />Key User Pain Points:</h3>
+                                            <div className='grid grid-cols-1 gap-y-4 *:bg-purple-100/40 *:flex'>
+                                                <div className='p-3 rounded-md'>
+                                                    <span className='text-slate-500 pr-2'>01</span>
+                                                    <span className='text-slate-800'>Complex, multi-step project creation process.</span>
+                                                </div>
+                                                <div className='p-3 rounded-md'>
+                                                    <span className='text-slate-500 pr-2'>02</span>
+                                                    <span className='text-slate-800'>Inability to manage projects, invoices, and contracts independently</span>
+                                                </div>
+                                                <div className='p-3 rounded-md'>
+                                                    <span className='text-slate-500 pr-2'>03</span>
+                                                    <span className='text-slate-800'>Lack of collaborative tools for task management.</span>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div className=''>
+                                            <h3 className='flex font-semibold text-slate-900 items-center mb-4'><InformationCircleIcon className='size-5 mr-2 text-green-600' />Desired Outcomes for Users:</h3>
+                                            <div className='grid grid-cols-1 gap-y-4 *:bg-green-100 *:flex'>
+                                                <div className='p-3 rounded-md'>
+                                                    <span className='text-slate-500 pr-2'>01</span>
+                                                    <span className='text-slate-800'>A simplified and streamlined project setup process.</span>
+                                                </div>
+                                                <div className='p-3 rounded-md'>
+                                                    <span className='text-slate-500 pr-2'>02</span>
+                                                    <span className='text-slate-800'>The ability to choose and use only the features they need.</span>
+                                                </div>
+                                                <div className='p-3 rounded-md'>
+                                                    <span className='text-slate-500 pr-2'>03</span>
+                                                    <span className='text-slate-800'>Improved collaboration through integrated tools</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div className='grid grid-cols-1 space-y-6 mb-24'>
+                                    <div className='border-purple-950 border-l-2 pl-4 mb-8'>
+                                        <h3 className='text-2xl text-slate-950 font-bold mb-2'>Business Goals</h3>
+                                        <p className='text-lg text-slate-800 max-w-lg'>After analysing the data from previous exercise, I was able to identify some key components</p>
+                                    </div>
+                                    
+                                    <div className='grid grid-cols-1 gap-y-12 md:grid-cols-3 md:gap-x-8'>
+                                        <div className=''>
+                                            <h3 className='flex font-semibold text-slate-950 items-center mb-4'><InformationCircleIcon className='size-5 mr-2 text-purple-600' />Business Goals & Objectives:</h3>
+                                            <div className='grid grid-cols-1 gap-y-4 *:bg-purple-100/40 *:flex'>
+                                                <div className='p-3 rounded-md'>
+                                                    <span className='text-slate-500 pr-2'>01</span>
+                                                    <span className='text-slate-800'>Increase user engagement and retention.</span>
+                                                </div>
+                                                <div className='p-3 rounded-md'>
+                                                    <span className='text-slate-500 pr-2'>02</span>
+                                                    <span className='text-slate-800'>Expand Fullgap’s market reach.</span>
+                                                </div>
+                                                <div className='p-3 rounded-md'>
+                                                    <span className='text-slate-500 pr-2'>03</span>
+                                                    <span className='text-slate-800'>Generate additional revenue streams.</span>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div className=''>
+                                            <h3 className='flex font-semibold text-slate-950 items-center mb-4'><InformationCircleIcon className='size-5 mr-2 text-purple-600' />Constraint & Limitations:</h3>
+                                            <div className='grid grid-cols-1 gap-y-4 *:bg-purple-100/40 *:flex'>
+                                                <div className='p-3 rounded-md'>
+                                                    <span className='text-slate-500 pr-2'>01</span>
+                                                    <span className='text-slate-700'>Balance between advanced functionality and user simplicity.</span>
+                                                </div>
+                                                <div className='p-3 rounded-md'>
+                                                    <span className='text-slate-500 pr-2'>02</span>
+                                                    <span className='text-slate-700'>Resource limitations for development and testing of new features.</span>
+                                                </div>
+                                                <div className='p-3 rounded-md'>
+                                                    <span className='text-slate-500 pr-2'>03</span>
+                                                    <span className='text-slate-700'>Resistance from users accustomed to the original workflow and structure.</span>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div className=''>
+                                            <h3 className='flex font-semibold text-slate-950 items-center mb-4'><InformationCircleIcon className='size-5 mr-2 text-green-600' />Success Criteria for the Project:</h3>
+                                            <div className='grid grid-cols-1 gap-y-4 *:bg-green-100 *:flex'>
+                                                <div className='p-3 rounded-md'>
+                                                    <span className='text-slate-500 pr-2'>01</span>
+                                                    <span className='text-slate-800'>Achieving a 45% increase in user engagement metrics.</span>
+                                                </div>
+                                                <div className='p-3 rounded-md'>
+                                                    <span className='text-slate-500 pr-2'>02</span>
+                                                    <span className='text-slate-800'>Reducing project creation time by 25%</span>
+                                                </div>
+                                                <div className='p-3 rounded-md'>
+                                                    <span className='text-slate-500 pr-2'>03</span>
+                                                    <span className='text-slate-800'>Successfully attracting B2B users and increasing service offerings.</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div className='mb-24'>
+                                    <p className='text-lg text-slate-800 pb-2'>Following that, a <strong>user journey map</strong> was produced which included their thoughts and feelings in response to a problem situation.</p>
+                                    <p className='text-lg text-slate-800'>I was able to envision their difficulties and develop possibilities in the issue space as a result of this.</p>
+                                </div>
+
+                                <div className='grid grid-cols-1 space-y-6 mb-24'>
+                                    <div className='border-purple-950 border-l-2 pl-4 mb-12'>
+                                        <h3 className='text-2xl text-slate-950 font-bold mb-2'>How Might We</h3>
+                                        <p className='text-lg text-slate-800 max-w-lg'>These HMW statements focus on the core challenges from both the user and business perspectives, guiding potential solutions to improve Fullgap&apos;s platform and business strategy.</p>
+                                    </div>
+                                    
+                                    <div className='grid grid-cols-1 gap-y-12 md:grid-cols-2 md:gap-x-8'>
+                                        <div className=''>
+                                            <h3 className='flex font-semibold text-slate-900 items-center mb-4'><InformationCircleIcon className='size-5 mr-2 text-purple-600' />Users</h3>
+                                            <div className='grid grid-cols-2 gap-4 *:bg-yellow-100 *:flex *:text-sm *:-rotate-2 *:shadow-md *:text-slate-800'>
+                                                <div className='p-3 rounded-md'>
+                                                    <span>How might we streamline the project setup process to make it faster and less overwhelming for freelancers and businesses?</span>
+                                                </div>
+                                                <div className='p-3 rounded-md'>
+                                                    <span>How might we enable users to add tasks at their own pace after project creation, fostering more flexible and intuitive workflows?</span>
+                                                </div>
+                                                <div className='p-3 rounded-md'>
+                                                    <span>How might we provide users with the flexibility to manage projects, invoices, and contracts independently, without forcing them through unnecessary steps?</span>
+                                                </div>
+                                                <div className='p-3 rounded-md'>
+                                                    <span>How might we enhance task management by integrating collaborative tools that encourage teamwork and communication within the platform?</span>
+                                                </div>
+                                                <div className='p-3 rounded-md'>
+                                                    <span>How might we create a modular system where users can select the specific tools (projects, invoicing, contracts) they need, meeting both freelancer and B2B requirements?</span>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div className=''>
+                                            <h3 className='flex font-semibold text-slate-900 items-center mb-4'><InformationCircleIcon className='size-5 mr-2 text-purple-600' />Business Goals:</h3>
+                                            <div className='grid grid-cols-2 gap-4 *:bg-yellow-100 *:flex *:text-sm *:rotate-3 *:shadow-md *:text-slate-800'>
+                                                <div className='p-3 rounded-md'>
+                                                    <span>How might we increase user engagement and retention by improving platform usability and creating a more intuitive user experience?</span>
+                                                </div>
+                                                <div className='p-3 rounded-md'>
+                                                    <span>How might we transition Fullgap from a B2C platform to also serve B2B users, expanding our market reach?s.</span>
+                                                </div>
+                                                <div className='p-3 rounded-md'>
+                                                    <span>How might we offer modular services that open new revenue streams by allowing users to select the features they need?</span>
+                                                </div>
+                                                <div className='p-3 rounded-md'>
+                                                    <span>How might we offer modular services that open new revenue streams by allowing users to select the features they need?</span>
+                                                </div>
+                                                <div className='p-3 rounded-md'>
+                                                    <span>How might we offer modular services that open new revenue streams by allowing users to select the features they need?</span>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                        {/* Ideation & Design */}
+                        <section className='mb-24'>
+                            <div className='mx-auto max-w-4xl px-6 pt-10 lg:px-8 lg:pt-10'>
+                                <div className='border-slate-950 border-b mb-16'>
+                                    <h5 className='text-6xl font-thin text-slate-950 mb-4'>Ideation & Design</h5>
+                                </div>
+
+                                <div className='grid grid-cols-1 space-y-6 mb-8'>
+                                    <div className='border-purple-950 border-l-2 pl-4'>
+                                        <h3 className='text-2xl text-slate-950 font-bold mb-2'>Wireframes</h3>
+                                        <p className='text-lg text-slate-800 max-w-lg'>When we were designing the main screens, we had to think about how people would use them in different situations. This helped us figure out how to organize everything and make it easy to use.</p>
+                                    </div>
+                                </div>
+                                
+                                <div className='mb-8'>
+                                    <p className='text-lg text-slate-800 pb-6'>First, I <strong>sketched out the process</strong> of creating a new project. I <strong>changed it a bunch of times until it felt just right!</strong> We had a lot of different <strong>versions</strong> and talked about how users would interact with each part of the app.  We even <strong>tested these versions</strong> to make sure they were clear and easy to use.</p>
+                                    <p className='text-lg text-slate-800 pb-6'>This whole process helped us really understand our users — <strong>what they need, what they want, and what frustrates them</strong>. We also looked at what the company wanted to achieve with this product.  By combining all this information, we created the structure of the app and basic layouts for the screens (called wireframes).</p>
+                                </div>
+
+                                <div className='*:mb-16 mb-24'>
+                                    <div className='rounded-xl bg-gradient-to-r from-purple-900 to-blue-800 p-4 md:p-8'>
+                                        <h3 className='flex items-center text-lg text-white font-black mb-8'>Project Creation</h3>
+                                        <div className=''>
+                                            <img src='/images/fg/Wireframe-project-create.png' />
+                                        </div>
+                                    </div>
+
+                                    <div className='rounded-xl bg-gradient-to-r from-purple-900 to-blue-800 p-4 md:p-8'>
+                                        <h3 className='flex items-center text-lg text-white font-black mb-8'>Project List</h3>
+                                        <div className=''>
+                                            <img src='/images/fg/Wireframe-project-list.png' />
+                                        </div>
+                                    </div>
+
+                                    <div className='rounded-xl bg-gradient-to-r from-purple-900 to-blue-800 p-4 md:p-8'>
+                                        <h3 className='flex items-center text-lg text-white font-black mb-8'>Milestone</h3>
+                                        <div className=''>
+                                            <img src='/images/fg/Wireframe-milestone-view.png' />
+                                        </div>
+                                    </div>
+
+                                    <div className='rounded-xl bg-gradient-to-r from-purple-900 to-blue-800 p-4 md:p-8'>
+                                        <h3 className='flex items-center text-lg text-white font-black mb-8'>Task Details</h3>
+                                        <div className=''>
+                                            <img src='/images/fg/Wireframe-task-details.png' />
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div className='grid grid-cols-1 space-y-6 mb-8'>
+                                    <div className='border-purple-950 border-l-2 pl-4'>
+                                        <h3 className='text-2xl text-slate-950 font-bold mb-2'>Initial Concepts</h3>
+                                        <p className='text-lg text-slate-800 max-w-lg'>After all that work, we finally got to the really fun part: designing how the app actually looks! This is what people will see and interact with.</p>
+                                    </div>
+                                </div>
+                                
+                                <div className='mb-8'>
+                                    <p className='text-lg text-slate-800 pb-6'>These designs were some of my early explorations, but they didn&apos;t quite make the cut.  Sometimes user feedback steered us in a different direction, and other times we had to make changes based on technical limitations.</p>
+                                </div>
+
+                                <div className='*:mb-16 mb-24'>
+                                    <div className='rounded-xl bg-gradient-to-r from-purple-900 to-blue-800 p-4 md:p-8'>
+                                        <h3 className='flex items-center text-lg text-white font-black mb-8'>Project Creation Concept</h3>
+                                        <div className=''>
+                                            <img src='/images/fg/project-creation-concept.png' />
+                                        </div>
+                                        <p className='bg-red-100 p-6 rounded-md text-base text-red-600 mt-12'>While this is a huge improvement from the 5 steps creation phases, during testing, I discovered some users don&apos;t need client/invoice/contract at all, additionally, the payment structure is not flexible enough.</p>
+                                    </div>
+
+                                    <div className='rounded-xl bg-gradient-to-r from-purple-900 to-blue-800 p-4 md:p-8'>
+                                        <h3 className='flex items-center text-lg text-white font-black mb-8'>Earlier Iteration of Task View</h3>
+                                        <div className=''>
+                                            <img src='/images/fg/Initial-task-view.png' />
+                                        </div>
+                                        <p className='bg-red-100 p-6 rounded-md text-base text-red-600 mt-12'>The initial slide-out panel for task details had limitations. It restricted new features and scalability for collaborative tools.  Plus, the colors were confusing. So, I went back to the drawing board to come up with a better solution!</p>
+                                    </div>
+
+                                    <div className='rounded-xl bg-gradient-to-r from-purple-900 to-blue-800 p-4 md:p-8'>
+                                        <h3 className='flex items-center text-lg text-white font-black mb-8'>Initial Invoice Manager</h3>
+                                        <div className=''>
+                                            <img src='/images/fg/Initial-invoice-manager.png' />
+                                        </div>
+                                        <p className='bg-red-100 p-6 rounded-md text-base text-red-600 mt-12'>The invoice management page is a bit clunky, especially on smaller screens. Some users have given us feedback that it&apos;s tough to find their way around.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                        {/* Testing & Iteration */}
+                        <section className='mb-24'>
+                            <div className='mx-auto max-w-4xl px-6 pt-10 lg:px-8 lg:pt-10'>
+                                <div className='border-slate-950 border-b mb-12'>
+                                    <h5 className='text-6xl font-thin text-slate-950 mb-4'>Testing & Iteration</h5>
+                                </div>
+
+                                {/* User Feedback */}
+                                <div className='grid grid-cols-1 gap-y-6 mb-24'>
+                                    <div className=''>
+                                        <h3 className='text-2xl text-slate-950 font-bold mb-2'>User Feedback</h3>
+                                        <p className='text-lg text-slate-800'>After designing the single page system, I conducted usability tests with targeted users identified through analytics. Freelancers appreciated the flexibility, and B2B users welcomed the ability to manage internal projects without unnecessary features.</p>
+                                    </div>
+                                    <div className='border p-2 rounded-3xl'>
+                                        <div className='grid grid-cols-1 md:grid-cols-3 gap-6 border p-4 rounded-2xl bg-zinc-50'>
+                                            <div className=''>
+                                                <h3 className='font-bold text-slate-950 mb-2'>Method</h3>
+                                                <p className='text-slate-800'>Remote and in-person testing</p>
+                                            </div>
+                                            <div className=''>
+                                                <h3 className='font-bold text-slate-950 mb-2'>Area Tested</h3>
+                                                <p className='text-slate-800 pb-4'>Projection creation, invoice, task and contract management, competitors analysis, problem valuation</p>
+                                            </div>
+                                            <div className=''>
+                                                <h3 className='font-bold text-slate-950 mb-2'>Participants</h3>
+                                                <p className='text-slate-800 pb-4'>24</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                {/* Participants */}
+                                <div className='grid grid-cols-1 space-y-6 mb-24'>
+                                    <div className='border-purple-950 border-l-2 pl-4 mb-6'>
+                                        <h3 className='text-2xl text-slate-950 font-bold mb-2'>Participants</h3>
+                                        <p className='text-lg text-slate-800 max-w-lg'>Who did I test?</p>
+                                    </div>
+                                    <div className='grid grid-cols-1 md:grid-cols-3 gap-16'>
+                                        <div className='text-center'>
+                                            <div className='mb-4 rounded-lg'>
+                                                <img src='/images/fg/24.png' />
+                                            </div>
+                                            <h3 className='font-semibold text-slate-950 mb-2'>Number of Participants</h3>
+                                        </div>
+
+                                        <div className='text-center'>
+                                            <div className='mb-4 rounded-lg'>
+                                                <img src='/images/fg/participants.png' />
+                                            </div>
+                                            <h3 className='font-semibold text-slate-950 mb-2'>Years of Experience</h3>
+                                        </div>
+
+                                        <div className='text-center'>
+                                            <div className='mb-4 rounded-lg'>
+                                                <img src='/images/fg/background.png' />
+                                            </div>
+                                            <h3 className='font-semibold text-slate-950 mb-2'>Professional Background</h3>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                {/* Executive summary */}
+                                <div className='grid grid-cols-1 space-y-6 mb-24'>
+                                    <div className='border-purple-950 border-l-2 pl-4 mb-6'>
+                                        <h3 className='text-2xl text-slate-950 font-bold mb-2'>Executive Summary</h3>
+                                        <p className='text-lg text-slate-800 max-w-2xl'>The Fullgap usability test revealed a divided response among users regarding the product&apos;s readiness. Some users responded enthusiastically, expressing a desire to use the tool immediately and share it with their teams. In contrast, few others did not see enough value in the current version and indicated they would wait to see how the product evolves before adopting it.</p>
+                                    </div>
+                                    <div className='grid md:grid-cols-4 gap-6 *:bg-gray-100 *:rounded-xl *:p-6'>
+                                        <div className=''>
+                                            <h2 className='text-5xl text-green-600 font-lora mb-4'>87%</h2>
+                                            <h3 className='text-slate-800 mb-2'>Participants stated that they prefer the single page project creation.</h3>
+                                        </div>
+
+                                        <div className=''>
+                                            <h2 className='text-5xl text-green-600 font-lora mb-4'>70%</h2>
+                                            <h3 className='text-slate-800 mb-2'>Participants completed all the tasks.</h3>
+                                        </div>
+                                        <div className=''>
+                                            <h2 className='text-5xl text-green-600 font-lora mb-4'>40%</h2>
+                                            <h3 className='text-slate-800 mb-2'>Stated that they see a great potential in the app.</h3>
+                                        </div>
+                                        <div className=''>
+                                            <h2 className='text-5xl text-green-600 font-lora mb-4'>35%</h2>
+                                            <h3 className='text-slate-800 mb-2'>Had a problem with the invoice and contract management.</h3>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                {/* Key Insight */}
+                                <div className='grid grid-cols-1 space-y-6 mb-24'>
+                                    <div className='border-purple-950 border-l-2 pl-4 mb-6'>
+                                        <h3 className='text-2xl text-slate-950 font-bold mb-2'>Key Insight</h3>
+                                        <p className='text-lg text-slate-800 max-w-2xl'>Lorem ipsum dolor amet.</p>
+                                    </div>
+                                    <div className='grid md:grid-cols-3 gap-6 *:bg-gray-100 *:rounded-xl *:p-8'>
+                                        <div className='space-y-3'>
+                                            <div className='inline-block p-2 bg-red-600/90 rounded-md shadow-md'><XMarkIcon className='size-7 text-white' /></div>
+                                            <h2 className='text-xl text-slate-950'>11 Negative insights</h2>
+                                            <p className='text-base text-slate-800'>Defined problems divided into three categories: Crucial, Major, and Minor.</p>
+                                        </div>
+
+                                        <div className='space-y-3'>
+                                            <div className='inline-block p-2 bg-slate-600/90 rounded-md shadow-md'><MinusIcon className='size-7 text-white' /></div>
+                                            <h2 className='text-xl text-slate-950'>9 Neutral insights</h2>
+                                            <p className='text-base text-slate-800'>Ideas and suggestions made by test participants.</p>
+                                        </div>
+
+                                        <div className='space-y-3'>
+                                            <div className='inline-block p-2 bg-green-600/90 rounded-md shadow-md'><CheckIcon className='size-7 text-white' /></div>
+                                            <h2 className='text-xl text-slate-950'>10 Positive insights</h2>
+                                            <p className='text-base text-slate-800'>All the positive feedback from the users.</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                {/* Negative */}
+                                <div className='grid grid-cols-1 space-y-6 mb-16 p-4 border rounded-xl'>
+                                    <div className='mb-2 border-b pb-2'>
+                                        <div className='flex items-center text-2xl text-slate-950 font-bold mb-2'>
+                                            <div className='inline-block p-2 bg-red-600/90 rounded-md shadow-md items-center mr-2'><XMarkIcon className='size-4 text-white' /></div>11 Negative Insights
+                                        </div>
+                                    </div>
+                                    
+                                    <div className='grid gap-y-8 md:grid-cols-3 md:gap-x-8'>
+                                        <div className=''>
+                                            <h3 className='flex font-semibold text-slate-900 items-center mb-4'>
+                                            <img src='/images/negative-bar-high.svg' alt='' className='size-7 mr-2' />Crucial</h3>
+                                            <div className='grid grid-cols-1 gap-y-4 *:bg-red-200/40 *:flex'>
+                                                <div className='p-3 rounded-md'>
+                                                    <span className='text-slate-500 pr-2'>01</span>
+                                                    <span className='text-slate-800'>Overwhelming Project Creation Process.</span>
+                                                </div>
+                                                <div className='p-3 rounded-md'>
+                                                    <span className='text-slate-500 pr-2'>02</span>
+                                                    <span className='text-slate-800'>Lack of Flexibility for B2B Users.</span>
+                                                </div>
+                                                <div className='p-3 rounded-md'>
+                                                    <span className='text-slate-500 pr-2'>03</span>
+                                                    <span className='text-slate-800'>Rigid Workflow.</span>
+                                                </div>
+                                                <div className='p-3 rounded-md'>
+                                                    <span className='text-slate-500 pr-2'>04</span>
+                                                    <span className='text-slate-800'>Task Management Lacked Collaboration.</span>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div className=''>
+                                            <h3 className='flex font-semibold text-slate-900 items-center mb-4'>
+                                            <img src='/images/negative-bar-medium.svg' alt='' className='size-7 mr-2' />Major</h3>
+                                            <div className='grid grid-cols-1 gap-y-4 *:bg-red-200/40 *:flex'>
+                                                <div className='p-3 rounded-md'>
+                                                    <span className='text-slate-500 pr-2'>05</span>
+                                                    <span className='text-slate-700'>Insufficient Visual Streamlining.</span>
+                                                </div>
+                                                <div className='p-3 rounded-md'>
+                                                    <span className='text-slate-500 pr-2'>06</span>
+                                                    <span className='text-slate-700'>Complexity in Task Customization.</span>
+                                                </div>
+                                                <div className='p-3 rounded-md'>
+                                                    <span className='text-slate-500 pr-2'>07</span>
+                                                    <span className='text-slate-700'>Limited Adaptability for Growing Teams.</span>
+                                                </div>
+                                                <div className='p-3 rounded-md'>
+                                                    <span className='text-slate-500 pr-2'>08</span>
+                                                    <span className='text-slate-700'>Insufficient Discovery of User Needs.</span>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div className=''>
+                                            <h3 className='flex font-semibold text-slate-900 items-center mb-4'>
+                                            <img src='/images/negative-bar-low.svg' alt='' className='size-7 mr-2' />Minor</h3>
+                                            <div className='grid grid-cols-1 gap-y-4 *:bg-red-200/40 *:flex'>
+                                                <div className='p-3 rounded-md'>
+                                                    <span className='text-slate-500 pr-2'>09</span>
+                                                    <span className='text-slate-700'>Low Adoption of Advanced Features.</span>
+                                                </div>
+                                                <div className='p-3 rounded-md'>
+                                                    <span className='text-slate-500 pr-2'>10</span>
+                                                    <span className='text-slate-700'>Underwhelming Task Views.</span>
+                                                </div>
+                                                <div className='p-3 rounded-md'>
+                                                    <span className='text-slate-500 pr-2'>11</span>
+                                                    <span className='text-slate-700'>Lack of Microservice Flexibility Early On.</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                {/* Neutral */}
+                                <div className='grid grid-cols-1 space-y-6 mb-16 p-4 border rounded-xl'>
+                                    <div className='mb-2 border-b pb-2'>
+                                        <div className='flex items-center text-2xl text-slate-950 font-bold mb-2'>
+                                            <div className='inline-block p-2 bg-gray-600/90 rounded-md shadow-md items-center mr-2'><MinusIcon className='size-4 text-white' /></div>9 Neutral Insights
+                                        </div>
+                                    </div>
+                                    
+                                    <div className='grid gap-y-8 md:grid-cols-3 md:gap-x-8'>
+                                        <div className=''>
+                                            <h3 className='flex font-semibold text-slate-950 items-center mb-4'>
+                                            <img src='/images/neutral-bar-high.svg' alt='' className='size-7 mr-2' />Crucial</h3>
+                                            <div className='grid grid-cols-1 gap-y-4 *:bg-gray-200/40 *:flex'>
+                                                <div className='p-3 rounded-md'>
+                                                    <span className='text-slate-500 pr-2'>01</span>
+                                                    <span className='text-slate-800'>Split User Opinions on Initial Value.</span>
+                                                </div>
+                                                <div className='p-3 rounded-md'>
+                                                    <span className='text-slate-500 pr-2'>02</span>
+                                                    <span className='text-slate-800'>B2B Flexibility Was Previously Unknown.</span>
+                                                </div>
+                                                <div className='p-3 rounded-md'>
+                                                    <span className='text-slate-500 pr-2'>03</span>
+                                                    <span className='text-slate-800'>Waiting for Further Product Development.</span>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div className=''>
+                                            <h3 className='flex font-semibold text-slate-950 items-center mb-4'>
+                                            <img src='/images/neutral-bar-medium.svg' alt='' className='size-7 mr-2' />Major</h3>
+                                            <div className='grid grid-cols-1 gap-y-4 *:bg-gray-200/40 *:flex'>
+                                                <div className='p-3 rounded-md'>
+                                                    <span className='text-slate-500 pr-2'>04</span>
+                                                    <span className='text-slate-800'>User Expectations Evolving.</span>
+                                                </div>
+                                                <div className='p-3 rounded-md'>
+                                                    <span className='text-slate-500 pr-2'>05</span>
+                                                    <span className='text-slate-800'>Gradual Increase in B2B Interest.</span>
+                                                </div>
+                                                <div className='p-3 rounded-md'>
+                                                    <span className='text-slate-500 pr-2'>06</span>
+                                                    <span className='text-slate-800'>Potential for Further Refinement in Task Views.</span>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div className=''>
+                                            <h3 className='flex font-semibold text-slate-950 items-center mb-4'>
+                                            <img src='/images/neutral-bar-low.svg' alt='' className='size-7 mr-2' />Minor</h3>
+                                            <div className='grid grid-cols-1 gap-y-4 *:bg-gray-200/40 *:flex'>
+                                                <div className='p-3 rounded-md'>
+                                                    <span className='text-slate-500 pr-2'>07</span>
+                                                    <span className='text-slate-800'>Decoupling Highlighted Flexibility Needs.</span>
+                                                </div>
+                                                <div className='p-3 rounded-md'>
+                                                    <span className='text-slate-500 pr-2'>08</span>
+                                                    <span className='text-slate-800'>Gradual Acceptance of Modular Features.</span>
+                                                </div>
+                                                <div className='p-3 rounded-md'>
+                                                    <span className='text-slate-500 pr-2'>09</span>
+                                                    <span className='text-slate-800'>Mixed Responses to Flexibility.</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                {/* Positive */}
+                                <div className='grid grid-cols-1 space-y-6 mb-24 p-4 border rounded-xl'>
+                                    <div className='mb-2 border-b pb-2'>
+                                        <div className='flex items-center text-2xl text-slate-950 font-bold mb-2'>
+                                            <div className='inline-block p-2 bg-green-600/90 rounded-md shadow-md items-center mr-2'><CheckIcon className='size-4 text-white' /></div>10 Positive Insights
+                                        </div>
+                                    </div>
+                                    
+                                    <div className='grid gap-y-8 md:grid-cols-3 md:gap-x-8'>
+                                        <div className=''>
+                                            <h3 className='flex font-semibold text-slate-950 items-center mb-4'>
+                                            <img src='/images/positive-bar-high.svg' alt='' className='size-7 mr-2' />Crucial</h3>
+                                            <div className='grid grid-cols-1 gap-y-4 *:bg-green-200/40 *:flex'>
+                                                <div className='p-3 rounded-md'>
+                                                    <span className='text-slate-500 pr-2'>01</span>
+                                                    <span className='text-slate-800'>Significant Increase in User Engagement.</span>
+                                                </div>
+                                                <div className='p-3 rounded-md'>
+                                                    <span className='text-slate-500 pr-2'>02</span>
+                                                    <span className='text-slate-800'>Decoupled Features for Greater Flexibility.</span>
+                                                </div>
+                                                <div className='p-3 rounded-md'>
+                                                    <span className='text-slate-500 pr-2'>03</span>
+                                                    <span className='text-slate-800'>B2B Engagement Expanded.</span>
+                                                </div>
+                                                <div className='p-3 rounded-md'>
+                                                    <span className='text-slate-500 pr-2'>04</span>
+                                                    <span className='text-slate-800'>Improved Task Collaboration.</span>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div className=''>
+                                            <h3 className='flex font-semibold text-slate-950 items-center mb-4'>
+                                            <img src='/images/positive-bar-medium.svg' alt='' className='size-7 mr-2' />Major</h3>
+                                            <div className='grid grid-cols-1 gap-y-4 *:bg-green-200/40 *:flex'>
+                                                <div className='p-3 rounded-md'>
+                                                    <span className='text-slate-500 pr-2'>05</span>
+                                                    <span className='text-slate-800'>Return Rate and Task Creation Boosted.</span>
+                                                </div>
+                                                <div className='p-3 rounded-md'>
+                                                    <span className='text-slate-500 pr-2'>06</span>
+                                                    <span className='text-slate-800'>Positive User Reception to Modular Design.</span>
+                                                </div>
+                                                <div className='p-3 rounded-md'>
+                                                    <span className='text-slate-500 pr-2'>07</span>
+                                                    <span className='text-slate-800'>Seamless Feature Integration.</span>
+                                                </div>
+                                                <div className='p-3 rounded-md'>
+                                                    <span className='text-slate-500 pr-2'>08</span>
+                                                    <span className='text-slate-800'>Enhanced Collaboration Toolsn.</span>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div className=''>
+                                            <h3 className='flex font-semibold text-slate-950 items-center mb-4'>
+                                            <img src='/images/positive-bar-low.svg' alt='' className='size-7 mr-2' />Minor</h3>
+                                            <div className='grid grid-cols-1 gap-y-4 *:bg-green-200/40 *:flex'>
+                                                <div className='p-3 rounded-md'>
+                                                    <span className='text-slate-500 pr-2'>09</span>
+                                                    <span className='text-slate-800'>Smoother Rollout Using Feature Flags.</span>
+                                                </div>
+                                                <div className='p-3 rounded-md'>
+                                                    <span className='text-slate-500 pr-2'>10</span>
+                                                    <span className='text-slate-800'>Positive Impact on User Retention.</span>
+                                                </div>
+                                                <div className='p-3 rounded-md'>
+                                                    <span className='text-slate-500 pr-2'>11</span>
+                                                    <span className='text-slate-800'>User-Friendly Interface for Freelancers.</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                {/* Insight 1 */}
+                                <div className='mb-24'>
+                                    <div className='mb-8'>
+                                        <h4 className='text-lg text-slate-600 mb-4'>Insight #1</h4>
+                                        <div className='border-purple-950 border-l-2 pl-4 mb-4'>
+                                            <h3 className='text-2xl text-slate-950 font-bold mb-2'>Overwhelming Project Creation Process</h3>
+                                            <p className='text-lg text-slate-800 max-w-2xl'>The original multi-step process (project details, deliverables, payment, contract, preview) was too complex, resulting in high drop-off rates.</p>
+                                        </div>
+                                    </div>
+
+                                    <div className='grid md:grid-cols-2'>
+                                        <div className="grid grid-cols-1 gap-6 max-w-sm">
+                                            <div className="">
+                                                <h3 className="font-semibold text-slate-950 mb-2">Location</h3>
+                                                <p className="text-slate-800">online</p>
+                                            </div>
+                                            <div className='grid grid-cols-2 max-w-64'>
+                                                <div className="">
+                                                    <h3 className="font-semibold text-slate-950 mb-2">Severity</h3>
+                                                    <h3 className='flex text-slate-800 items-center mb-4'><img src='/images/negative-bar-high.svg' alt='' className='size-6 mr-2' />Crucial</h3>
+                                                </div>
+                                                <div className="">
+                                                    <h3 className="font-semibold text-slate-950 mb-2">Type</h3>
+                                                    <h3 className='flex text-slate-800 items-center mb-4'><div className='inline-block p-1 bg-red-600/90 rounded-md shadow-md items-center mr-2'><XMarkIcon className='size-4 text-white' /></div>Negative</h3>
+                                                </div>
+                                            </div>
+                                            <div className="">
+                                                <h3 className="font-semibold text-slate-950 mb-2">Recommendation</h3>
+                                                <p className="text-slate-800">Streamline the process and prioritise each component the user interact with</p>
+                                            </div>
+                                        </div>
+
+                                        <div className='mt-12 md:mt-0'>
+                                            <img src='/images/insight-1.png' className='size-56' />
+                                        </div>
+                                    </div>
+                                </div>
+
+                                {/* Insight 2 */}
+                                <div className='mb-24'>
+                                    <div className='mb-8'>
+                                        <h4 className='text-lg text-slate-600 mb-4'>Insight #2</h4>
+                                        <div className='border-purple-950 border-l-2 pl-4 mb-4'>
+                                            <h3 className='text-2xl text-slate-950 font-bold mb-2'>Split User Opinions on Initial Value</h3>
+                                            <p className='text-lg text-slate-800 max-w-2xl'>While some users saw immediate value in Fullgap’s new features, others felt that the product was not yet compelling enough to adopt fully.</p>
+                                        </div>
+                                    </div>
+
+                                    <div className='grid md:grid-cols-2'>
+                                        <div className="grid grid-cols-1 gap-6 max-w-sm">
+                                            <div className="">
+                                                <h3 className="font-semibold text-slate-950 mb-2">Location</h3>
+                                                <p className="text-slate-800">Every tested method</p>
+                                            </div>
+                                            <div className='grid grid-cols-2 max-w-64'>
+                                                <div className="">
+                                                    <h3 className="font-semibold text-slate-950 mb-2">Type</h3>
+                                                    <h3 className='flex text-slate-800 items-center mb-4'><div className='inline-block p-1 bg-gray-600/90 rounded-md shadow-md items-center mr-2'><MinusIcon className='size-4 text-white' /></div>Neutral</h3>
+                                                    
+                                                </div>
+                                            </div>
+                                            <div className="">
+                                                <h3 className="font-semibold text-slate-950 mb-2">Recommendation</h3>
+                                                <p className="text-slate-800">Competitive analysis and the use of feature flag</p>
+                                            </div>
+                                        </div>
+
+                                        <div className='mt-12 md:mt-0'>
+                                            <img src='/images/insight-2.png' className='size-56' />
+                                        </div>
+                                    </div>
+                                </div>
+
+                                {/* Insight 3 */}
+                                <div className='mb-24'>
+                                    <div className='mb-8'>
+                                        <h4 className='text-lg text-slate-600 mb-4'>Insight #3</h4>
+                                        <div className='border-purple-950 border-l-2 pl-4 mb-4'>
+                                            <h3 className='text-2xl text-slate-950 font-bold mb-2'>Significant Increase in User Engagement</h3>
+                                            <p className='text-lg text-slate-800 max-w-2xl'>The streamlined project creation process, combined with better task management, resulted in a 45% increase in user engagement.</p>
+                                        </div>
+                                    </div>
+
+                                    <div className='grid md:grid-cols-2'>
+                                        <div className="grid grid-cols-1 gap-6 max-w-sm">
+                                            <div className="">
+                                                <h3 className="font-semibold text-slate-950 mb-2">Location</h3>
+                                                <p className="text-slate-800">Every tested method</p>
+                                            </div>
+                                            <div className='grid grid-cols-2 max-w-64'>
+                                                <div className="">
+                                                    <h3 className="font-semibold text-slate-950 mb-2">Type</h3>
+                                                    <h3 className='flex text-slate-800 items-center mb-4'><div className='inline-block p-1 bg-green-600/90 rounded-md shadow-md items-center mr-2'><CheckIcon className='size-4 text-white' /></div>Positive</h3>
+                                                    
+                                                </div>
+                                            </div>
+                                            <div className="">
+                                                <h3 className="font-semibold text-slate-950 mb-2">Recommendation</h3>
+                                                <p className="text-slate-800">Decouple project components into standalone and expand task management</p>
+                                            </div>
+                                        </div>
+
+                                        <div className='mt-12 md:mt-0'>
+                                            <img src='/images/insight-3.png' className='size-56' />
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </section>
 
-                        <div className='mx-auto max-w-4xl px-6 pt-20 lg:px-8 lg:pt-40'>
-                            <h5 className='uppercase text-md font-medium text-zinc-400'>Team Composition</h5>
-                            <h5 className='text-2xl font-sans pt-3 pb-4 text-gray-500'>In this story, I was the protagonist, the product designer, researcher, and market strategist.</h5>
-                            <div className='text-gray-500'>
-                                <p className='text-sm'>My mission was to delve deep into the user experience, uncover their pain points, and craft solutions that would make Fullgap the go-to platform for creatives. But no hero works alone. I collaborated with:</p>
-                            </div>
-                            <div className='grid grid-cols-1 lg:grid-cols-3 gap-5 mt-4'>
-                                <div className=''>
-                                    <h2 className='text-md pb-2 pt-4'><UserCircleIcon className='h-5 w-5 text-gray-900 mr-2 inline-flex' aria-hidden='true' />Engineers</h2>
-                                    <p className='text-gray-500 text-sm'>The wizards who brought our technical solutions to life.</p>
+                        {/* Outcome & Reflection */}
+                        <section className='mb-24'>
+                            <div className='mx-auto max-w-4xl px-6 pt-10 lg:px-8 lg:pt-10'>
+                                <div className='border-slate-300 border-b mb-8'>
+                                    <h5 className='text-6xl font-thin text-slate-950 mb-4'>Outcome & Reflection</h5>
                                 </div>
-                                <div className=''>
-                                    <h2 className='text-md pb-2 pt-4'><UserCircleIcon className='h-5 w-5 text-gray-900 mr-2 inline-flex' aria-hidden='true' />Product manager</h2>
-                                    <p className='text-gray-500 text-sm'>The strategists who ensured our goals aligned with user needs and business objectives.</p>
-                                </div>
-                                <div className=''>
-                                    <h2 className='text-md pb-2 pt-4'><UserCircleIcon className='h-5 w-5 text-gray-900 mr-2 inline-flex' aria-hidden='true' />Marketers</h2>
-                                    <p className='text-gray-500 text-sm'>The communicators who kept our users informed and engaged.</p>
-                                </div>
-                            </div>
-                        </div>
 
-                        <div className='mx-auto max-w-4xl px-6 pt-20 lg:px-8 lg:pt-40'>
-                            <h5 className='uppercase text-md font-medium text-zinc-400'>Approach</h5>
-                            <h5 className='text-2xl font-sans pt-3 pb-4 text-gray-500'>Strategy and research method: Our journey began with understanding the terrain</h5>
+                                <div className='grid grid-cols-1 gap-y-6 mb-12'>
+                                    <div className=''>
+                                        <h3 className='text-2xl text-slate-950 font-bold mb-3'>Refined Visuals</h3>
+                                        <p className='text-lg text-slate-800'>After designing the single page system, I conducted usability tests with targeted users identified through analytics. Freelancers appreciated the flexibility, and B2B users welcomed the ability to manage internal projects without unnecessary features.</p>
+                                    </div>
+                                </div>
 
-                            <div className='grid grid-cols-1 gap-5'>
-                                <div className=''>
-                                    <div className='relative w-full min-h-[1rem] mt-8 group'>
-                                        <div className='bg-zinc-100 p-16 rounded-lg border'>
-                                            <img src='/images/fg-mixpanel.png' alt='' className='rounded-md h-full w-full block object-cover object-center shadow-md' />
+                                <div className='mb-24'>
+
+                                    <div className='rounded-xl bg-gradient-to-r from-purple-900 to-blue-800 p-4 md:p-8 mb-16'>
+                                        <h3 className='flex items-center text-lg text-white font-black mb-8'>New Project Creation</h3>
+                                        <div className=''>
+                                            <img src='/images/fg/New-project-creation.png' />
+                                        </div>
+                                        <div className='mt-8'>
+                                            <ul className='*:text-base *:mb-2 last-of-type:mb-0 *:p-4 *:text-green-600 *:font-medium *:bg-green-100 *:rounded-lg'>
+                                                <li>To streamline project creation, I designed a single-page workflow. This simplified approach focuses on essential tasks, making it efficient and user-friendly.</li>
+                                                <li>Features like invoice and contract generation were made optional, ensuring the design caters to a wider range of users.  Those who need these capabilities can easily add them later.</li>
+                                                <li>To further boost efficiency, I created a reusable component for adding tasks and milestones. This component can be integrated into any page, eliminating the need for users to navigate away from their current context.</li>
+                                                <li>Finally, I added a &quot;duplicate&quot; function for tasks and milestones. This allows users to quickly create similar entries with a single click, saving them time and effort.</li>
+                                            </ul>
                                         </div>
                                     </div>
-                                    <p className='text-gray-500 text-sm mt-2'><strong>Data analysis:</strong> Like detectives, I scoured Mixpanel data to track user movements and pinpoint where they dropped off. I discovered that many users abandoned the project creation process halfway through.</p>
-                                </div>
-                                <div className=''>
-                                    <div className='relative w-full min-h-[1rem] mt-8 group'>
-                                        <div className='bg-zinc-100 p-16 rounded-lg border'>
-                                            <img src='/images/fg-notion-interview.png' alt='' className='rounded-md h-full w-full block object-cover object-center shadow-md' />
+
+                                    <div className='rounded-xl bg-gradient-to-r from-purple-900 to-blue-800 p-4 md:p-8 mb-16'>
+                                        <h3 className='flex items-center text-lg text-white font-black mb-8'>Task View - List</h3>
+                                        <div className=''>
+                                            <img src='/images/fg/Task-view-list.png' />
                                         </div>
                                     </div>
-                                    <p className='text-gray-500 text-sm mt-2'><strong>User interview:</strong> We reached out to users, inviting them to share their stories. Their feedback revealed that the multi-page project creation was overwhelming, and they often didn&apos;t have tasks ready at the project&apos;s inception. The view captures some of the script I created using Notion Doc.</p>
-                                </div>
-                                <div className=''>
-                                    <div className='relative w-full min-h-[1rem] mt-8 group'>
-                                        <div className='bg-zinc-100 p-16 pb-0 rounded-lg border overflow-hidden'>
-                                            <img src='/images/fg-notion-calls.png' alt='' className='rounded-md h-full w-full block object-cover object-center shadow-md -mb-1' />
+
+                                    <div className='rounded-xl bg-gradient-to-r from-purple-900 to-blue-800 p-4 md:p-8 mb-16'>
+                                        <h3 className='flex items-center text-lg text-white font-black mb-8'>Task View - Board</h3>
+                                        <div className=''>
+                                            <img src='/images/fg/Task-list-board.png' />
                                         </div>
                                     </div>
-                                    <p className='text-gray-500 text-sm mt-2'><strong>User Feedback:</strong> Our community forums and call center logs became treasure troves of insights. Sifting through these logs, though tedious, was crucial in understanding recurring complaints and frustrations.</p>
-                                </div>
-                                <div className=''>
-                                    <div className='relative w-full min-h-[1rem] mt-8 group'>
-                                        <div className='bg-zinc-100 p-16 rounded-lg border overflow-hidden'>
-                                            <img src='/images/fg-iterations.png' alt='' className='rounded-md h-full w-full block object-cover object-center shadow-md' />
+
+                                    <div className='rounded-xl bg-gradient-to-r from-purple-900 to-blue-800 p-4 md:p-8 mb-16'>
+                                        <h3 className='flex items-center text-lg text-white font-black mb-8'>New Task Details</h3>
+                                        <div className=''>
+                                            <img src='/images/fg/Task-details.png' />
                                         </div>
                                     </div>
-                                    <p className='text-gray-500 text-sm mt-2'><strong>Design testing:</strong> We sketched out new designs and tested them with users. Each iteration brought us closer to a solution that felt just right.</p>
-                                </div>
-                            </div>
-                        </div>
 
-
-
-                        <div className='mx-auto max-w-4xl px-6 pt-20 lg:px-8 lg:pt-40'>
-                            <h5 className='uppercase text-md font-medium text-zinc-400'>Challenges</h5>
-                            <h5 className='text-2xl font-sans pt-3 pb-4 text-gray-500'>We thought we knew all the challenges when we started but research had something in store for us - lol</h5>
-                            <div className='grid grid-cols-1 lg:grid-cols-6 pt-8 gap-6'>
-                                <div className='col-span-1 lg:col-span-3 pb-16 lg:pb-0'>
-                                    <div className='relative w-full min-h-[1rem]'>
-                                        <div className='overflow-hidden'>
-                                            <img src='/images/fg-userengagement.png' alt='' className='rounded-md h-full w-full block object-cover object-center shadow-md' />
+                                    <div className='rounded-xl bg-gradient-to-r from-purple-900 to-blue-800 p-4 md:p-8 mb-16'>
+                                        <h3 className='flex items-center text-lg text-white font-black mb-8'>Share Component</h3>
+                                        <div className=''>
+                                            <img src='/images/fg/Share-feature.png' />
                                         </div>
                                     </div>
-                                    <h2 className='font-semibold pb-2'>User Engagement for Interviews:</h2>
-                                    <p className='text-gray-500 text-sm'>Convincing users to participate in interviews was like persuading busy bees to pause their work. We offered incentives—discounts—to sweeten the deal, which helped increase participation.</p>
-                                </div>
 
-                                <div className='col-span-1 lg:col-end-7 lg:col-span-2 rounded-lg'>
-                                    <div className='relative w-full min-h-[1rem]'>
-                                        <div className='overflow-hidden'>
-                                            <img src='/images/fg-analyze-data.png' alt='' className='rounded-md h-full w-full block object-cover object-center shadow-md' />
+                                    <div className='rounded-xl bg-gradient-to-r from-purple-900 to-blue-800 p-4 md:p-8 mb-16'>
+                                        <h3 className='flex items-center text-lg text-white font-black mb-8'>New Invoice - Standalone</h3>
+                                        <div className=''>
+                                            <img src='/images/fg/New-invoice.png' />
                                         </div>
                                     </div>
-                                    <h2 className='font-semibold pb-2'>Sifting Through Call Center Logs:</h2>
-                                    <p className='text-gray-500 text-sm'>Diving into the depths of call logs was time-consuming but essential. Each log was a piece of the puzzle, helping us see the bigger picture of user pain points.</p>
+
+                                    <div className='rounded-xl bg-gradient-to-r from-purple-900 to-blue-800 p-4 md:p-8 mb-16'>
+                                        <h3 className='flex items-center text-lg text-white font-black mb-8'>New Invoice Details</h3>
+                                        <div className=''>
+                                            <img src='/images/fg/New-invoice-details.png' />
+                                        </div>
+                                    </div>
+
+                                    <div className='rounded-xl bg-gradient-to-r from-purple-900 to-blue-800 p-4 md:p-8 mb-16'>
+                                        <h3 className='flex items-center text-lg text-white font-black mb-8'>New Contract - Standalone</h3>
+                                        <div className=''>
+                                            <img src='/images/fg/New-contract-standalone.png' />
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div className='grid grid-cols-1 space-y-6 mb-24'>
+                                    <div className='border-purple-950 border-l-2 pl-4 mb-6'>
+                                        <h3 className='text-2xl text-slate-950 font-bold mb-2'>Lesson Learned</h3>
+                                        <p className='text-lg text-slate-800 max-w-2xl'>Research is sometimes more about learning what not to do. It helps us avoid repeating mistakes and guides us towards better solutions.</p>
+                                    </div>
+                                    <div className='grid md:grid-cols-3 gap-6 *:bg-gray-100 *:rounded-xl *:p-8'>
+                                        <div className='space-y-3'>
+                                            <div className='inline-block p-2 bg-red-600/90 rounded-md shadow-md'><XMarkIcon className='size-7 text-white' /></div>
+                                            <h2 className='text-xl text-slate-950'>What didn&apos;t work</h2>
+                                            <p className='text-base text-slate-800'>The initial design relied too heavily on visual streamlining, which wasn’t enough without decoupling the features.</p>
+                                        </div>
+
+                                        <div className='space-y-3'>
+                                            <div className='inline-block p-2 bg-slate-600/90 rounded-md shadow-md'><MinusIcon className='size-7 text-white' /></div>
+                                            <h2 className='text-xl text-slate-950'>What I&apos;d do differently</h2>
+                                            <p className='text-base text-slate-800'>Start with more modular thinking from the outset, rather than relying on visual design alone to solve complex user journeys.</p>
+                                        </div>
+
+                                        <div className='space-y-3'>
+                                            <div className='inline-block p-2 bg-green-600/90 rounded-md shadow-md'><CheckIcon className='size-7 text-white' /></div>
+                                            <h2 className='text-xl text-slate-950'>What worked</h2>
+                                            <p className='text-base text-slate-800'>The modular design was key in meeting both freelancer and B2B needs, creating flexibility and improving user satisfaction.</p>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
+                        </section>
 
-                        <div className='mx-auto max-w-4xl px-6 pt-20 lg:px-8 lg:pt-40'>
-                            <h5 className='uppercase text-md font-medium text-zinc-400'>Solution</h5>
-                            <h5 className='text-2xl font-sans pt-3 pb-4 text-gray-500'>Design Highlights:</h5>
-                            <div className='grid grid-cols-1 space-y-6 text-gray-500 '>
-                                <p className='text-sm'>Creating the optimal design for Fullgap required <strong className='text-gray-900'>numerous visual drafts and prototypes</strong>. After extensive testing and multiple iterations, we identified the most effective solutions to address user pain points. These chosen designs represent the best of our efforts to enhance the user experience.</p>
-                                <hr />
-                                <p className='text-sm'>Nevertheless, our commitment to excellence means we will continue testing and optimizing these features to ensure they meet our users&apos; evolving needs. Here are the key changes we implemented:</p>
-                            </div>
-                        </div>
+                        {/* Conclusion */}
+                        <section className='mb-24'>
+                            <div className='mx-auto max-w-4xl px-6 pt-10 lg:px-8 lg:pt-10'>
+                                <div className='border-slate-300 border-b mb-8'>
+                                    <h5 className='text-6xl font-thin text-slate-950 mb-4'>Conclusion</h5>
+                                </div>
 
-                        <div className='mx-auto max-w-4xl px-6 pt-10 lg:px-8 lg:pt-10'>
-                            <h5 className='text-2xl font-sans pt-3 pb-4 text-gray-500'>Single-Page Project Creation</h5>
-                            <div className='grid grid-cols-1 space-y-6 text-gray-500'>
-                                <p className='text-sm'>I transformed the project creation process from a five-page odyssey into a single-page sprint. This streamlined approach made it faster and less intimidating for users.</p>
-                            </div>
-                        </div>
-
-                        <div className='mx-auto max-w-4xl px-6'>
-                            <div className='relative w-full min-h-[1rem] mt-8 group'>
-                                <div className=''>
-                                    <img src='/images/videos/fg-pj-creation-f1.gif' alt='' className='rounded-2xl h-full w-full block object-cover object-center border-4 border-gray-700' />
+                                <div className='grid grid-cols-1 gap-y-6 mb-12'>
+                                    <div className=''>
+                                        {/* <h3 className='text-2xl text-slate-950 font-bold mb-3'></h3> */}
+                                        <p className='text-lg text-slate-800 pb-4'>This project highlights my ability to identify and address user pain points through research, test-driven design iterations, and modular solutions.</p>
+                                        
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-
-                        <div className='mx-auto max-w-4xl px-6 pt-10 lg:px-8 lg:pt-20'>
-                            <h5 className='text-2xl font-sans pt-3 pb-4 text-gray-500'>Task Creation Post-Project</h5>
-                            <div className='grid grid-cols-1 space-y-6 text-gray-500'>
-                                <p className='text-sm'>By decoupling task creation from project setup, we gave users the flexibility to add tasks later. This change encouraged them to return to the platform, enhancing ongoing engagement.</p>
-                            </div>
-                        </div>
-
-                        <div className='mx-auto max-w-4xl px-6'>
-                            <div className='relative w-full min-h-[1rem] mt-8 group'>
-                                <div className=''>
-                                    <img src='/images/fullgap-task-creation.png' alt='' className='hidden rounded-2xl h-full w-full block object-cover object-center' />
-                                    <img src='/images/videos/fg-tc-flow.gif' alt='' className='rounded-2xl h-full w-full block object-cover object-center border-4 border-gray-700' />
-                                </div>
-                            </div>
-                        </div>
-
-                        <div className='mx-auto max-w-4xl px-6 pt-10 lg:px-8 lg:pt-20'>
-                            <h5 className='text-2xl font-sans pt-3 pb-4 text-gray-500'>Enhanced Project/Task View</h5>
-                            <div className='grid grid-cols-1 pb-8 space-y-6 text-gray-500'>
-                                <p className='text-sm'>I revamped the project view, adding different layout and easy filter mechanism and task detail view, expanding it from a drawer to a full-page layout. We also added a commenting system, turning tasks into collaborative spaces where ideas could flow freely.</p>
-                            </div>
-                        </div>
-
-                        <div className='mx-auto max-w-4xl px-6'>
-                            <div className='relative w-full min-h-[1rem] mt-2 group'>
-                                <div className=''>
-                                    <img src='/images/videos/fg-en-flow.gif' alt='' className='rounded-2xl h-full w-full block object-cover object-center border-4 border-gray-700' />
-                                </div>
-                            </div>
-                        </div>
-
-                        {/* Project starts here */}
-                        {/* <div className="mx-auto max-w-4xl px-6 lg:px-8">
-                            <ImageGallery imagePaths={imageProjects} />
-                        </div> */}
-                        {/* Projects ends here */}
-
-                        <div className='mx-auto max-w-4xl px-6 pt-10 lg:px-8 lg:pt-20'>
-                            <h5 className='text-2xl font-sans pt-3 pb-4 text-gray-500'>Invoice Management Update</h5>
-                            <div className='grid grid-cols-1 pb-8 space-y-6 text-gray-500'>
-                                <p className='text-sm'>I liberated invoice creation from the shackles of projects, allowing users to generate standalone invoices. This provided much-needed flexibility and met users&apos; varying needs.</p>
-                            </div>
-                        </div>
-
-                        <div className='mx-auto max-w-4xl px-6'>
-                            <div className='relative w-full min-h-[1rem] mt-2 group'>
-                                <div className=''>
-                                    <img src='/images/videos/fg-in-flow.gif' alt='' className='rounded-2xl h-full w-full block object-cover object-center border-4 border-gray-700' />
-                                </div>
-                            </div>
-                        </div>
-
-                        {/* <div className="mx-auto max-w-4xl px-6 lg:px-8">
-                            <ImageGallery imagePaths={imageInvoices} />
-                        </div> */}
-
-                        <div className='bg-zinc-50 mt-20'>
-                            <div className='mx-auto max-w-4xl px-6 pt-20 lg:px-8 lg:py-20'>
-                                <h5 className='uppercase text-lg font-medium text-zinc-400'>Results and Impact</h5>
-                                <h5 className='text-2xl font-sans pt-3 pb-4 text-gray-500'>Key Performance Indicators (KPIs):</h5>
-                                <div className='grid grid-cols-1 pb-8 space-y-6 text-gray-500'>
-                                    <p className='text-sm'>The results were nothing short of transformative:</p>
-                                </div>
-                                <div className='grid grid-cols-1 lg:grid-cols-2 gap-6 text-gray-700 rounded-xl overflow-hidden'>
-                                    <div className='text-2xl font-sans p-6 bg-white rounded-lg'><strong className='text-4xl block pb-2 font-semibold text-indigo-500'>45% Engagement Increase </strong>thanks to the intuitive and streamlined processes.</div>
-                                    <div className='text-2xl font-sans p-6 bg-white rounded-lg'><strong className='text-4xl block pb-2 font-semibold text-indigo-500'>85x time reduction </strong>time to create a project plummeted by 85% making users more productive and satisfied.</div>
-                                    <div className='text-2xl font-sans p-6 bg-white rounded-lg'><strong className='text-4xl block pb-2 font-semibold text-indigo-500'>5.5x more tasks created </strong>more tasks added, boosting our return rate and ensuring continuous interaction.</div>
-                                    <div className='text-2xl font-sans p-6 bg-white rounded-lg'><strong className='text-4xl block pb-2 font-semibold text-indigo-500'>4 comments/task </strong>The new commenting system sparked collaboration, with team members communicating more effectively within the platform.</div>
-                                </div>
-                                <hr className='mt-10 mb-6' />
-                                <p className='text-sm text-gray-500 pb-8 lg:pb-0'>With the help of Mixpanel, we were able to monitor how users interact with the features added, comparing previous data to the current </p>
-                            </div>
-                        </div>
-
-                        <div className='mx-auto max-w-4xl px-6 pt-10 lg:px-8 lg:pt-40'>
-                            <h5 className='uppercase text-lg font-medium text-zinc-400'>Next Steps</h5>
-                            <h5 className='text-2xl font-sans pt-3 pb-4 text-gray-500'>Ongoing Monitoring</h5>
-                            <div className='grid grid-cols-1 pb-8 space-y-6 text-gray-500'>
-                                <p className='text-sm'>The journey doesn&apos;t end here. I will:</p>
-                            </div>
-                            <div className='grid grid-cols-1 lg:grid-cols-2 pb-16 text-gray-700 rounded-xl overflow-hidden'>
-                                <div className='p-6 bg-indigo-50'>Continuously monitor user trends through Mixpanel, staying vigilant for new patterns and areas for improvement.</div>
-                                <div className='p-6 bg-indigo-100'>Integrate Logrocket to observe live user interactions, allowing us to make real-time adjustments and enhancements.</div>
-                            </div>
-
-                            <h5 className='text-2xl font-sans pt-3 pb-4 text-gray-500'>Future Enhancement</h5>
-                            <div className='grid grid-cols-1 lg:grid-cols-2 pb-16 text-gray-700 rounded-xl overflow-hidden'>
-                                <div className='p-6 bg-slate-50'>We plan to introduce additional features based on ongoing user feedback, further streamlining workflows and enhancing usability.</div>
-                                <div className='p-6 bg-slate-100'>Regular workshops and usability tests will ensure Fullgap evolves with our users&apos; needs, staying ahead of the curve.</div>
-                            </div>
-
-                            <div className='text-2xl font-sans lg:text-3xl mb-20 text-gray-500'>Through this transformative journey, Fullgap has become the vibrant, efficient hive of creativity we always envisioned. Our story is one of listening, learning, and continuously improving, ensuring our platform not only meets but exceeds the needs of creatives everywhere.</div>
-                        </div>
+                        </section>
 
                     </div>
                 </div>

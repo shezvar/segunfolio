@@ -1,12 +1,12 @@
 import type { Metadata } from "next";
-import { Manrope } from "next/font/google";
+import { IBM_Plex_Sans, Manrope } from "next/font/google";
 import "./globals.css";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import GTagScript from "@/components/GTagScript";
 import { Analytics } from "@vercel/analytics/react";
 
 
-const manrope = Manrope({ subsets: ["latin"] });
+const manrope = IBM_Plex_Sans({ subsets: ["latin"], weight: ["100", "200", "300", "400", "500", "600", "700"] });
 
 export const metadata: Metadata = {
   title: "Segun Oroyo",
@@ -23,7 +23,7 @@ export default function RootLayout({
       <head>
         <GTagScript />
       </head>
-      <body className={manrope.className}>
+      <body>
         {children}
         <Analytics />
         <SpeedInsights />
